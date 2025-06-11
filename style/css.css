@@ -1933,9 +1933,9 @@ footer p {
     font-size: 16px !important;
   }
 
-  #stop-point {
+  /* #stop-point {
     height: 20px;
-    /* margin-top: 40px; */
+    margin-top: 40px;
   }
 
   #stop-point2 {
@@ -1948,7 +1948,7 @@ footer p {
     margin-top: 56px;
   }
 
-  /* #sticky-btn {
+  #sticky-btn {
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
@@ -1956,7 +1956,7 @@ footer p {
     width: 93vw;
     transition: all 0.8s ease;
     margin-bottom: 0px;
-  } */
+  }
 
   #sticky-btn.stop {
     position: absolute;
@@ -1978,7 +1978,7 @@ footer p {
     z-index: 1000;
     box-sizing: border-box;
     margin-bottom: 0px;
-    /* padding-top: 8px; */
+    padding-top: 8px;
   }
 
   #sticky-btn2.stopped {
@@ -2005,7 +2005,7 @@ footer p {
     bottom: 0;
     top: auto;
     width: 100%;
-  }
+  } */
 
   .company-info img {
     width: 120px;
@@ -2826,7 +2826,7 @@ footer p {
   }
 
   .mgTp {
-    margin-top: 3px !important;
+    margin-top: 8px !important;
   }
 
   .household-popup .modal-content {
