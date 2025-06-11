@@ -157,8 +157,8 @@ body {
 /****************************** Banner *****************************/
 /****************************** Products *****************************/
 .buying-background {
-  background: #E67323;
-  border-top: 4px solid #E67323;
+  background: #1EB9F0;
+  border-top: 4px solid #1EB9F0;
 }
 
 .pr-logopart {
@@ -1176,6 +1176,16 @@ p.people {
   border-radius: 10px;
 }
 
+#yomz-original-carousel2 .product-thumbs .swiper-slide img {
+  border: 3px solid #1EB9F0;
+  border-radius: 10px;
+}
+
+#yomz-sours-carousel2 .product-thumbs .swiper-slide img {
+  border: 3px solid #0AA03C;
+  border-radius: 10px;
+}
+
 /****************************** Products *****************************/
 /****************************** Products *****************************/
 .guarantee {
@@ -1613,6 +1623,14 @@ p.people {
   margin-top: 30px;
 }
 
+.listdone-gap li {
+  font-style: italic;
+}
+
+.listdone-gap p {
+  text-align: left !important;
+}
+
 .listdone-gap ol {
   padding-left: 40px;
 }
@@ -1903,7 +1921,7 @@ footer p {
 }
 
 @media screen and (max-width: 767px) {
-  .pading-rote2 img {
+  .pading-rote2 .product-slider img {
     padding-left: 45px;
     padding-right: 45px;
   }
@@ -1917,7 +1935,7 @@ footer p {
 
   #stop-point {
     height: 20px;
-    margin-top: 40px;
+    /* margin-top: 40px; */
   }
 
   #stop-point2 {
@@ -1930,7 +1948,7 @@ footer p {
     margin-top: 56px;
   }
 
-  #sticky-btn {
+  /* #sticky-btn {
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
@@ -1938,7 +1956,7 @@ footer p {
     width: 93vw;
     transition: all 0.8s ease;
     margin-bottom: 0px;
-  }
+  } */
 
   #sticky-btn.stop {
     position: absolute;
@@ -2869,7 +2887,7 @@ footer p {
     /* Optional for contrast */
     padding: 0px;
     text-align: center;
-    /* margin-top: 10px; */
+    margin-top: 10px;
     margin-bottom: 10px;
   }
 
@@ -3254,7 +3272,7 @@ footer p {
   }
 
   .right-side-info h1 {
-    font-size: calc(8.7vw - 0px) !important;
+    font-size: calc(9.9vw - 0px) !important;
     line-height: calc(0.8em + 1vw) !important;
     text-align: center;
     margin-bottom: 2px;
@@ -3279,7 +3297,7 @@ footer p {
   }
 
   .guarantee {
-    padding: 30px 0 0px;
+    padding: 10px 0 10px;
   }
 
   .guarantee p {
@@ -3287,13 +3305,24 @@ footer p {
   }
 
   .guarantee h2 {
-    font-size: calc(7.5vw - 0px) !important;
-    line-height: calc(0.8em + 1vw) !important;
+    font-size: calc(9.2vw - 0px) !important;
+    line-height: calc(1em + 1vw) !important;
     margin-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .guarantee p {
+    font-size: 16px !important;
+    line-height: normal;
   }
 
   span.mobile-ds-block {
     display: block;
+  }
+
+  .shipping {
+    padding: 10px 0;
   }
 
   .bouns-box h4 {
@@ -3424,7 +3453,11 @@ footer p {
   }
 
   .shipping .icon-square {
-    width: 25%;
+    width: 100%;
+  }
+
+  .shipping img {
+    width: 36%;
   }
 
   .shipping h3 {
