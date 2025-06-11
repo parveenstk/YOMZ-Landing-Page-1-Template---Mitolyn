@@ -75,6 +75,30 @@ body {
 }
 
 /****************************** header *****************************/
+
+
+.header{background: #1eb9f0 !important;}
+
+.header .nav-item a {
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.header .btn {background: #694191 !important;
+    border-radius: 40px!important;
+    align-items: center!important;
+    position: relative!important;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #fff !important;
+    border: 1px solid #694191!important;}
+
+
+    .header .navbar-nav .btn:hover {
+    background: #f0a0c3 !important;
+    color: #fff !important;
+    border: 1px solid #f0a0c3!important;
+}
 /****************************** header *****************************/
 /****************************** Banner *****************************/
 .hide {
@@ -1176,16 +1200,6 @@ p.people {
   border-radius: 10px;
 }
 
-#yomz-original-carousel2 .product-thumbs .swiper-slide img {
-  border: 3px solid #1EB9F0;
-  border-radius: 10px;
-}
-
-#yomz-sours-carousel2 .product-thumbs .swiper-slide img {
-  border: 3px solid #0AA03C;
-  border-radius: 10px;
-}
-
 /****************************** Products *****************************/
 /****************************** Products *****************************/
 .guarantee {
@@ -1921,6 +1935,36 @@ footer p {
 }
 
 @media screen and (max-width: 767px) {
+  
+
+  .header {
+    background: #1eb9f0 !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.navbar-collapse{    position: absolute;
+    z-index: 6666;
+    background: rgb(255, 255, 255);
+    width: 100%;
+    top: 100%;}
+
+.header  .navbar-toggler{border: none; box-shadow: none;}
+
+.header .navbar{padding: 0px !important; position: relative;}
+
+.header .navbar .ms-3{margin-left: 0rem !important;}
+
+.header .btn{font-size: 13px; padding-right: 10px; padding-left: 10px; margin-right: 10px;}
+
+.header .container{padding-left: 0px; padding-right: 0px;}
+a.navbar-brand img {
+    margin-left: 10px;
+}
+
+
+
+
   .pading-rote2 .product-slider img {
     padding-left: 45px;
     padding-right: 45px;
@@ -2578,6 +2622,14 @@ footer p {
     border: 2px solid #0AA03C;
   }
 
+  #yomz-original-carousel2 .product-thumbs .swiper-slide img {
+    border: 2px solid #1EB9F0;
+  }
+
+  #yomz-sours-carousel2 .product-thumbs .swiper-slide img {
+    border: 2px solid #0AA03C;
+  }
+
   .swiper-button-next:after,
   .swiper-container-rtl .swiper-button-prev:after {
     content: 'next';
@@ -2826,7 +2878,7 @@ footer p {
   }
 
   .mgTp {
-    margin-top: 8px !important;
+    margin-top: 3px !important;
   }
 
   .household-popup .modal-content {
@@ -2887,7 +2939,7 @@ footer p {
     /* Optional for contrast */
     padding: 0px;
     text-align: center;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     margin-bottom: 10px;
   }
 
@@ -3325,12 +3377,17 @@ footer p {
     padding: 10px 0;
   }
 
+
+
+
+
   .bouns-box h4 {
-    font-size: 22px;
+    font-size: 20px;
+    margin-bottom: 5px;
   }
 
   .bouns-box {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   .bouns-box p {
@@ -3355,9 +3412,13 @@ footer p {
   }
 
   .bonuses h3 {
-    font-size: calc(7.3vw - 0px) !important;
+    font-size: calc(7vw - 0px) !important;
     line-height: calc(1em + 1vw) !important;
     margin-bottom: 10px;
+  }
+
+  .bouns-box p {
+    font-size: 16px;
   }
 
   .subtext {
@@ -3388,17 +3449,20 @@ footer p {
     padding: 20px 0;
   }
 
+
+
   .ins-header h3 {
-    font-size: calc(9.2vw - 0px) !important;
+    font-size: calc(8.9vw - 0px) !important;
     line-height: calc(1em + 1vw) !important;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     text-align: center;
   }
 
   .ins-header p {
-    font-size: 19px;
+    font-size: 16px;
     text-align: center;
     line-height: normal;
+    margin-bottom: 0px;
   }
 
   .listdone-gap {
@@ -3406,19 +3470,30 @@ footer p {
   }
 
   .ins-header {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   .ins-data img {
     width: 70%;
   }
 
+  .ins-data p {
+    font-size: 16px;
+    line-height: normal;
+    text-align: center;
+  }
+
   .ins-data h4 {
     text-align: center;
     margin-top: 11px;
-    margin-bottom: 7px;
+    margin-bottom: 3px;
     height: auto;
-    font-size: 28px;
+    font-size: 22px;
+  }
+
+  .ins-data li {
+    font-size: 16px;
+    line-height: normal;
   }
 
   .ins-data p {
@@ -3431,10 +3506,24 @@ footer p {
   }
 
   .scienceexpert h4 {
-    font-size: calc(9vw - 0px) !important;
+    font-size: calc(7.5vw - 0px) !important;
     line-height: calc(1em + 1vw) !important;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+
+  }
+
+  .complese {
+        font-size: calc(5.4vw - 0px) !important;
+        line-height: calc(1em + 1vw) !important;
+    }
+
+
+
+  .listdone-gap p {
+    font-size: 13px;
   }
 
   .bouns-box img {
@@ -3460,8 +3549,17 @@ footer p {
     width: 36%;
   }
 
+  .pf-pr {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .mobile-block {
+    display: block;
+  }
+
   .shipping h3 {
-    font-size: calc(7.3vw - 0px) !important;
+    font-size: calc(7.1vw - 0px) !important;
     line-height: calc(1em + 1vw) !important;
   }
 
@@ -3477,6 +3575,22 @@ footer p {
     padding: 20px 0;
   }
 
+  .scienceexpert h3 {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .scienceexpert p {
+    font-size: 16px;
+    line-height: normal;
+  }
+
+  .listdone-gap li {
+    color: #999999;
+    font-size: 16px;
+    line-height: normal;
+  }
+
   .extraicons .ext-icons .icon-square {
     width: 15%;
     border-radius: 77px;
@@ -3490,11 +3604,11 @@ footer p {
   }
 
   .reviews {
-    padding: 20px 0;
+    padding: 20px 0 0px;
   }
 
   .reviews h3 {
-    font-size: calc(9.3vw - 0px) !important;
+    font-size: calc(9.1vw - 0px) !important;
     line-height: calc(1em + 1vw) !important;
   }
 
@@ -3503,12 +3617,24 @@ footer p {
   }
 
   .maintitle {
-    font-size: 1.5rem !important;
+    font-size: calc(5.3vw - 0px) !important;
+    line-height: calc(1em + 1vw) !important;
     margin-bottom: 5px !important;
   }
 
+  .review-inner .none-p {
+    margin-top: 5px !important;
+  }
+
+
+
   .reviews .clt-face {
-    width: 15%;
+    width: 13%;
+    margin-right: 8px !important;
+  }
+
+  .review-inner p {
+    font-size: 16px;
   }
 
   p.messge-wote {
@@ -3517,7 +3643,11 @@ footer p {
   }
 
   .sec-aoue .icon-square {
-    width: 18%;
+    width: 15%
+  }
+
+  .last-reviews {
+    margin-bottom: 0px;
   }
 
   .sec-aoue p {
@@ -3545,7 +3675,8 @@ footer p {
   }
 
   .faqs .accordion-item h3 .accordion-button {
-    font-size: 20px !important;
+    font-size: 18px !important;
+    padding: 10px;
   }
 
   .faqs .accordion-item {
@@ -3566,6 +3697,7 @@ footer p {
   .scientific ul li a {
     color: #999999;
     font-size: 12px;
+    display: inline-flex;
   }
 
   .scientific ul li {
@@ -3599,6 +3731,16 @@ footer p {
 
   .thatwy-data p {
     text-align: center;
+    font-size: 16px;
+    line-height: normal;
+    margin-bottom: 0px;
+    margin-top: 5px;
+  }
+
+  .faqs .accordion-body {
+    padding: 10px;
+    font-size: 16px;
+    line-height: normal;
   }
 }
 

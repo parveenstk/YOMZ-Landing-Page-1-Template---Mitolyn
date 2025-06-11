@@ -213,8 +213,8 @@ const circle3 = document.getElementById("step3-circle");
 
 // to move next1 to next2
 nextStep1.addEventListener("click", () => {
-    offerTwo.classList.remove("hide");
-    offerOne.classList.add("hide");
+    replaceCls(offerOne, 'show', 'hide');
+    replaceCls(offerTwo, 'hide', 'show');
     replaceCls(circle1, "active", "completed");
     replaceCls(bar1, "bar", "compltedBar");
     replaceCls(circle2, "circle", "circleActive");
@@ -222,8 +222,8 @@ nextStep1.addEventListener("click", () => {
 
 // to move next2 to next3
 nextStep2.addEventListener("click", () => {
-    offerThree.classList.remove("hide");
-    offerTwo.classList.add("hide");
+    replaceCls(offerTwo, 'show', 'hide');
+    replaceCls(offerThree, 'hide', 'show');
     replaceCls(circle2, "circleActive", "circleCompleted");
     replaceCls(bar2, "bar", "compltedBar");
     replaceCls(circle3, "circle", "circleActive");
@@ -231,9 +231,8 @@ nextStep2.addEventListener("click", () => {
 
 // to backward backButton-2 to step1
 backStep2.addEventListener("click", () => {
-    offerTwo.classList.add("hide");
-    offerOne.classList.remove("hide");
-    offerOne.classList.add("show");
+    replaceCls(offerTwo, 'show', 'hide');
+    replaceCls(offerOne, 'hide', 'show');
     replaceCls(circle2, "circleActive", "circle");
     replaceCls(bar1, "compltedBar", "bar");
     replaceCls(circle1, "completed", "active");
@@ -241,9 +240,8 @@ backStep2.addEventListener("click", () => {
 
 // to backward backButton-3 to backButton-2
 backStep3.addEventListener("click", () => {
-    offerThree.classList.add("hide");
-    offerTwo.classList.add("show");
-    offerTwo.classList.remove("hide");
+    replaceCls(offerThree, 'show', 'hide');
+    replaceCls(offerTwo, 'hide', 'show');
     replaceCls(circle3, "circleActive", "circle");
     replaceCls(bar2, "compltedBar", "bar");
     replaceCls(circle2, "circleCompleted", "circleActive");
