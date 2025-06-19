@@ -11,12 +11,16 @@
   <link rel="stylesheet" type="text/css" href="style/css.css">
   <link rel='stylesheet' href='https://unpkg.com/swiper@6.5.4/swiper-bundle.min.css'>
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.2/css/all.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
 
   <!-- Header -->
-  <div class="header sticky-top shadow-sm px-3 bg-white">
+  <div class="header sticky-top px-3 bg-white">
     <div class="container">
       <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="#">
@@ -31,24 +35,23 @@
         <div class="collapse navbar-collapse" id="navbarRightContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center">
             <li class="nav-item">
-              <a class="nav-link active" href="#"><strong class="exblod ">FREE</strong> Bonuses</a>
+              <a class="nav-link active" href="#bonuses"><strong>FREE</strong> Bonuses</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Ingredients</a>
+              <a class="nav-link" href="#ingredients">Ingredients</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">FAQ</a>
+              <a class="nav-link" href="#faqs">FAQ</a>
             </li>
             <li class="nav-item d-none d-sm-none d-lg-block">
-              <a class="btn btn-primary ms-3" href="#">Order Now <i class="fa-solid fa-arrow-right"></i></a>
+              <a class="btn btn-primary ms-3" href="#order">Order Now </a>
             </li>
           </ul>
         </div>
-        <a class="btn btn-primary ms-3 d-sm-block d-lg-none" href="#">Order Now <i
-            class="fa-solid fa-arrow-right"></i></a>
+        <a class="btn btn-primary ms-3 d-sm-block d-lg-none" href="#order">Order Now</a>
       </nav>
     </div>
   </div>
@@ -58,20 +61,22 @@
   <div class="banner">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-md-6">
-          <div class="right-side-info">
-            <h1>Hidden Hunger<br>Has Met Its Match</h1>
-            <p class="exblod">YOMZ plugs nutrition gaps for better wellness</p>
-            <div class="banner-video-part">
-
-            </div>
+        <div class="col-md-6 col-7 mx-auto">
+          <div class="bannerproducts-image">
+            <img src="images/banner-bag.png" class="img-fluid">
           </div>
-
         </div>
 
         <!-- Video content -->
         <div class="col-md-6">
-          <div class="banner-left-side">
+          <div class="right-side-info">
+            <h1>Unlock Your Family’s<br>Health Potential</h1>
+            <p class="subhed-head">Plug nutrition gaps and feel great</p>
+            <div class="banner-video-part">
+
+            </div>
+          </div>
+          <!-- <div class="banner-left-side">
             <div class="video-container">
               <video id="myVideo" poster="images/dummy.jpg">
                 <source src="images/dummy.mp4" type="video/mp4">Your browser does not support the video tag.
@@ -80,7 +85,7 @@
                 <img id="playPauseIcon" src="images/play.webp" alt="Play">
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
 
       </div>
@@ -89,10 +94,10 @@
   <!-- Banenr -->
 
   <!-- Products-->
-  <section class="section is-paddingless buying-background b-section">
+  <section class="section is-paddingless buying-background b-section" id="order">
     <div class="container container-limit">
-      <h2 class="title-head1">Subscribe to YOMZ & Save BIG!</h2>
-      <p class="exblod"><i>The More You Buy, the More You Save</i></p>
+      <h2 class="title-head1">Try YOMZ & Save BIG!</h2>
+      <p class="exblod"><i>The more you buy, the more you save</i></p>
     </div>
   </section>
   <div class="off-white-background" style="border-top:none;">
@@ -101,465 +106,124 @@
   <!-- Products-->
 
   <!-- product-checkBox -->
-  <div class="products-banner">
-    <div class="container">
-      <div class="pr-logo-part d-sm-block d-lg-none">
-        <div class="pr-logopart"> <img src="images/product-carousel/bg-yomzLogo.png" class="img-fluid"> </div>
-        <p class="daily-natu"> <span class="daily">daily nutrition</span> <span class="packets">28
-            packets</span> </p>
-        <div class="star-part">
-          <p> <img src="images/product-carousel/star.svg"> <span>15</span> </p>
+
+  <section class="section off-white-background pt-2 pb-4 px-2" style="border-top:none;">
+    <div class="container pt-1 container-limit">
+      <div class="row mx-auto justify-content-center">
+        <div class="col-md-4 order-2 order-md-1">
+          <div class="gumm-bag orl basic">
+            <span class="top-basic bsred">BASIC</span>
+            <div class="row">
+              <div class="column leftwd col-md-12 col-6 padding-lft">
+                <span class="bag-heading">
+                  <h3 class="exblod">1 PERSON</h3>
+                  <h4 class="exblod">30 Day Supply</h4>
+                </span>
+                <span class="products-image">
+                  <img src="images/bag-1.png" class="img-fluid d-none d-sm-none d-lg-block">
+                  <img src="images/bag-1.1.png" class="img-fluid d-sm-block d-lg-none">
+                  <!-- <span class="badge-offer pulse">
+                    <p class="exblod"><span>40%</span>OFF</p>
+                  </span> -->
+                </span>
+              </div>
+              <div class="column text-center col-md-12 col-6 padding-lft">
+                <del class="del-price">$79.99</del>
+                <span class="price pricea exblod">$47.99</span>
+                <span class="exblod text-center perday">$1.71 per day</span>
+                <div class="footer-tag">
+                  <a href="#" class="btn"><img src="images/buy-btn.png" class="img-fluid"></a>
+                  <span class="payment-image">
+                    <img src="images/payment.png" class="img-fluid">
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6 pading-rote2">
 
-          <!-- 1st Carousel - Yomz Original -->
-          <div id="yomz-original-carousel" class="product-left product-red mb-3 mb-lg-0">
-            <div class="swiper-container product-slider mb-3">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="images/product-carousel/yomzOriginal/4.jpg" alt="yomzOriginal-product-image4"
-                    class="img-fluid">
-                </div>
-                <div class="swiper-slide">
-                  <img src="images/product-carousel/yomzOriginal/3.jpg" alt="yomzOriginal-product-image3"
-                    class="img-fluid">
-                </div>
-                <div class="swiper-slide">
-                  <img src="images/product-carousel/yomzOriginal/2.jpg" alt="yomzOriginal-product-image2"
-                    class="img-fluid">
-                </div>
-                <div class="swiper-slide">
-                  <img src="images/product-carousel/yomzOriginal/1.jpg" alt="yomzOriginal-product-image1"
-                    class="img-fluid">
-                </div>
+        <div class="col-md-4 order-1 order-md-2">
+          <div class="gumm-bag orl popular">
+            <span class="top-basic bsred">MOST POPULAR</span>
+            <div class="row">
+              <div class="column  leftwd col-md-12 col-6 padding-lft">
+                <span class="bag-heading">
+                  <h3 class="exblod">3 PEOPLE</h3>
+                  <h4 class="exblod">30 Day Supply Each</h4>
+                </span>
+                <span class="products-image">
+                  <img src="images/bag-3.png" class="img-fluid d-none d-sm-none d-lg-block">
+                  <img src="images/bag-3.1.png" class="img-fluid d-sm-block d-lg-none">
+
+                  <!-- <span class="badge-offer pulse">
+                    <p class="exblod"><span>46%</span>OFF</p>
+                  </span> -->
+                </span>
               </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-            </div>
-            <div class="swiper-container product-thumbs">
-              <!-- thumnail previews -->
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="images/product-carousel/yomzOriginal/4.jpg" alt="yomzOriginal-thumbnail-image4"
-                    class="img-fluid">
-                </div>
-                <div class="swiper-slide">
-                  <img src="images/product-carousel/yomzOriginal/3.jpg" alt="yomzOriginal-thumbnail-image3"
-                    class="img-fluid">
-                </div>
-                <div class="swiper-slide">
-                  <img src="images/product-carousel/yomzOriginal/2.jpg" alt="yomzOriginal-thumbnail-image2"
-                    class="img-fluid">
-                </div>
-                <div class="swiper-slide">
-                  <img src="images/product-carousel/yomzOriginal/1.jpg" alt="yomzOriginal-thumbnail-image1"
-                    class="img-fluid">
+              <div class="column text-center leftwd col-md-12 col-6 padding-lft">
+                <del class="del-price">$239.97</del>
+                <span class="price pricea exblod">$129.58</span>
+                <span class="exblod text-center perday">$1.54 per day</span>
+                <ul class="ullist ">
+                  <li class="bounes"><i class="fas fa-check-circle"></i> 3 FREE BONUSES!</li>
+                  <li class="shippingus"><i class="fas fa-check-circle"></i> FREE US SHIPPING!</li>
+                </ul>
+                <div class="footer-tag" style="position:relative">
+                  <a href="#" class="btn"><img src="images/buy-btn.png" class="img-fluid"></a>
+                  <div>
+                    <div class="floating-hand fhc"></div>
+                  </div>
+                  <span class="payment-image">
+                    <img src="images/payment.png" class="img-fluid">
+                  </span>
                 </div>
               </div>
             </div>
           </div>
-          <!-- 1st Carousel - Yomz Original -->
 
-          <!-- 1st Carousel - Yomz sours - 2 -->
-          <div id="yomz-sours-carousel" class="product-left product-green mb-3 mb-lg-0 hide">
-            <div class="swiper-container product-slider mb-3">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="images/product-carousel/yomzSours/4.jpg" alt="image3-img" class="img-fluid">
-                </div>
-                <div class="swiper-slide">
-                  <img src="images/product-carousel/yomzSours/3.jpg" alt="..." class="img-fluid">
-                </div>
-                <div class="swiper-slide">
-                  <img src="images/product-carousel/yomzSours/2.jpg" alt="image5-img" class="img-fluid">
-                </div>
-                <div class="swiper-slide">
-                  <img src="images/product-carousel/yomzSours/1.jpg" alt="image2-img" class="img-fluid">
-                </div>
-              </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-            </div>
-            <div class="swiper-container product-thumbs">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide"> <img src="images/product-carousel/yomzSours/4.jpg" alt="..."
-                    class="img-fluid"> </div>
-                <div class="swiper-slide"> <img src="images/product-carousel/yomzSours/3.jpg" alt="..."
-                    class="img-fluid"> </div>
-                <div class="swiper-slide"> <img src="images/product-carousel/yomzSours/2.jpg" alt="..."
-                    class="img-fluid"> </div>
-                <div class="swiper-slide"> <img src="images/product-carousel/yomzSours/1.jpg" alt="..."
-                    class="img-fluid"> </div>
-              </div>
-            </div>
-          </div>
-          <!-- 1st Carousel - Yomz sours -->
         </div>
-        <div class="col-md-6 pading-rote">
-          <div class="products-detials">
-            <div class="pr-logo-part d-none d-sm-none d-lg-block">
-              <div class="pr-logopart"> <img src="images/product-carousel/bg-yomzLogo.png" class="img-fluid"> </div>
-              <p class="daily-natu"><span class="daily">daily nutrition</span> <span class="packets">28
-                  packets</span> </p>
-              <div class="star-part">
-                <p> <img src="images/product-carousel/star.svg"> <span>15</span></p>
+
+        <div class="col-md-4 order-1 order-md-3">
+          <div class="gumm-bag orl bundle">
+            <span class="top-basic bsred">BUNDLE</span>
+            <div class="row">
+              <div class="column leftwd col-md-12 col-6 padding-lft">
+                <span class="bag-heading">
+                  <h3 class="exblod">2 PEOPLE</h3>
+                  <h4 class="exblod">30 Day Supply Each</h4>
+                </span>
+                <span class="products-image">
+                  <img src="images/bag-2.png" class="img-fluid d-none d-sm-none d-lg-block">
+                  <img src="images/bag-2.1.png" class="img-fluid d-sm-block d-lg-none">
+
+                  <!-- <span class="badge-offer pulse">
+                    <p class="exblod"><span>43%</span>OFF</p>
+                  </span> -->
+                </span>
               </div>
-            </div> <!-- 1st Stepper -->
-            <div class="flavor-part stampform">
-              <div class="step-container d-flex align-items-center justify-content-center">
-                <!-- Step - 1 -->
-                <div id="step-1" class="step">
-                  <div id="step1-circle" class="circle active">1</div>
-                  <div id="step1-bar" class="bar"></div>
-                </div> <!-- Step - 2 -->
-                <div id="step-2" class="step">
-                  <div id="step2-circle" class="circle">2</div>
-                  <div id="step2-bar" class="bar"></div>
-                </div> <!-- Step - 3 -->
-                <div id="step-3" class="step">
-                  <div id="step3-circle" class="circle">3</div>
+              <div class="column text-center col-md-12 col-6 padding-lft">
+                <del class="del-price">$159.98</del>
+                <span class="price pricea exblod">$91.20</span>
+                <span class="exblod text-center perday">$1.63 per day</span>
+                <ul class="ullist ">
+                  <li class="bounes"><i class="fas fa-check-circle"></i> 3 FREE BONUSES!</li>
+                </ul>
+                <div class="footer-tag">
+                  <a href="#" class="btn"><img src="images/buy-btn.png" class="img-fluid"></a>
+                  <span class="payment-image">
+                    <img src="images/payment.png" class="img-fluid">
+                  </span>
                 </div>
-              </div>
-              <p>CHOOSE YOUR FLAVOR:</p>
-            </div>
-
-            <!-- 1st Stepper -->
-            <!-- First-steps -->
-            <div id="offer-one" class="tabsbtn mb-3 all stapform show">
-              <div class="first-steps start-botton-show">
-                <div class="classbtn1"> <!-- Yomz Original Button -->
-                  <div id="original-Button" class="form-check borderBlue"> <input class="form-check-input product-red"
-                      type="checkbox" value="yomzOriginal" id="checkOriginal" name="productType"
-                      onclick="handleCheckboxClick(this)" checked> <label class="form-check-label cursor padding13"
-                      for="checkOriginal"> <img src="images/original.png" class="img-fluid" alt="Original">
-                      <span><b>Original</b></span> </label> </div>
-                  <!-- Yomz Sour Button -->
-                  <div id="sours-Button" class="form-check"> <input class="form-check-input product-green"
-                      type="checkbox" value="yomzSours" id="checkSour" name="productType"
-                      onclick="handleCheckboxClick(this)">
-                    <label class="form-check-label cursor padding13" for="checkSour"> <img src="images/sour.png"
-                        class="img-fluid" alt="Sour">
-                      <span><b>Sour</b></span> </label>
-                  </div>
-                </div>
-              </div>
-              <p id="prod-Description" class="text-center mt-3 simp-font">Flavor:<br>Peachy, Strawbeary,
-                Beary Berry </p>
-              <!-- nextStep1 button -->
-              <div class="next-prev-btn" id="sticky-btn">
-                <button class="btn next-btn buttonBlue" id="nextStep1">NEXT</button>
-              </div>
-            </div>
-            <!-- first-steps -->
-
-            <!-- Second Step -->
-            <div id="offer-two" class="sec-steps start-botton-show hide">
-              <!-- <div id="offer-two" class="sec-steps"> -->
-              <div class="classbtn1 slt-price">
-                <div class="form-check">
-                  <input class="form-check-input product-red mgTp" type="checkbox" value="" id="checkBox-input1">
-                  <label class="form-check-label oneTimePurchase" for="checkBox-input1">
-                    <span class="item-title">One-Time Purchase</span>
-                    <span id="product-price" class="tab-price">$XX.99</span>
-                  </label>
-                </div>
-              </div>
-              <div class="best-value best-value-blue"> <!-- Offer-two : Best Value Box -->
-                <div id="offer2-boxBorder" class="best-value-item">
-                  <div id="offer2-boxHeader" class="head">
-                    <p>BEST VALUE</p>
-                  </div>
-                  <div class="box-padding">
-                    <div class="classbtn1 slt-price">
-                      <div class="form-check"> <input class="form-check-input product-red" type="checkbox" value=""
-                          id="checkBox-input2" checked> <label class="form-check-label cursor" for="checkBox-input2">
-                          <span class="item-title">Subscribe & <span id="offer2-saveText" class="save-color">Save
-                              XX%</span> </span> <span class="tab-price"> <span><del>$18.99</del></span> <span
-                              data-price="12" id="options-price">$12.00</span> </span>
-                        </label> </div>
-                    </div>
-                    <div class="item-bag">
-                      <div class="row">
-
-                        <!-- Option 1 -->
-                        <div class="col-6">
-                          <div class="slt-bag-item">
-                            <div onclick="selectedOpt(this);" id="offer2-opt1" data-id="1" data-value="opt1"
-                              class="card borderBlueOffer2 offer2-opts">
-                              <div class="badge">SAVE $12</div>
-                              <div class="d-flex text-left">
-                                <div class="col-4 px-0">
-                                  <img id="opt1-img1" src="./images/yomzOriginal/pack-1.jpg" alt="Yomz Candy Bag"
-                                    class="img-fluid">
-                                </div>
-                                <div class="col-8 px-0 left-gap">
-                                  <div class="product-title">1x bag</div>
-                                  <div class="product-subtitle">+ Accessories</div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <!-- Option 2 -->
-                        <div class="col-6">
-                          <div class="slt-bag-item">
-                            <div onclick="selectedOpt(this);" id="offer2-opt2" data-id="2" data-value="opt2"
-                              class="card unsalect offer2-opts">
-                              <div class="badge">SAVE $12</div>
-                              <div class="d-flex text-left">
-                                <div class="col-4 px-0">
-                                  <img id="opt1-img2" src="./images/yomzOriginal/pack-2.jpg" alt="Yomz Candy Bag"
-                                    class="img-fluid">
-                                </div>
-                                <div class="col-8 px-0 left-gap">
-                                  <div class="product-title">2x bag</div>
-                                  <div class="product-subtitle">+ Accessories</div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <!-- Option 3 -->
-                        <div class="col-6 mobile-mg-botton">
-                          <div class="slt-bag-item">
-                            <div onclick="selectedOpt(this);" id="offer2-opt3" data-id="3" data-value="opt3"
-                              class="card unsalect offer2-opts">
-                              <div class="badge">SAVE $12</div>
-                              <div class="d-flex text-left">
-                                <div class="col-4 px-0">
-                                  <img id="opt1-img3" src="./images/yomzOriginal/pack-3.jpg" alt="Yomz Candy Bag"
-                                    class="img-fluid">
-                                </div>
-                                <div class="col-8 px-0 left-gap">
-                                  <div class="product-title">3x bag</div>
-                                  <div class="product-subtitle">+ Accessories</div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <!-- Option 4 -->
-                        <div class="col-6 mobile-mg-botton">
-                          <div class="slt-bag-item">
-                            <div onclick="selectedOpt(this);" id="offer2-opt4" data-id="4" data-value="opt4"
-                              class="card unsalect offer2-opts">
-                              <div class="badge">SAVE $12</div>
-                              <div class="d-flex text-left">
-                                <div class="col-4 px-0">
-                                  <img id="opt1-img4" src="./images/yomzOriginal/pack-4.jpg" alt="Yomz Candy Bag"
-                                    class="img-fluid">
-                                </div>
-                                <div class="col-8 px-0 left-gap">
-                                  <div class="product-title">4x bag</div>
-                                  <div class="product-subtitle">+ Accessories</div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="frequency">
-                      <p class="delvery">DELIVERY EVERY <span id="offer2-month" class="number-month">1</span> month </p>
-                      <p class="frequency-op" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <u>Which
-                          frequency is right for
-                          me?</u> </p>
-                      <ul class="list-unstyled">
-                        <li><img src="images/check.svg"> No Set Term, Cancel Anytime</li>
-                        <li><img src="images/check.svg"> 100% Risk Free, Money Back Guarantee
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="gift-value-title">
-                  <p>Free Gifts With Your First Order</p>
-                  <div class="row managemobilegap">
-                    <div class="col-4">
-                      <div class="product-card">
-                        <div class="price-tag">
-                          <del>$10.00</del>
-                        </div>
-                        <div class="product-border">
-                          <img src="images/order-1.jpg" alt="" class="img-fluid" />
-                        </div>
-                      </div>
-                      <div class="sticker">
-                        <p class="text-left fr"><span>FREE</span>Collectable Sticker</p>
-                      </div>
-                    </div>
-                    <div class="col-4">
-                      <div class="product-card">
-                        <div class="price-tag">
-                          <del>$10.00</del>
-                        </div>
-                        <div class="product-border">
-                          <img src="images/white.jpg" alt="" class="img-fluid" />
-                        </div>
-                      </div>
-                      <div class="sticker">
-                        <p class="text-left fr"><span>FREE</span>Donation</p>
-                      </div>
-                    </div>
-                    <div class="col-4">
-                      <div class="product-card">
-                        <div class="price-tag">
-                          <del>$10.00</del>
-                        </div>
-                        <div class="product-border">
-                          <img src="images/white.jpg" alt="" class="img-fluid" />
-                        </div>
-                      </div>
-                      <div class="sticker">
-                        <p class="text-left fr"><span>FREE</span>Giveaway Entry </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- nextStep2 button -->
-                  <div id="step2-wrapper" style="position: relative;">
-                    <!-- <div id="stop-point2" style="height: 0px; margin-top: 64px;"></div> -->
-                    <div id="stop-point2"></div>
-                    <div id="sticky-btn2" class="next-prev-btn next-prev-btn-new d-flex">
-                      <button id="backStep2" class="btn prev-btn">
-                        <img src="images/prev.svg" class="img-fluid">
-                      </button>
-                      <button id="nextStep2" class="btn next-btn buttonBlue">NEXT STEP</button>
-                    </div>
-                  </div>
-                  <!-- nextStep2 button -->
-
-                </div>
-              </div>
-            </div>
-            <!-- Second Steps -->
-
-            <!-- Third-Steps -->
-            <div id="offer-three" class="third-steps start-botton-show hide">
-              <!-- <div id="offer-three" class="third-steps"> -->
-              <div class="best-value best-value-blue">
-                <div id="offer3-boxBorder" class="best-value-item">
-                  <div class="box-padding">
-                    <div class="classbtn1 slt-price">
-                      <div class="form-check cursor"> <input class="form-check-input product-red" type="checkbox"
-                          value="" id="checkBox-input3" checked> <label class="form-check-label cursor"
-                          for="checkBox-input3"> <span class="item-title">Try Once</span> <span class="tab-price">
-                            <span><del>$18.99</del></span> <span data-price="12" id="tryOnce-price">$12.00</span>
-                          </span> </label> </div>
-                    </div>
-                    <div class="salect-offers">
-                      <div class="row"> <!-- box1 - Offer -->
-                        <div class="col-3 outline-box gray-box px-2">
-                          <div class="card offerBox" id="offerBox-1" data-price="1" data-percentage="0">
-                            <div id="box1-save" class="save">Save 0%</div>
-                            <div id="box1-qty" class="quantity">1</div>
-                            <div id="box1-pack" class="label">PACK</div>
-                            <div class="price-strip">ONLY $X.XX PER DAY</div>
-                          </div>
-                        </div> <!-- box2 - Offer -->
-                        <div class="col-3 outline-box px-2">
-                          <div class="card offerBox" id="offerBox-2" data-price="2" data-percentage="10">
-                            <div id="badge-box2" class="badge">MOST POPULAR</div>
-                            <div id="box2-save" class="save">Save 10%</div>
-                            <div id="box2-qty" class="quantity">2</div>
-                            <div id="box2-pack" class="label">PACK</div>
-                            <div class="price-strip">ONLY $X.XX PER DAY</div>
-                          </div>
-                        </div> <!-- box3 - Offer -->
-                        <div class="col-3 outline-box gray-box px-2">
-                          <div class="card offerBox" id="offerBox-3" data-price="3" data-percentage="15">
-                            <div id="box3-Save" class="save">Save 15%</div>
-                            <div id="box3-Qty" class="quantity">3</div>
-                            <div id="box3-pack" class="label">PACK</div>
-                            <div class="price-strip">ONLY $X.XX PER DAY</div>
-                          </div>
-                        </div> <!-- box4 - Offer -->
-                        <div class="col-3 outline-box gray-blue px-2">
-                          <div id="offerBox-4" class="card offerBox" id="offerBox-4" data-price="4"
-                            data-percentage="40">
-                            <div id="badge-box4" class="badge">BEST VALUE</div>
-                            <div id="box4-save" class="save">Save 40%</div>
-                            <div id="box4-qty" class="quantity">4</div>
-                            <div id="box4-pack" class="label">PACK</div>
-                            <div class="price-strip">ONLY $X.XX PER DAY</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="best-value best-value-blue insalect"> <!-- BEST VALUE BOX -->
-                <div id="offer3-bv-box" class="best-value-item">
-                  <div id="offer3-bv-box-header" class="head">
-                    <p>BEST VALUE</p>
-                  </div>
-                  <div class="box-padding">
-                    <div class="classbtn1 slt-price">
-                      <div class="form-check"> <!-- Input : Checkbox --> <input class="form-check-input product-red"
-                          type="checkbox" value="" id="checkBox-input4"> <label class="form-check-label cursor"
-                          for="checkBox-input4"> <span class="item-title">Subscribe & <span id="offer3-saveText"
-                              class="save-color">Save 0%</span>
-                          </span> <span class="tab-price"> <span><del>$18.99</del></span>
-                            <span id="Offer3-bestValue-Price" data-price="12">$12.00</span>
-                          </span> </label> </div>
-                    </div>
-                    <div class="frequency">
-                      <p class="frequency-op" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                        <u>Which frequency is right for
-                          me?</u>
-                      </p>
-                      <ul class="list-unstyled">
-                        <li><img src="images/check.svg"> No Set Term, Cancel Anytime</li>
-                        <li><img src="images/check.svg"> 100% Risk Free, Money Back Guarantee
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- nextStep3 button -->
-                <div id="step3-wrapper" style="position: relative;">
-                  <!-- <div id="stop-point3" style="height: 18px; margin-top: 56px;"></div> -->
-                  <div id="stop-point3"></div>
-                  <div id="sticky-btn3" class="next-prev-btn next-prev-btn-new d-flex mgTp">
-                    <button id="backStep3" class="btn prev-btn">
-                      <img src="images/prev.svg" class="img-fluid">
-                    </button>
-                    <button id="nextStep3" class="btn next-btn buttonBlue">NEXT STEP</button>
-                  </div>
-                </div>
-                <!-- nextStep3 button -->
-
-              </div>
-            </div> <!-- Third-Steps -->
-          </div>
-          <div class="manufactured">
-            <div class="row text-center">
-              <div class="col-md-3 col-3"> <img src="images/USA.png" class="img-fluid">
-                <p>MANUFACTURED<br>IN USA</p>
-              </div>
-              <div class="col-md-3 col-3"> <img src="images/time.png" class="img-fluid">
-                <p>FAST<br>SHIPPING</p>
-              </div>
-              <div class="col-md-3 col-3"> <img src="images/Free.png" class="img-fluid">
-                <p>FREE<br>DELIVERY</p>
-              </div>
-              <div class="col-md-3 col-3"> <img src="images/secure.png" class="img-fluid">
-                <p>SECURE<br>CHECKOUT</p>
               </div>
             </div>
           </div>
-          <div class="col-md-3 col-4 mx-auto mt-3"> <img src="images/bbb.png" class="img-fluid"> </div>
+
         </div>
       </div>
     </div>
-  </div>
+  </section>
+
   <!-- product-checkBox -->
 
   <!-- Guarantee -->
@@ -567,7 +231,7 @@
 
     <div class="container">
       <div class="row">
-        <h2>YOMZ Picky Momz<br>60-Day Money Back<span class="mobile-ds-block">Guarantee</span> </h2>
+        <h2>YOMZ Picky Momz<br>90-Day Money Back<span class="mobile-ds-block">Guarantee</span> </h2>
       </div>
       <div class="col d-flex align-items-center">
         <div
@@ -575,62 +239,104 @@
           <img src="images/guarantee.png" alt="" class="img-fluid">
         </div>
         <div>
-          <p class="is-size-4">Choosing YOMZ to fight Hidden Hunger is a no-brainer. And no risk because of our
-            iron-clad Picky Momz 60-Day Money Back Guarantee. If you’re not happy with YOMZ, it hasn’t filled
-            your family’s nutrition gaps, or it hasn’t helped improve your overall health, then let us know within the
-            next 60 days.</p>
-          <p>We’ll refund every penny.<span class="mobile-block">No hassles, no questions.</span></p>
+          <p class="is-size-4">Your order today is protected by our iron-clad YOMZ Picky Momz 90-day <strong>100% Money
+              Back
+              Guarantee.</strong> If you’re not happy with <strong>YOMZ</strong>, or it hasn’t filled your family’s
+            nutrition gaps, or you simply
+            don’t feel your best with <strong>YOMZ</strong>, then let us know in the next <strong>90 days</strong>.
+            We’ll refund every penny.
+
+          </p>
+          <p class="is-size-4">No hassles, no questions.</p>
         </div>
       </div>
 
       <div class="row">
         <div class="col-md-8 mx-auto py-3 pt-4">
-          <img src="images/gor.png" alt="" class="img-fluid">
+          <img src="images/gor.jpg" alt="" class="img-fluid">
 
         </div>
-        <p class=" text-center d-block"><strong class="exblod">YOMZ is made in the USA</strong> with the finest domestic
-          or foreign ingredients.</p>
       </div>
 
+      <div class="row">
+        <div class="col-md-10 mx-auto">
+          <p class="text-center d-block next-font"><strong>YOMZ is proudly manufactured in the USA</strong> with the
+            finest premium ingredients in
+            an <strong>FDA-registered, cGMP-certified</strong> facility committed to upholding the highest
+            quality standards.</p>
+        </div>
+      </div>
     </div>
 
   </div>
+
   <!-- Guarantee -->
 
   <!-- Bonuses -->
-  <div class="bonuses">
+  <div class="bonuses" id="bonuses">
     <div class="container">
-      <h3>Get <u>3 Free Bonuses</u> with<br>Each Subscription Order</h3>
+      <h3 class="d-none d-sm-none d-lg-block"> Order for
+        <span style="color: #FFEB00;">3 People</span>
+        or <span style="color: #FFEB00;">2 People</span><br> and Get
+        <u>3 FREE Bonuses</u>
+      </h3>
+
+      <h3 class="d-sm-block d-lg-none"> Order for <span style="color: #FFEB00;">3 People </span> or <br>
+        <span style="color: #FFEB00;">2 People</span> and Get<br>
+        <u>3 FREE Bonuses</u>
+      </h3>
+
       <div class="row">
         <div class="col-md-4">
           <div class="bouns-box text-center">
-            <img src="images/bn-1.jpg" alt="" class="img-fluid">
-            <h4 class="exblod">BONUS #1<br>FREE YOMZ Sticker</h4>
-            <p>Show off your love of YOM with this fun,
-              colorful sticker. Perfect for lunchbox,
-              fridge, phone case, car, and more.</p>
+            <h4 class="d-sm-block d-lg-none"><span>FREE BONUS #1</span><br>Collectable YOMZ Sticker<br><span
+                class="free-block" style="color: #FFEB00;">100% FREE</span></h4>
+            <div class="offer-check-img">
+              <img src="images/bn-1.jpg" alt="" class="img-fluid bnrol">
+              <img src="images/first-nt.png" alt="" class="img-fluid bhimage">
+            </div>
+
+            <h4 class="d-none d-sm-none d-lg-block"><span>FREE BONUS #1</span><br>Collectable YOMZ Sticker<br><span
+                class="free-block" style="color: #FFEB00;">100% FREE</span></h4>
+            <p>Show your YOMZ love with this colorful, collectable sticker. Perfect for lunchbox, fridge, phone case,
+              car, and more.</p>
 
           </div>
         </div>
 
         <div class="col-md-4">
           <div class="bouns-box text-center">
-            <img src="images/bn-2.jpg" alt="" class="img-fluid">
-            <h4 class="exblod">BONUS #2<br>FREE Entry into Our<br><span class="clr-yellow">$100K Giveaway</span></h4>
-            <p>Yes, you could win $100K! Purchase any
-              subscription, and you'll automatically
-              be entered into our $100K giveaway.</p>
+            <h4 class="d-sm-block d-lg-none"><span>FREE BONUS #2</span><br>Chance for Order Refund<br><span
+                class="free-block" style="color: #FFEB00;">Yes, Your Order Could Be FREE</span></h4>
+            <div class="offer-check-img">
+              <img src="images/bn-2.jpg" alt="" class="img-fluid bnrol">
+
+              <img src="images/sec-nt.png" alt="" class="img-fluid bhimage">
+            </div>
+            <h4 class="d-none d-sm-none d-lg-block"><span>FREE BONUS #2</span><br>Chance for Order Refund<br><span
+                class="free-block" style="color: #FFEB00;">Yes, Your Order Could Be FREE</span></h4>
+            <p>Order today & you'll be entered automatically to have your entire order refunded!</p>
 
           </div>
         </div>
 
         <div class="col-md-4">
           <div class="bouns-box text-center">
-            <img src="images/bn-3.jpg" alt="" class="img-fluid">
-            <h4 class="exblod">BONUS #3<br>Donation in your name<br><span class="clr-yellow">to fight Hidden
-                Hunger</span></h4>
-            <p>1% of the proceeds from your order
-              will go to fight Hidden Hunger</p>
+
+            <h4 class="d-sm-block d-lg-none"><span>FREE BONUS #3</span><br>Ancient Energy Secrets for Modern
+              Families<br><span class="free-block" style="color: #FFEB00;">100% FREE</span>
+            </h4>
+            <div class="offer-check-img">
+              <img src="images/bn-3.jpg" alt="" class="img-fluid bnrol">
+
+              <img src="images/third-nt.png" alt="" class="img-fluid bhimage">
+            </div>
+
+            <h4 class="d-none d-sm-none d-lg-block"><span>FREE BONUS #3</span><br>Ancient Energy Secrets for Modern
+              Families<br><span class="free-block" style="color: #FFEB00;">100% FREE</span></h4>
+            <p>Secrets from the past perfect for today:
+              3 dirt-cheap ways to avoid the dreaded
+              3pm energy crash.</p>
 
           </div>
         </div>
@@ -653,7 +359,8 @@
             <div>
               <h3 class="exblod">Every YOMZ 3+ Bag Order <span class="mobile-block">Gets <u>Free Shipping!</u></span>
               </h3>
-              <p>Most popular option - <span class="mobile-block">73% of customers order 3+ bags</span></p>
+              <p> <span class="exblod" style="color: #000;">(Our recommended option)</span> <span class="mobile-block">
+                  94% of customers order for 2+ people</span></p>
 
             </div>
           </div>
@@ -664,46 +371,90 @@
 
   <!-- Shipping -->
 
-  <!-- Shipping -->
+  <!-- Offering YOMZ  -->
 
-  <div class="scienceexpert">
+  <div class="offeringyomz">
     <div class="container">
       <div class="row">
-        <h3> <span id="current-date"></span> - Science News </h3>
-        <h4>The Shocking Link between Hidden
-          Hunger and Heart Health…</h4>
-        <p class="complese"><i>And it could be plaguing your kids</i></p>
-        <p>Hidden Hunger is a type of malnutrition. It’s due to deficiencies in micronutrients, fiber, and more - which
-          are essential to the health of your gut. And gut health is crucial to overall health.</p>
+        <div class="col-md-9 mx-auto text-center">
+          <h3>Why Are We Offering YOMZ<br>at HUGE Savings + Giving You<br>FREE Bonuses?</h3>
+          <p>YOMZ was founded by Nastya, the star of YouTube’s biggest kid series <i>Like Nastya.</i> You see, Nastya
+            used to
+            suffer from Hidden Hunger. She was eating a healthy diet, yet she
+            had unexplained energy crashes, tummy troubles, mood swings, fatigue, lack of focus, and more. In short, she
+            just didn't feel right. When she couldn’t find anything to help PLUS tasted great…
+            She created YOMZ. And now she’s on a mission to end Hidden Hunger for 100 million people. That’s why you're
+            getting this exclusive offer: <span class="exblod">Save big</span> on YOMZ + 3 <span
+              class="exblod">free</span> bonuses.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Offering YOMZ  -->
+
+  <!-- Science Expert -->
+
+  <div class="scienceexpert" id="about">
+    <div class="container">
+      <div class="row">
+        <h3 class="newdatefont"> <span id="current-date"></span> - Scientific Update </h3>
+        <h4>Harvard Scientists Uncover <span class="mobile-block">Shocking to Heart Problems</span></h4>
+        <p class="complese"><i>And it's not what you think</i></p>
+        <p>In a landmark heart study, Harvard
+          scientists studied 1,429 men and
+          women ages 32-89 for a better
+          understanding of the link between an
+          altered gut microbiome (often due to
+          micronutrient deficiencies) and CVD
+          (cardiovascular disease)<sup>1</sup>.</p>
       </div>
 
       <div class="row align-items-center">
-        <div class="col-md-6 d-none d-sm-none d-lg-block">
-          <img src="images/41.png" alt="" class="img-fluid ">
+        <div class="col-md-6 mb-3 mt-2">
+          <img src="images/heart-gut-connection.jpg" alt="" class="img-fluid rounded-1">
         </div>
         <div class="col-md-6">
-          <p>But that’s not all. The NIH reports that a lack of micronutrients and fiber is also a threat to your heart
-            health. For example, low levels of the vitamin E are linked to heart damage and low vitamin D to an
-            increased risk of heart attack.</p>
-          <p>In short, if left unaddressed, Hidden Hunger could lead to heart problems later in life.</p>
+          <p>Micronutrient deficiencies, aka
+            Hidden Hunger, can lead to an
+            unhealthy heart because it relies
+            on micronutrients to run smooth.
+            Without micronutrients like
+            vitamins A, C, D, and K2, your heart
+            works harder, damages more easily,
+            and risks sudden failure <sup>2,3,4.</sup>. Like a car
+            running on low oil. </p>
+
+          <p>In short, Hidden Hunger isn’t just
+            a gap in your diet… it’s a ticking
+            time bomb for your heart. So the
+            more micronutrients you consume,
+            the healthier your heart will be.</p>
         </div>
       </div>
       <div class="row listdone-gap">
-        <p><strong class="exblod"><i>References</i></strong></p>
+        <p><strong><i>References</i></strong></p>
 
         <ol>
-          <li>Impact of the Gut Microbiota Balance on the Health–Disease Relationship: The Importance of Consuming
-            Probiotics and Prebiotics<br>
-            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8230287/"
-              target="_blank">https://pmc.ncbi.nlm.nih.gov/articles/PMC8230287/</a>
+          <li><strong>Gut microbiome and metabolome profiling in Framingham Heart Study reveals cholesterol-metabolizing
+              bacteria </strong><br>
+            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11071153/#S10"
+              target="_blank">https://pmc.ncbi.nlm.nih.gov/articles/PMC11071153/#S10</a>
           </li>
-          <li>Micronutrient Depletion in Heart Failure: Common, Clinically Relevant and Treatable<br>
+          <li><strong>Micronutrient Depletion in Heart Failure: Common, Clinically Relevant and Treatable</strong><br>
             <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6888526/"
-              target="_blank">https://pmc.ncbi.nlm.nih.gov/articles/PMC6888526/</a>
+              target="_blank">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6888526/</a>
           </li>
-          <li>Changes in USDA food composition data for 43 garden crops, 1950 to 1999<br>
-            <a href="https://pubmed.ncbi.nlm.nih.gov/15637215/"
-              target="_blank">https://pubmed.ncbi.nlm.nih.gov/15637215/</a>
+          <li><strong>The coincidence of low vitamin K status and high expression of growth differentiation factor 15
+              may indicate increased mortality risk in stable coronary heart disease patients</strong><br>
+            <a href="https://www.sciencedirect.com/science/article/abs/pii/S0939475320304026#"
+              target="_blank">https://www.sciencedirect.com/science/article/abs/pii/S0939475320304026#</a>
+          </li>
+          <li><strong>Dietary Antioxidants and Risk of Coronary Artery Disease</strong><br>
+            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5555375/"
+              target="_blank">https://pmc.ncbi.nlm.nih.gov/articles/PMC5555375/</a>
           </li>
         </ol>
       </div>
@@ -714,22 +465,22 @@
     </div>
   </div>
 
-  <!-- Shipping -->
+  <!-- Science Expert -->
 
   <!--That’s why there’s… -->
 
   <div class="thatswhy">
     <div class="container">
-      <h3>That’s why there’s…</h3>
+      <h3>That’s why we created...</h3>
       <img src="images/logo.png" class="img-fluid logo-thats">
-      <div class="row  align-items-center">
-        <div class="col-md-6">
+      <div class="row  align-items-center justify-content-center">
+        <div class="col-md-5 col-6">
           <img src="images/bannerimage.png" class="img-fluid">
         </div>
-        <div class="col-md-6">
+        <div class="col-md-5">
           <div class="thatwy-data">
-            <p>YOMZ packs micronutrients, vitamins, fiber, and other nutrients into the tastiest gummy on Earth. Just 1g
-              of sugar and no artificial colors.</p>
+            <p>YOMZ packs vitamins, antioxidants, fiber, micronutrients, and more into the tastiest gummy on Earth. With
+              NO added sugar or artificial colors.</p>
           </div>
         </div>
       </div>
@@ -740,57 +491,70 @@
 
   <!--Inside every YOMZ-->
 
-  <div class="inside">
+  <div class="inside" id="ingredients">
     <div class="container">
       <div class="ins-header">
         <h3>Inside Every YOMZ<br>Gummy You’ll Enjoy:</h3>
-        <p>A power-packed, plant-powered punch of micronutrients, fiber, antioxidants, and more to help fight Hidden
+        <p>A power-packed, plant-fueled punch of micronutrients, fiber, antioxidants, and more to help fight Hidden
           Hunger.</p>
       </div>
 
       <div class="row justify-content-center">
-        <div class="col-md-4">
+        <div class="col-md-4 col-6">
           <div class="ins-data">
             <img src="images/NatureKnit.jpg" alt="" class="img-fluid">
             <h4 class="exblod">NatureKnit™</h4>
-            <p>From superfoods like apples, blueberries, carrots, cranberries, and spinach for a fiber-powered,
-              gut-repairing powerhouse. Also supports better mood, focus, and brain function.</p>
+            <p>A fiber-fueled, gut- repairing power blend of superfoods. </p>
 
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="ins-data">
-            <img src="images/PhytoServ.jpg" alt="" class="img-fluid">
-            <h4 class="exblod">PhytoServ®</h4>
-            <p>Patented blend of real food extracts with the nutrient equivalent of 3 servings of fruits & vegetables.
-              Supports gut health, energy, mood, and stronger immunity.</p>
-
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="ins-data">
-            <img src="images/fructooligosaccharides.jpg" alt="" class="img-fluid">
-            <h4 class="exblod">Fructooligosaccharides (FOS)</h4>
-            <p>A type of fiber that helps your gut absorb nutrients - crucial because 90% of your immunity lives in your
-              gut. Supports gut health, nutrient absorption, and immunity.</p>
             <div class="list-done featured-image-with-text__text">
               <ul>
-                <li>Supercharges nutrient absorption</li>
-                <li>Bulletproofs immunity</li>
+                <li>Promotes gut health</li>
+                <li>Supports a healthy brain</li>
+                <li>Promotes better focus</li>
               </ul>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-6">
           <div class="ins-data">
-            <img src="images/Vitamins-a.jpg" alt="" class="img-fluid">
-            <h4 class="exblod">Vitamins A, C, D, K2</h4>
+            <img src="images/PhytoServ.jpg" alt="" class="img-fluid">
+            <h4 class="exblod">PhytoServ®</h4>
+            <p>Patented blend of phytonutrients equal to 3 servings of fruits & veggies. </p>
             <div class="list-done featured-image-with-text__text">
               <ul>
-                <li>A: Protects immunity and halts viruses before they hijack your system.</li>
-                <li>C: Protects against whatever “bug of the day” is going around.</li>
-                <li>D: Helps resist flu risks, weaker bones, and mood swings.</li>
-                <li>K2: Helps improve teeth, bones, and long-term heart risks.</li>
+                <li>Promotes gut health </li>
+                <li>Supports immunity</li>
+                <li>Promotes better energy</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-4 col-6">
+          <div class="ins-data">
+            <img src="images/fructooligosaccharides.jpg" alt="" class="img-fluid">
+            <h4 class="exblod">FOS <span class="mobile-block subhead-tag">(Fructooligosaccharides)</span></h4>
+            <p>FOS is a type of fiber that helps your gut absorb nutrients.</p>
+
+            <div class="list-done featured-image-with-text__text">
+              <ul>
+                <li>Promotes gut health</li>
+                <li>Supports immunity</li>
+                <li>Supports strong bones and teeth</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-6">
+          <div class="ins-data">
+            <img src="images/Vitamins-a.jpg" alt="" class="img-fluid">
+            <h4 class="exblod">Vitamins <span class="mobile-block">A, C, D, K2</span></h4>
+            <p class="mt-1">"Fantastic 4" of vitamins supports overall health, plus:</p>
+            <div class="list-done featured-image-with-text__text">
+              <ul>
+                <li>Supports heart, lung, kidneys</li>
+                <li>Supports brain & muscle function</li>
+                <li>Supports bones, immunity, & more</li>
               </ul>
             </div>
           </div>
@@ -804,12 +568,18 @@
   <!--extraicons-->
   <div class="extraicons">
     <div class="container">
+
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-2 col-4 mx-auto mb-1">
+          <img src="images/logo.png" class="img-fluid">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-6 pd-rt-0">
           <div class="ext-icons">
             <div class="col d-flex align-items-center">
               <div class="icon-square flex-shrink-0 me-3">
-                <img src="images/mouthwatering.jpg" alt="" class="img-fluid">
+                <img src="images/thumb.png" alt="" class="img-fluid">
               </div>
               <div>
                 <h4 class="exblod">Mouthwatering</h4>
@@ -817,11 +587,11 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-6 pd-rt-0">
           <div class="ext-icons">
             <div class="col d-flex align-items-center">
               <div class="icon-square flex-shrink-0 me-3">
-                <img src="images/gut-healthy.jpg" alt="" class="img-fluid">
+                <img src="images/thumb.png" alt="" class="img-fluid">
               </div>
               <div>
                 <h4 class="exblod">Gut Healthy</h4>
@@ -829,11 +599,11 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-6 pd-rt-0">
           <div class="ext-icons">
             <div class="col d-flex align-items-center">
               <div class="icon-square flex-shrink-0 me-3">
-                <img src="images/Keto-friendly.jpg" alt="" class="img-fluid">
+                <img src="images/thumb.png" alt="" class="img-fluid">
               </div>
               <div>
                 <h4 class="exblod">Keto-friendly</h4>
@@ -841,11 +611,11 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-6 pd-rt-0">
           <div class="ext-icons">
             <div class="col d-flex align-items-center">
               <div class="icon-square flex-shrink-0 me-3">
-                <img src="images/Non-GMO.jpg" alt="" class="img-fluid">
+                <img src="images/thumb.png" alt="" class="img-fluid">
               </div>
               <div>
                 <h4 class="exblod">Non-GMO</h4>
@@ -853,11 +623,11 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-6 pd-rt-0">
           <div class="ext-icons">
             <div class="col d-flex align-items-center">
               <div class="icon-square flex-shrink-0 me-3">
-                <img src="images/Gluten-free.jpg" alt="" class="img-fluid">
+                <img src="images/thumb.png" alt="" class="img-fluid">
               </div>
               <div>
                 <h4 class="exblod">Gluten-free</h4>
@@ -865,11 +635,11 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-6 pd-rt-0">
           <div class="ext-icons">
             <div class="col d-flex align-items-center">
               <div class="icon-square flex-shrink-0 me-3">
-                <img src="images/1g-Sugar.jpg" alt="" class="img-fluid">
+                <img src="images/thumb.png" alt="" class="img-fluid">
               </div>
               <div>
                 <h4 class="exblod">1g Sugar</h4>
@@ -889,16 +659,49 @@
     <div class="container">
       <h3>Real YOMZ Families.<br>Real YOMZ Talk.</h3>
 
-      <img src="" alt="">
+      <div class="reviews-images">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-3 product-first">
+            <div class="prod-image">
+              <img src="images/r-5.jpg" class="img-fluid ">
+            </div>
+          </div>
+          <div class="col-3 product-second">
+            <div class="prod-image">
+              <img src="images/r-3.jpg" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="prod-image">
+              <img src="images/r-1.jpg" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="prod-image">
+              <img src="images/r-11.jpg" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-3 product-second">
+            <div class="prod-image">
+              <img src="images/r-7.jpg" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-3 product-first">
+            <div class="prod-image">
+              <img src="images/r-9.jpg" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
 
-      <div class="review-inner">
+      <div class="review-inner top-reviews">
         <div class="col d-flex align-items-center d-sm-block d-lg-none">
           <div class="icon-square clt-face flex-shrink-0 me-3">
             <img src="images/face-2.jpg" alt="" class="img-fluid rounded-circle">
           </div>
           <div>
-            <h4 class="maintitle exblod">Picky eaters rejoice!</h4>
-            <p class="vrify-reviews">
+            <h4 class="maintitle exblod ">Picky eaters rejoice!</h4>
+            <p class="vrify-reviews d-sm-block d-lg-none">
               <span class="featured-review-columns-card__reviews">
                 <img src="images/star.svg" class="img-fluid">
                 <img src="images/star.svg" class="img-fluid">
@@ -915,21 +718,20 @@
           </div>
           <div>
             <h4 class="maintitle exblod d-none d-sm-none d-lg-block">Picky eaters rejoice!</h4>
-            <p class="vrify-reviews d-none d-sm-none d-lg-block">
-              <span class="featured-review-columns-card__reviews">
-                <img src="images/star.svg" class="img-fluid">
-                <img src="images/star.svg" class="img-fluid">
-                <img src="images/star.svg" class="img-fluid">
-                <img src="images/star.svg" class="img-fluid">
-                <img src="images/star.svg" class="img-fluid">
-              </span> Verified Purchase
-            </p>
+            <span class="d-none d-sm-none d-lg-block">
+              <p class="vrify-reviews">
+                <span class="featured-review-columns-card__reviews">
+                  <img src="images/star.svg" class="img-fluid">
+                  <img src="images/star.svg" class="img-fluid">
+                  <img src="images/star.svg" class="img-fluid">
+                  <img src="images/star.svg" class="img-fluid">
+                  <img src="images/star.svg" class="img-fluid">
+                </span> Verified Purchase
+              </p>
+            </span>
 
-            <p class="messge-wote mb-0"> <img src="images/quote.svg" alt="">"I always felt self-conscious about my
-              appearance, especially in social situations. Since trying Mitolyn, I've lost 35 pounds, and for the first
-              time in years, I actually enjoy looking in the mirror. It's</p>
-            <p class="messge-wote none-p">My kids are real picky eaters. So it's
-              a challenge to get all the necessary nutrients. It's no lie to say that YOMZ has saved the day. My picky
+            <p class="messge-wote"> <img src="images/quote.svg" alt="">"My kids are real picky eaters. So it's a
+              challenge to get all the necessary nutrients. It's no lie to say that YOMZ has saved the day. My picky
               kids love them. So glad I saw their ad and clicked! I finally found something that helps my kids'
               nutrition needs." </p>
 
@@ -938,8 +740,9 @@
                 <img src="images/rw-1.jpg" alt="" class="img-fluid">
               </div>
               <div>
-                <p class="is-size-5 mb-2 lh1"><strong class="exblod">Piper H.</strong> - La Jolla, CA</p>
-                <p class="is-size-5 is-size-6-mobile thorn has-text-weight-bold lh1 exblod">Purchased 4 Bag Subscription
+                <p class="is-size-5 mb-2 lh1"><strong>Piper H.</strong> - La Jolla, CA</p>
+                <p class="is-size-5 is-size-6-mobile thorn has-text-weight-bold lh1"><strong>Purchased 4 Bag
+                    Subscription</strong>
                 </p>
               </div>
             </div>
@@ -971,27 +774,30 @@
           </div>
           <div>
             <h4 class="maintitle exblod d-none d-sm-none d-lg-block">Perfect for the whole fam!</h4>
-            <p class="vrify-reviews d-none d-sm-none d-lg-block">
-              <span class="featured-review-columns-card__reviews">
-                <img src="images/star.svg" class="img-fluid">
-                <img src="images/star.svg" class="img-fluid">
-                <img src="images/star.svg" class="img-fluid">
-                <img src="images/star.svg" class="img-fluid">
-                <img src="images/star.svg" class="img-fluid">
-              </span> Verified Purchase
-            </p>
+            <span class="d-none d-sm-none d-lg-block">
+              <p class="vrify-reviews">
+                <span class="featured-review-columns-card__reviews">
+                  <img src="images/star.svg" class="img-fluid">
+                  <img src="images/star.svg" class="img-fluid">
+                  <img src="images/star.svg" class="img-fluid">
+                  <img src="images/star.svg" class="img-fluid">
+                  <img src="images/star.svg" class="img-fluid">
+                </span> Verified Purchase
+              </p>
+            </span>
 
-            <p class="messge-wote"> <img src="images/quote.svg" alt=""> "I got this for my 4yo daughter 1st. It only
-              took a week to get a 2nd one for me lol. I've noticed a difference in my gut health and my daughter's
-              moods. When my husband gets back from his deployment, we'll be getting a 3rd one!"</p>
+            <p class="messge-wote"> <img src="images/quote.svg" alt=""> "I got YOMZ for my 4yo daughter. It only took a
+              week to get a bag for me lol. I've noticed a difference in my gut health and my daughter's moods. When my
+              husband gets back from deployment, we'll be getting a 3rd bag!"</p>
 
             <div class="col sec-aoue d-flex align-items-center">
               <div class="icon-square flex-shrink-0 me-1">
-                <img src="images/rw-2.jpg" alt="" class="img-fluid">
+                <img src="images/rw-1.jpg" alt="" class="img-fluid">
               </div>
               <div>
-                <p class="is-size-5 mb-2 lh1"><strong class="exblod">Deb M.</strong> - Asheville, NC</p>
-                <p class="is-size-5 is-size-6-mobile thorn has-text-weight-bold lh1 exblod">Purchased 2 Bag Subscription
+                <p class="is-size-5 mb-2 lh1"><strong>Deb M.</strong> - Asheville, NC</p>
+                <p class="is-size-5 is-size-6-mobile thorn has-text-weight-bold lh1"><strong>Purchased 2 Bag
+                    Subscription</strong>
                 </p>
               </div>
             </div>
@@ -1023,28 +829,31 @@
           </div>
           <div>
             <h4 class="maintitle exblod d-none d-sm-none d-lg-block">All my husband's fault...</h4>
-            <p class="vrify-reviews d-none d-sm-none d-lg-block">
-              <span class="featured-review-columns-card__reviews">
-                <img src="images/star.svg" class="img-fluid">
-                <img src="images/star.svg" class="img-fluid">
-                <img src="images/star.svg" class="img-fluid">
-                <img src="images/star.svg" class="img-fluid">
-                <img src="images/star.svg" class="img-fluid">
-              </span> Verified Purchase
-            </p>
+            <span class="d-none d-sm-none d-lg-block">
+              <p class="vrify-reviews">
+                <span class="featured-review-columns-card__reviews">
+                  <img src="images/star.svg" class="img-fluid">
+                  <img src="images/star.svg" class="img-fluid">
+                  <img src="images/star.svg" class="img-fluid">
+                  <img src="images/star.svg" class="img-fluid">
+                  <img src="images/star.svg" class="img-fluid">
+                </span> Verified Purchase
+              </p>
+            </span>
 
-            <p class="messge-wote"> <img src="images/quote.svg" alt="">"My husband loves gummies, so when he came across
-              YOMZ, he had to try. Didn't care if it was nutritious or not, just that it tasted good. Once I tried them
-              myself, I started reading up on them. I was shocked to find out how nutritious they are, so I had to order
-              for me and our 6yo soccer-crazy daughter."</p>
+            <p class="messge-wote"> <img src="images/quote.svg" alt="">"My husband loves gummies, so when he found YOMZ,
+              he had to try, didn't care if it was nutritious, just that it tasted good. Once I tried them, I started
+              reading up on them. I was shocked to find out how nutritious they are, so I had to order for me and our
+              6yo soccer-crazy daughter."</p>
 
             <div class="col sec-aoue d-flex align-items-center">
               <div class="icon-square flex-shrink-0 me-1">
                 <img src="images/rw-1.jpg" alt="" class="img-fluid">
               </div>
               <div>
-                <p class="is-size-5 mb-2 lh1"><strong class="exblod">Misty C.</strong> - Lincoln, NE</p>
-                <p class="is-size-5 is-size-6-mobile thorn has-text-weight-bold lh1 exblod">Purchased 3 Bag Subscription
+                <p class="is-size-5 mb-2 lh1"><strong>Misty C.</strong> - Lincoln, NE</p>
+                <p class="is-size-5 is-size-6-mobile thorn has-text-weight-bold lh1"><strong>Purchased 3 Bag
+                    Subscription</strong>
                 </p>
               </div>
             </div>
@@ -1076,29 +885,30 @@
           </div>
           <div>
             <h4 class="maintitle exblod d-none d-sm-none d-lg-block">Meets our many needs...</h4>
-            <p class="vrify-reviews d-none d-sm-none d-lg-block">
-              <span class="featured-review-columns-card__reviews">
-                <img src="images/star.svg" class="img-fluid">
-                <img src="images/star.svg" class="img-fluid">
-                <img src="images/star.svg" class="img-fluid">
-                <img src="images/star.svg" class="img-fluid">
-                <img src="images/star.svg" class="img-fluid">
-              </span> Verified Purchase
-            </p>
+            <span class="d-none d-sm-none d-lg-block">
+              <p class="vrify-reviews">
+                <span class="featured-review-columns-card__reviews">
+                  <img src="images/star.svg" class="img-fluid">
+                  <img src="images/star.svg" class="img-fluid">
+                  <img src="images/star.svg" class="img-fluid">
+                  <img src="images/star.svg" class="img-fluid">
+                  <img src="images/star.svg" class="img-fluid">
+                </span> Verified Purchase
+              </p>
+            </span>
 
-            <p class="messge-wote"> <img src="images/quote.svg" alt="">"We're an active family. Hubs is into
-              boats, son football, daughter volleyball,
-              and I'm a runner. So something nutritious
-              and convenient is a must. YOMZ is perfect.
-              Highly recommend!"</p>
+            <p class="messge-wote"> <img src="images/quote.svg" alt="">"We're a very active family. Hubs is into boats,
+              my son football, daughter volleyball, and I'm a runner. So a snack that's nutritious AND convenient is a
+              must. YOMZ is perfect. Highly recommend!"</p>
 
             <div class="col sec-aoue d-flex align-items-center">
               <div class="icon-square flex-shrink-0 me-1">
-                <img src="images/rw-2.jpg" alt="" class="img-fluid">
+                <img src="images/rw-1.jpg" alt="" class="img-fluid">
               </div>
               <div>
-                <p class="is-size-5 mb-2 lh1"><strong class="exblod">Sheila T.</strong> - Bloomington, IL</p>
-                <p class="is-size-5 is-size-6-mobile thorn has-text-weight-bold lh1 exblod">Purchased 4 Bag Subscription
+                <p class="is-size-5 mb-2 lh1"><strong>Sheila T.</strong> - Bloomington, IL</p>
+                <p class="is-size-5 is-size-6-mobile thorn has-text-weight-bold lh1"><strong>Purchased 4 Bag
+                    Subscription</strong>
                 </p>
               </div>
             </div>
@@ -1106,7 +916,40 @@
         </div>
       </div>
 
-      <img src="" alt="">
+      <div class="reviews-images">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-3 product-first">
+            <div class="prod-image">
+              <img src="images/r-2.jpg" class="img-fluid ">
+            </div>
+          </div>
+          <div class="col-3 product-second">
+            <div class="prod-image">
+              <img src="images/r-4.jpg" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="prod-image">
+              <img src="images/r-12.jpg" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="prod-image">
+              <img src="images/r-6.jpg" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-3 product-second">
+            <div class="prod-image">
+              <img src="images/r-8.jpg" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-3 product-first">
+            <div class="prod-image">
+              <img src="images/r-10.jpg" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
 
     </div>
   </div>
@@ -1114,472 +957,143 @@
   <!--reviews -->
 
   <!-- Products-->
-  <section class="section is-paddingless buying-background b-section">
+  <section class="section is-paddingless buying-background b-section" id="order">
     <div class="container container-limit">
-      <h2 class="title-head1">Subscribe to YOMZ & Save BIG!</h2>
-      <p class="exblod"><i>The More You Buy, the More You Save</i></p>
+      <h2 class="title-head1">Try YOMZ & Save BIG!</h2>
+      <p class="exblod"><i>The more you buy, the more you save</i></p>
     </div>
   </section>
   <div class="off-white-background" style="border-top:none;">
     <div class="buying-background p-4 g-arrow" style="max-width:600px;top:-1px;"></div>
   </div>
-  <!-- Products-->
 
   <!-- 2nd-product-checkBox -->
-  <div class="products-banner">
-    <div class="container">
-      <div class="pr-logo-part d-sm-block d-lg-none">
-        <div class="pr-logopart">
-          <img src="./images/product-carousel/bg-yomzLogo.png" class="img-fluid">
+  <section class="section off-white-background pt-2 pb-4 px-2" style="border-top:none;">
+    <div class="container pt-1 container-limit">
+      <div class="row mx-auto justify-content-center">
+        <div class="col-md-4 order-2 order-md-1">
+          <div class="gumm-bag orl basic">
+            <span class="top-basic bsred">BASIC</span>
+            <div class="row">
+              <div class="column leftwd col-md-12 col-6 padding-lft">
+                <span class="bag-heading">
+                  <h3 class="exblod">1 PERSON</h3>
+                  <h4 class="exblod">30 Day Supply</h4>
+                </span>
+                <span class="products-image">
+                  <img src="images/bag-1.png" class="img-fluid d-none d-sm-none d-lg-block">
+                  <img src="images/bag-1.1.png" class="img-fluid d-sm-block d-lg-none">
+                  <!-- <span class="badge-offer pulse">
+                    <p class="exblod"><span>40%</span>OFF</p>
+                  </span> -->
+                </span>
+              </div>
+              <div class="column text-center col-md-12 col-6 padding-lft">
+                <del class="del-price">$79.99</del>
+                <span class="price pricea exblod">$47.99</span>
+                <span class="exblod text-center perday">$1.71 per day</span>
+                <div class="footer-tag">
+                  <a href="#" class="btn"><img src="images/buy-btn.png" class="img-fluid"></a>
+                  <span class="payment-image">
+                    <img src="images/payment.png" class="img-fluid">
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
-        <p class="daily-natu">
-          <span class="daily">daily nutrition</span>
-          <span class="packets">28packets</span>
-        </p>
-        <div class="star-part">
-          <p> <img src="./images/product-carousel/star.svg"> <span>15</span> </p>
+
+        <div class="col-md-4 order-1 order-md-2">
+          <div class="gumm-bag orl popular">
+            <span class="top-basic bsred">MOST POPULAR</span>
+            <div class="row">
+              <div class="column  leftwd col-md-12 col-6 padding-lft">
+                <span class="bag-heading">
+                  <h3 class="exblod">3 PEOPLE</h3>
+                  <h4 class="exblod">30 Day Supply Each</h4>
+                </span>
+                <span class="products-image">
+                  <img src="images/bag-3.png" class="img-fluid d-none d-sm-none d-lg-block">
+                  <img src="images/bag-3.1.png" class="img-fluid d-sm-block d-lg-none">
+
+                  <!-- <span class="badge-offer pulse">
+                    <p class="exblod"><span>46%</span>OFF</p>
+                  </span> -->
+                </span>
+              </div>
+              <div class="column text-center leftwd col-md-12 col-6 padding-lft">
+                <del class="del-price">$239.97</del>
+                <span class="price pricea exblod">$129.58</span>
+                <span class="exblod text-center perday">$1.54 per day</span>
+                <ul class="ullist ">
+                  <li class="bounes"><i class="fas fa-check-circle"></i> 3 FREE BONUSES!</li>
+                  <li class="shippingus"><i class="fas fa-check-circle"></i> FREE US SHIPPING!</li>
+                </ul>
+                <div class="footer-tag" style="position:relative">
+                  <a href="#" class="btn"><img src="images/buy-btn.png" class="img-fluid"></a>
+                  <div>
+                    <div class="floating-hand fhc"></div>
+                  </div>
+                  <span class="payment-image">
+                    <img src="images/payment.png" class="img-fluid">
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6 pading-rote2">
 
-          <!-- 2nd Carousel - Yomz Original -->
-          <div id="yomz-original-carousel2" class="product-left product-red mb-3 mb-lg-0 show">
-            <div class="swiper-container product-slider mb-3">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide"> <img src="./images/product-carousel/yomzOriginal/4.jpg"
-                    alt="yomzOriginal2-product-image4" class="img-fluid">
-                </div>
-                <div class="swiper-slide"> <img src="./images/product-carousel/yomzOriginal/3.jpg"
-                    alt="yomzOriginal2-product-image3" class="img-fluid"> </div>
-                <div class="swiper-slide"> <img src="./images/product-carousel/yomzOriginal/2.jpg"
-                    alt="yomzOriginal2-product-image2" class="img-fluid"> </div>
-                <div class="swiper-slide"> <img src="./images/product-carousel/yomzOriginal/1.jpg"
-                    alt="yomzOriginal2-product-image1" class="img-fluid"> </div>
+        <div class="col-md-4 order-1 order-md-3">
+          <div class="gumm-bag orl bundle">
+            <span class="top-basic bsred">BUNDLE</span>
+            <div class="row">
+              <div class="column leftwd col-md-12 col-6 padding-lft">
+                <span class="bag-heading">
+                  <h3 class="exblod">2 PEOPLE</h3>
+                  <h4 class="exblod">30 Day Supply Each</h4>
+                </span>
+                <span class="products-image">
+                  <img src="images/bag-2.png" class="img-fluid d-none d-sm-none d-lg-block">
+                  <img src="images/bag-2.1.png" class="img-fluid d-sm-block d-lg-none">
+
+                  <!-- <span class="badge-offer pulse">
+                    <p class="exblod"><span>43%</span>OFF</p>
+                  </span> -->
+                </span>
               </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-            </div>
-
-            <!-- yomzOriginal thumbnail images -->
-            <div class="swiper-container product-thumbs">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide"> <img src="./images/product-carousel/yomzOriginal/4.jpg"
-                    alt="yomzOriginal2-thumbnail-image4" class="img-fluid">
-                </div>
-                <div class="swiper-slide"> <img src="./images/product-carousel/yomzOriginal/3.jpg"
-                    alt="yomzOriginal2-thumbnail-image3" class="img-fluid">
-                </div>
-                <div class="swiper-slide"> <img src="./images/product-carousel/yomzOriginal/2.jpg"
-                    alt="yomzOriginal2-thumbnail-image2" class="img-fluid">
-                </div>
-                <div class="swiper-slide"> <img src="./images/product-carousel/yomzOriginal/1.jpg"
-                    alt="yomzOriginal2-thumbnail-image1" class="img-fluid">
+              <div class="column text-center col-md-12 col-6 padding-lft">
+                <del class="del-price">$159.98</del>
+                <span class="price pricea exblod">$91.20</span>
+                <span class="exblod text-center perday">$1.63 per day</span>
+                <ul class="ullist ">
+                  <li class="bounes"><i class="fas fa-check-circle"></i> 3 FREE BONUSES!</li>
+                </ul>
+                <div class="footer-tag">
+                  <a href="#" class="btn"><img src="images/buy-btn.png" class="img-fluid"></a>
+                  <span class="payment-image">
+                    <img src="images/payment.png" class="img-fluid">
+                  </span>
                 </div>
               </div>
             </div>
           </div>
-          <!-- 2nd Carousel - Yomz Original -->
 
-          <!-- 2nd Carousel - Yomz Sours -->
-          <div id="yomz-sours-carousel2" class="product-left product-green mb-3 mb-lg-0 hide">
-            <div class="swiper-container product-slider mb-3">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="./images/product-carousel/yomzSours/4.jpg" alt="yomzSours2-product-image4"
-                    class="img-fluid">
-                </div>
-                <div class="swiper-slide">
-                  <img src="./images/product-carousel/yomzSours/3.jpg" alt="yomzSours2-product-image3"
-                    class="img-fluid">
-                </div>
-                <div class="swiper-slide">
-                  <img src="./images/product-carousel/yomzSours/2.jpg" alt="yomzSours2-product-image2"
-                    class="img-fluid">
-                </div>
-                <div class="swiper-slide">
-                  <img src="./images/product-carousel/yomzSours/1.jpg" alt="yomzSours2-product-image1"
-                    class="img-fluid">
-                </div>
-              </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-            </div>
-            <div class="swiper-container product-thumbs">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="./images/product-carousel/yomzSours/4.jpg" alt="yomzSours2-thumbnail-image4"
-                    class="img-fluid">
-                </div>
-                <div class="swiper-slide">
-                  <img src="./images/product-carousel/yomzSours/3.jpg" alt="yomzSours2-thumbnail-image3"
-                    class="img-fluid">
-                </div>
-                <div class="swiper-slide">
-                  <img src="./images/product-carousel/yomzSours/2.jpg" alt="yomzSours2-thumbnail-image2"
-                    class="img-fluid">
-                </div>
-                <div class="swiper-slide">
-                  <img src="./images/product-carousel/yomzSours/1.jpg" alt="yomzSours2-thumbnail-image1"
-                    class="img-fluid">
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- 2nd Carousel - Yomz Sours -->
-        </div>
-        <div class="col-md-6 pading-rote">
-          <div class="products-detials">
-            <div class="pr-logo-part d-none d-sm-none d-lg-block">
-              <div class="pr-logopart">
-                <img src="./images/product-carousel/bg-yomzLogo.png" class="img-fluid">
-              </div>
-              <p class="daily-natu">
-                <span class="daily">daily nutrition</span>
-                <span class="packets">28 packets</span>
-              </p>
-              <div class="star-part">
-                <p> <img src="./images/product-carousel/star.svg"> <span>15</span></p>
-              </div>
-            </div> <!-- 2nd Stepper -->
-            <div class="flavor-part stampform">
-              <div class="step-container d-flex align-items-center justify-content-center">
-                <!-- Step - 1 -->
-                <div id="step-1-2" class="step">
-                  <div id="step1-circle2" class="circle active">1</div>
-                  <div id="step1-bar2" class="bar"></div>
-                </div> <!-- Step - 2 -->
-                <div id="step-2-2" class="step">
-                  <div id="step2-circle2" class="circle">2</div>
-                  <div id="step2-bar2" class="bar"></div>
-                </div> <!-- Step - 3 -->
-                <div id="step-3-2" class="step">
-                  <div id="step3-circle2" class="circle">3</div>
-                </div>
-              </div>
-              <p>CHOOSE YOUR FLAVOR:</p>
-            </div>
-
-            <!-- 2nd Stepper -->
-            <!-- First-steps -->
-            <div id="offer-one2" class="tabsbtn mb-3 all stapform show">
-              <div class="first-steps start-botton-show">
-                <div class="classbtn1">
-                  <!-- Yomz Original Button -->
-                  <div id="original-Button2" class="form-check borderBlue">
-                    <input class="form-check-input product-red" type="checkbox" value="yomzOriginal" id="checkOriginal2"
-                      name="productType2" onclick="handleCheckboxClick2(this)" checked>
-                    <label class="form-check-label cursor padding13" for="checkOriginal2">
-                      <img src="images/original.png" class="img-fluid" alt="Original">
-                      <span><b>Original</b></span>
-                    </label>
-                  </div>
-
-                  <!-- Yomz Sour Button -->
-                  <div id="sours-Button2" class="form-check">
-                    <input class="form-check-input product-green" type="checkbox" value="yomzSours" id="checkSour2"
-                      name="productType2" onclick="handleCheckboxClick2(this)">
-                    <label class="form-check-label cursor padding13" for="checkSour2">
-                      <img src="images/sour.png" class="img-fluid" alt="Sour">
-                      <span><b>Sour</b></span>
-                    </label>
-                  </div>
-                </div>
-              </div>
-              <p id="prod-Description2" class="text-center mt-3 simp-font">
-                Sour Flavor:<br>Sour Peachy,
-                Strawbeary, Beary Berry
-              </p>
-              <div class="next-prev-btn">
-                <button class="btn next-btn buttonBlue" id="nextStep1-2">NEXT</button>
-              </div>
-            </div>
-            <!-- first-steps -->
-
-            <!-- Second Step -->
-            <div id="offer-two2" class="sec-steps start-botton-show hide">
-              <!-- <div id="offer-two2" class="sec-steps start-botton-show"> -->
-              <div class="classbtn1 slt-price">
-                <div class="form-check">
-                  <input class="form-check-input product-red mgTp" type="checkbox" value="" id="checkBox-input1-2">
-                  <label class="form-check-label oneTimePurchase" for="checkBox-input1-2">
-                    <span class="item-title">One-Time Purchase</span>
-                    <span id="product-price2" class="tab-price">$XX.99</span>
-                  </label>
-                </div>
-              </div>
-
-              <div class="best-value best-value-blue">
-                <!-- Offer-two : Best Value Box -->
-                <div id="offer2-boxBorder2" class="best-value-item">
-                  <div id="offer2-boxHeader2" class="head">
-                    <p>BEST VALUE</p>
-                  </div>
-                  <div class="box-padding">
-                    <div class="classbtn1 slt-price">
-                      <div class="form-check"> <input class="form-check-input product-red" type="checkbox" value=""
-                          id="checkBox-input2-2" checked> <label class="form-check-label cursor"
-                          for="checkBox-input2-2"> <span class="item-title">Subscribe & <span id="offer2-saveText2"
-                              class="save-color">Save XX%</span> </span> <span class="tab-price">
-                            <span><del>$18.99</del></span> <span data-price="12" id="options-price2">$12.00</span>
-                          </span>
-                        </label> </div>
-                    </div>
-                    <div class="item-bag">
-                      <div class="row">
-
-                        <!-- Option 1 -->
-                        <div class="col-6">
-                          <div class="slt-bag-item">
-                            <div onclick="selectedOpt2(this);" id="offer2-opt1-2" data-qty="1" data-value="opt1"
-                              class="card borderBlueOffer2 offer2-opts">
-                              <div class="badge">SAVE $12</div>
-                              <div class="d-flex text-left">
-                                <div class="col-4 px-0">
-                                  <img id="banner2-opt1-img1" src="./images/yomzOriginal/pack-1.jpg"
-                                    alt="Yomz Candy Bag" class="img-fluid">
-                                </div>
-                                <div class="col-8 px-0 left-gap">
-                                  <div class="product-title">1x bag</div>
-                                  <div class="product-subtitle">+ Accessories</div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <!-- Option 2 -->
-                        <div class="col-6">
-                          <div class="slt-bag-item">
-                            <div onclick="selectedOpt2(this);" id="offer2-opt2-2" data-qty="2" data-value="opt2"
-                              class="card unsalect offer2-opts">
-                              <div class="badge">SAVE $12</div>
-                              <div class="d-flex text-left">
-                                <div class="col-4 px-0">
-                                  <img id="banner2-opt2-img2" src="./images/yomzOriginal/pack-2.jpg"
-                                    alt="Yomz Candy Bag" class="img-fluid">
-                                </div>
-                                <div class="col-8 px-0 left-gap">
-                                  <div class="product-title">2x bag</div>
-                                  <div class="product-subtitle">+ Accessories</div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <!-- Option 3 -->
-                        <div class="col-6 mobile-mg-botton">
-                          <div class="slt-bag-item">
-                            <div onclick="selectedOpt2(this);" id="offer2-opt3-2" data-qty="3" data-value="opt3"
-                              class="card unsalect offer2-opts">
-                              <div class="badge">SAVE $12</div>
-                              <div class="d-flex text-left">
-                                <div class="col-4 px-0">
-                                  <img id="banner2-opt3-img3" src="./images/yomzOriginal/pack-3.jpg"
-                                    alt="Yomz Candy Bag" class="img-fluid">
-                                </div>
-                                <div class="col-8 px-0 left-gap">
-                                  <div class="product-title">3x bag</div>
-                                  <div class="product-subtitle">+ Accessories</div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <!-- Option 4 -->
-                        <div class="col-6 mobile-mg-botton">
-                          <div class="slt-bag-item">
-                            <div onclick="selectedOpt2(this);" id="offer2-opt4-2" data-qty="4" data-value="opt4"
-                              class="card unsalect offer2-opts">
-                              <div class="badge">SAVE $12</div>
-                              <div class="d-flex text-left">
-                                <div class="col-4 px-0">
-                                  <img id="banner2-opt4-img4" src="./images/yomzOriginal/pack-4.jpg"
-                                    alt="Yomz Candy Bag" class="img-fluid">
-                                </div>
-                                <div class="col-8 px-0 left-gap">
-                                  <div class="product-title">4x bag</div>
-                                  <div class="product-subtitle">+ Accessories</div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="frequency">
-                      <p class="delvery">DELIVERY EVERY <span id="offer2-month2" class="number-month">1</span> month
-                      </p>
-                      <p class="frequency-op" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"> <u>Which
-                          frequency is right for
-                          me?</u> </p>
-                      <ul class="list-unstyled">
-                        <li><img src="images/check.svg"> No Set Term, Cancel Anytime</li>
-                        <li><img src="images/check.svg"> 100% Risk Free, Money Back Guarantee
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="gift-value-title">
-                  <p>Free Gifts With Your First Order</p>
-                  <div class="row managemobilegap">
-                    <div class="col-4">
-                      <div class="product-card">
-                        <div class="price-tag"><del>$10.00</del></div>
-                        <div class="product-border"> <img src="images/order-1.jpg" alt="" class="img-fluid" /> </div>
-                      </div>
-                      <div class="sticker">
-                        <p class="text-left fr"><span>FREE</span>Collectable Sticker</p>
-                      </div>
-                    </div>
-                    <div class="col-4">
-                      <div class="product-card">
-                        <div class="price-tag"><del>$10.00</del></div>
-                        <div class="product-border"> <img src="images/white.jpg" alt="" class="img-fluid" /> </div>
-                      </div>
-                      <div class="sticker">
-                        <p class="text-left fr"><span>FREE</span>Donation</p>
-                      </div>
-                    </div>
-                    <div class="col-4">
-                      <div class="product-card">
-                        <div class="price-tag"><del>$10.00</del></div>
-                        <div class="product-border"> <img src="images/white.jpg" alt="" class="img-fluid" /> </div>
-                      </div>
-                      <div class="sticker">
-                        <p class="text-left fr"><span>FREE</span>Giveaway Entry </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="next-prev-btn next-prev-btn-new d-flex"> <button id="backStep2-2"
-                      class="btn prev-btn"><img src="images/prev.svg" class="img-fluid"> </button>
-                    <button id="nextStep2-2" class="btn next-btn buttonBlue">NEXT STEP</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Second Steps -->
-
-            <!-- Third-Steps -->
-            <div id="offer-three2" class="third-steps start-botton-show hide">
-              <!-- <div id="offer-three2" class="third-steps start-botton-show"> -->
-              <div class="best-value best-value-blue">
-                <div id="offer3-boxBorder2" class="best-value-item">
-                  <div class="box-padding">
-                    <div class="classbtn1 slt-price">
-                      <div class="form-check cursor"> <input class="form-check-input product-red" type="checkbox"
-                          value="" id="checkBox-input3-2" checked> <label class="form-check-label cursor"
-                          for="checkBox-input3-2"> <span class="item-title">Try Once</span> <span class="tab-price">
-                            <span><del>$18.99</del></span> <span data-price="12" id="tryOnce-price2">$12.00</span>
-                          </span> </label> </div>
-                    </div>
-                    <div class="salect-offers">
-                      <div class="row"> <!-- box1 - Offer -->
-                        <div class="col-3 outline-box gray-box px-2">
-                          <div class="card offerBox2" id="offerBox-1-2" data-price="1" data-percentage="0">
-                            <div id="box1-save2" class="save">Save 0%</div>
-                            <div id="box1-qty2" class="quantity">1</div>
-                            <div id="box1-pack2" class="label">PACK</div>
-                            <div class="price-strip">ONLY $X.XX PER DAY</div>
-                          </div>
-                        </div> <!-- box2 - Offer -->
-                        <div class="col-3 outline-box px-2">
-                          <div class="card offerBox2" id="offerBox-2-2" data-price="2" data-percentage="10">
-                            <div id="badge-box2-2" class="badge">MOST POPULAR</div>
-                            <div id="box2-save2" class="save">Save 10%</div>
-                            <div id="box2-qty2" class="quantity">2</div>
-                            <div id="box2-pack2" class="label">PACK</div>
-                            <div class="price-strip">ONLY $X.XX PER DAY</div>
-                          </div>
-                        </div> <!-- box3 - Offer -->
-                        <div class="col-3 outline-box gray-box px-2">
-                          <div class="card offerBox2" id="offerBox-3-2" data-price="3" data-percentage="15">
-                            <div id="box3-Save2" class="save">Save 15%</div>
-                            <div id="box3-Qty2" class="quantity">3</div>
-                            <div id="box3-pack2" class="label">PACK</div>
-                            <div class="price-strip">ONLY $X.XX PER DAY</div>
-                          </div>
-                        </div> <!-- box4 - Offer -->
-                        <div class="col-3 outline-box gray-blue px-2">
-                          <div id="offerBox-4-2" class="card offerBox2" data-price="4" data-percentage="40">
-                            <div id="badge-box4-2" class="badge">BEST VALUE</div>
-                            <div id="box4-save2" class="save">Save 40%</div>
-                            <div id="box4-qty2" class="quantity">4</div>
-                            <div id="box4-pack2" class="label">PACK</div>
-                            <div class="price-strip">ONLY $X.XX PER DAY</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="best-value best-value-blue insalect"> <!-- BEST VALUE BOX -->
-                <div id="offer3-bv-box2" class="best-value-item">
-                  <div id="offer3-bv-box-header2" class="head">
-                    <p>BEST VALUE</p>
-                  </div>
-                  <div class="box-padding">
-                    <div class="classbtn1 slt-price">
-                      <div class="form-check"> <input class="form-check-input product-red" type="checkbox" value=""
-                          id="checkBox-input4-2"> <label class="form-check-label cursor" for="checkBox-input4-2"> <span
-                            class="item-title">Subscribe & <span id="offer3-saveText2" class="save-color">Save 0%</span>
-                          </span> <span class="tab-price"> <span><del>$18.99</del></span> <span
-                              id="Offer3-bestValue-Price2" data-price="12">$12.00</span>
-                          </span> </label> </div>
-                    </div>
-                    <div class="frequency">
-                      <p class="frequency-op" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"> <u>Which
-                          frequency is right for
-                          me?</u> </p>
-                      <ul class="list-unstyled">
-                        <li><img src="images/check.svg"> No Set Term, Cancel Anytime</li>
-                        <li><img src="images/check.svg"> 100% Risk Free, Money Back Guarantee
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="next-prev-btn next-prev-btn-new d-flex mgTp"> <button id="backStep3-2"
-                    class="btn prev-btn"><img src="images/prev.svg" class="img-fluid"> </button>
-                  <button id="nextStep3-2" class="btn next-btn buttonBlue">NEXT STEP</button>
-                </div>
-              </div>
-            </div>
-            <!-- Third-Steps -->
-          </div>
-          <div class="manufactured">
-            <div class="row text-center">
-              <div class="col-md-3 col-3"> <img src="images/USA.png" class="img-fluid">
-                <p>MANUFACTURED<br>IN USA</p>
-              </div>
-              <div class="col-md-3 col-3"> <img src="images/time.png" class="img-fluid">
-                <p>FAST<br>SHIPPING</p>
-              </div>
-              <div class="col-md-3 col-3"> <img src="images/Free.png" class="img-fluid">
-                <p>FREE<br>DELIVERY</p>
-              </div>
-              <div class="col-md-3 col-3"> <img src="images/secure.png" class="img-fluid">
-                <p>SECURE<br>CHECKOUT</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 col-4 mx-auto mt-3"> <img src="images/bbb.png" class="img-fluid"> </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
   <!-- 2nd-product-checkBox -->
+
+  <!-- Products-->
 
   <!-- Guarantee -->
   <div class="guarantee">
 
     <div class="container">
       <div class="row">
-        <h2>YOMZ Picky Momz<br>60-Day Money Back<span class="mobile-ds-block">Guarantee</span> </h2>
+        <h2>YOMZ Picky Momz<br>90-Day Money Back<span class="mobile-ds-block">Guarantee</span> </h2>
       </div>
       <div class="col d-flex align-items-center">
         <div
@@ -1587,23 +1101,33 @@
           <img src="images/guarantee.png" alt="" class="img-fluid">
         </div>
         <div>
-          <p class="is-size-4">Choosing YOMZ to fight Hidden Hunger is a no-brainer. And no risk because of our
-            iron-clad Picky Momz 60-Day Money Back Guarantee. If you’re not happy with YOMZ, it hasn’t filled
-            your family’s nutrition gaps, or it hasn’t helped improve your overall health, then let us know within the
-            next 60 days.</p>
-          <p>We’ll refund every penny.<span class="mobile-block">No hassles, no questions.</span></p>
+          <p class="is-size-4">Your order today is protected by our iron-clad YOMZ Picky Momz 90-day <strong>100% Money
+              Back
+              Guarantee.</strong> If you’re not happy with <strong>YOMZ</strong>, or it hasn’t filled your family’s
+            nutrition gaps, or you simply
+            don’t feel your best with <strong>YOMZ</strong>, then let us know in the next <strong>90 days</strong>.
+            We’ll refund every penny.
+
+          </p>
+          <p class="is-size-4">No hassles, no questions.</p>
         </div>
       </div>
 
       <div class="row">
         <div class="col-md-8 mx-auto py-3 pt-4">
-          <img src="images/gor.png" alt="" class="img-fluid">
+          <img src="images/gor.jpg" alt="" class="img-fluid">
 
         </div>
-        <p class=" text-center d-block"><strong class="exblod">YOMZ is made in the USA</strong> with the finest domestic
-          or foreign ingredients.</p>
       </div>
 
+      <div class="row">
+        <div class="col-md-10 mx-auto">
+          <p class="text-center d-block next-font"><strong>YOMZ is proudly manufactured in the USA</strong> with the
+            finest premium ingredients in
+            an <strong>FDA-registered, cGMP-certified</strong> facility committed to upholding the highest
+            quality standards.</p>
+        </div>
+      </div>
     </div>
 
   </div>
@@ -1612,12 +1136,14 @@
 
   <!--Frequently Asked Questions -->
 
-  <div class="faqs">
+  <div class="faqs" id="faqs">
     <div class="container">
       <h2>Frequently Asked Questions</h2>
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-10 mx-auto">
           <div class="accordion" id="accordionExample">
+
+            <!-- Item 1 -->
             <div class="accordion-item">
               <h3 class="accordion-header exblod" id="headingOne">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
@@ -1634,6 +1160,8 @@
                 </div>
               </div>
             </div>
+
+            <!-- Item 2 -->
             <div class="accordion-item">
               <h3 class="accordion-header exblod" id="headingTwo">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -1660,6 +1188,8 @@
                 </div>
               </div>
             </div>
+
+            <!-- Item 3 -->
             <div class="accordion-item">
               <h3 class="accordion-header exblod" id="headingThree">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -1672,22 +1202,24 @@
                 <div class="accordion-body">
                   <p>The YOMZ mission is to end Hidden Hunger for 100 million people. The best way to reach that goal is
                     to ensure that each YOMZ gummy is crafted using the finest quality science-backed ingredients and
-                    state of the art, precision-engineered equipment in the strictest and most sterile conditions.
-                    Each YOMZ gummy is non-GMO, keto-friendly, vegan-friendly, gluten-free, and only 1g of sugar. Plus,
-                    every YOMZ gummy undergoes rigorous 3rd-party inspections and quality control to ensure high
-                    quality, purity, and potency. As always, we recommend speaking to your doctor about YOMZ before
-                    taking it.</p>
+                    state of the art, precision-engineered equipment in the strictest and most sterile conditions. Each
+                    YOMZ gummy is non-GMO, keto-friendly, vegan-friendly, gluten-free, and only 1g of sugar. Plus, every
+                    YOMZ gummy undergoes rigorous 3rd-party inspections and quality control to ensure high quality,
+                    purity, and potency. As always, we recommend speaking to your doctor about YOMZ before taking it.
+                  </p>
                 </div>
               </div>
             </div>
+
+            <!-- Item 4 -->
             <div class="accordion-item">
-              <h3 class="accordion-header exblod" id="headingThree">
+              <h3 class="accordion-header exblod" id="headingFour">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                   Who is the founder, Nastya?
                 </button>
               </h3>
-              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   <p>Nastya is the star of YouTube’s biggest kids series, Like Nastya. She founded YOMZ to help her fans
@@ -1698,14 +1230,15 @@
               </div>
             </div>
 
+            <!-- Item 5 -->
             <div class="accordion-item">
-              <h3 class="accordion-header exblod" id="headingThree">
+              <h3 class="accordion-header exblod" id="headingFive">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                   Which YOMZ is for me?
                 </button>
               </h3>
-              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   <p>YOMZ comes in 3 unforgettable flavors: Peachy, Strawbeary, and Beary Berry. You can choose your 3
@@ -1716,14 +1249,15 @@
               </div>
             </div>
 
+            <!-- Item 6 -->
             <div class="accordion-item">
-              <h3 class="accordion-header exblod" id="headingThree">
+              <h3 class="accordion-header exblod" id="headingSix">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  How many pack should I order?
+                  data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  How many packs should I order?
                 </button>
               </h3>
-              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   <p>One bag of YOMZ has 28 packs. Each bag contains 8 delicious, potent gummies and equals 1 serving
@@ -1733,14 +1267,15 @@
               </div>
             </div>
 
+            <!-- Item 7 -->
             <div class="accordion-item">
-              <h3 class="accordion-header exblod" id="headingThree">
+              <h3 class="accordion-header exblod" id="headingSeven">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
                   When is the best time to take YOMZ?
                 </button>
               </h3>
-              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   <p>Anytime you and your family feel it’s time to enjoy a delicious, nutritious snack. By a wide
@@ -1750,56 +1285,51 @@
               </div>
             </div>
 
+            <!-- Item 8 -->
             <div class="accordion-item">
-              <h3 class="accordion-header exblod" id="headingThree">
+              <h3 class="accordion-header exblod" id="headingEight">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Is this a one-time payment? Or is it subscription-only?
+                  data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                  Is this a one-time payment?
                 </button>
               </h3>
-              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <p>The best way to truly reap the benefits of YOMZ is to enjoy it daily. Hidden Hunger doesn’t go away
-                    on its own. Nutrition gaps don’t close on their own. This only happens by prioritizing your
-                    nutrition every day. That’s why we’ve made YOMZ so affordable for families who have a YOMZ
-                    subscription. Their orders arrive reliably and regularly. No need to remember to order every month.
-                    That said, there is a one-time only payment that you can use every time you order. But unless you
-                    simply like throwing money away, going subscription is best for your bank account. The savings are
-                    big. And since you have a family to consider too, we’ve made it so the more order, the more you
-                    save.</p>
+                  <p>Yes, your order today is a one-time payment with no auto-ship or hidden charges.</p>
                 </div>
               </div>
             </div>
 
+            <!-- Item 9 -->
             <div class="accordion-item">
-              <h3 class="accordion-header exblod" id="headingThree">
+              <h3 class="accordion-header exblod" id="headingNine">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  What if YOMZ isn't not for me and my family?
-
+                  data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                  What if YOMZ isn't for me and my family?
                 </button>
               </h3>
-              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   <p>That’s OK. It happens. Delicious, nutritious, and easy to take gummy snacks are not for everyone.
                     So every bag of YOMZ Gummies is backed by our 60-Day Picky Momz 100% Money-Back Guarantee. If for
-                    any reason, YOMZ is everything you thought it would be, simply reach out to us and we’ll refund your
-                    money on the spot. No hassles, no guilt, no risk. All we ask is that you share any uneaten YOMZ
+                    any reason, YOMZ isn't everything you thought it would be, simply reach out to us and we’ll refund
+                    your money on the spot. No hassles, no guilt, no risk. All we ask is that you share any uneaten YOMZ
                     Gummies with someone who might enjoy a tasty, good-for-you snack.</p>
                 </div>
               </div>
             </div>
 
+            <!-- Item 10 -->
             <div class="accordion-item">
-              <h3 class="accordion-header exblod" id="headingThree">
+              <h3 class="accordion-header exblod" id="headingTen">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
                   What do I do now?
                 </button>
               </h3>
-              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   <p>Why not try YOMZ? There’s no risk on your part with our 60-day Picky Momz 100% Money-Back
@@ -1811,13 +1341,147 @@
                 </div>
               </div>
             </div>
+
           </div>
         </div>
+
       </div>
     </div>
   </div>
 
   <!--Frequently Asked Questions -->
+
+  <!-- Products-->
+  <section class="section is-paddingless buying-background b-section" id="order">
+    <div class="container container-limit">
+      <h2 class="title-head1">Try YOMZ & Save BIG!</h2>
+      <p class="exblod"><i>The more you buy, the more you save</i></p>
+    </div>
+  </section>
+  <div class="off-white-background" style="border-top:none;">
+    <div class="buying-background p-4 g-arrow" style="max-width:600px;top:-1px;"></div>
+  </div>
+
+  <!-- 2nd-product-checkBox -->
+  <section class="section off-white-background pt-2 pb-4 px-2" style="border-top:none;">
+    <div class="container pt-1 container-limit">
+      <div class="row mx-auto justify-content-center">
+        <div class="col-md-4 order-2 order-md-1">
+          <div class="gumm-bag orl basic">
+            <span class="top-basic bsred">BASIC</span>
+            <div class="row">
+              <div class="column leftwd col-md-12 col-6 padding-lft">
+                <span class="bag-heading">
+                  <h3 class="exblod">1 PERSON</h3>
+                  <h4 class="exblod">30 Day Supply</h4>
+                </span>
+                <span class="products-image">
+                  <img src="images/bag-1.png" class="img-fluid d-none d-sm-none d-lg-block">
+                  <img src="images/bag-1.1.png" class="img-fluid d-sm-block d-lg-none">
+                  <!-- <span class="badge-offer pulse">
+                    <p class="exblod"><span>40%</span>OFF</p>
+                  </span> -->
+                </span>
+              </div>
+              <div class="column text-center col-md-12 col-6 padding-lft">
+                <del class="del-price">$79.99</del>
+                <span class="price pricea exblod">$47.99</span>
+                <span class="exblod text-center perday">$1.71 per day</span>
+                <div class="footer-tag">
+                  <a href="#" class="btn"><img src="images/buy-btn.png" class="img-fluid"></a>
+                  <span class="payment-image">
+                    <img src="images/payment.png" class="img-fluid">
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-md-4 order-1 order-md-2">
+          <div class="gumm-bag orl popular">
+            <span class="top-basic bsred">MOST POPULAR</span>
+            <div class="row">
+              <div class="column  leftwd col-md-12 col-6 padding-lft">
+                <span class="bag-heading">
+                  <h3 class="exblod">3 PEOPLE</h3>
+                  <h4 class="exblod">30 Day Supply Each</h4>
+                </span>
+                <span class="products-image">
+                  <img src="images/bag-3.png" class="img-fluid d-none d-sm-none d-lg-block">
+                  <img src="images/bag-3.1.png" class="img-fluid d-sm-block d-lg-none">
+
+                  <!-- <span class="badge-offer pulse">
+                    <p class="exblod"><span>46%</span>OFF</p>
+                  </span> -->
+                </span>
+              </div>
+              <div class="column text-center leftwd col-md-12 col-6 padding-lft">
+                <del class="del-price">$239.97</del>
+                <span class="price pricea exblod">$129.58</span>
+                <span class="exblod text-center perday">$1.54 per day</span>
+                <ul class="ullist ">
+                  <li class="bounes"><i class="fas fa-check-circle"></i> 3 FREE BONUSES!</li>
+                  <li class="shippingus"><i class="fas fa-check-circle"></i> FREE US SHIPPING!</li>
+                </ul>
+                <div class="footer-tag" style="position:relative">
+                  <a href="#" class="btn"><img src="images/buy-btn.png" class="img-fluid"></a>
+                  <div>
+                    <div class="floating-hand fhc"></div>
+                  </div>
+                  <span class="payment-image">
+                    <img src="images/payment.png" class="img-fluid">
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-md-4 order-1 order-md-3">
+          <div class="gumm-bag orl bundle">
+            <span class="top-basic bsred">BUNDLE</span>
+            <div class="row">
+              <div class="column leftwd col-md-12 col-6 padding-lft">
+                <span class="bag-heading">
+                  <h3 class="exblod">2 PEOPLE</h3>
+                  <h4 class="exblod">30 Day Supply Each</h4>
+                </span>
+                <span class="products-image">
+                  <img src="images/bag-2.png" class="img-fluid d-none d-sm-none d-lg-block">
+                  <img src="images/bag-2.1.png" class="img-fluid d-sm-block d-lg-none">
+
+                  <!-- <span class="badge-offer pulse">
+                    <p class="exblod"><span>43%</span>OFF</p>
+                  </span> -->
+                </span>
+              </div>
+              <div class="column text-center col-md-12 col-6 padding-lft">
+                <del class="del-price">$159.98</del>
+                <span class="price pricea exblod">$91.20</span>
+                <span class="exblod text-center perday">$1.63 per day</span>
+                <ul class="ullist ">
+                  <li class="bounes"><i class="fas fa-check-circle"></i> 3 FREE BONUSES!</li>
+                </ul>
+                <div class="footer-tag">
+                  <a href="#" class="btn"><img src="images/buy-btn.png" class="img-fluid"></a>
+                  <span class="payment-image">
+                    <img src="images/payment.png" class="img-fluid">
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 2nd-product-checkBox -->
+
+  <!-- Products-->
 
   <!--Scientific References -->
 
@@ -1830,10 +1494,10 @@
           <img src="images/sci-1.jpg" alt="" class="img-fluid">
         </div>
         <div class="col-md-3 col-6 mb-2">
-          <img src="images/sci-2.jpg" alt="" class="img-fluid">
+          <img src="images/sci-3.jpg" alt="" class="img-fluid">
         </div>
         <div class="col-md-3 col-6 mb-2">
-          <img src="images/sci-3.jpg" alt="" class="img-fluid">
+          <img src="images/sci-2.jpg" alt="" class="img-fluid">
         </div>
         <div class="col-md-3 col-6 mb-2">
           <img src="images/sci-4.jpg" alt="" class="img-fluid">
@@ -1929,6 +1593,59 @@
   </footer>
   <!--Footer -->
 
+  <!-- How Large is Your Household?  popup--> <!-- Modal -->
+  <div class="modal fade household-popup" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header"> <button type="button" class="btn-close" data-bs-dismiss="modal"
+            aria-label="Close"></button> </div>
+        <div class="modal-body">
+          <h4>How Large is Your Household?</h4>
+          <div class="row">
+            <div class="col-md-2 px-1">
+              <div class="household household-slt">
+                <p class="people">3 People</p>
+                <p class="month">3 Packs Every 1 Month</p>
+              </div>
+            </div>
+            <div class="col-md-2 px-1">
+              <div class="household">
+                <p class="people">2 People</p>
+                <p class="month">2 Packs Every 1 Month</p>
+              </div>
+            </div>
+            <div class="col-md-2 px-1">
+              <div class="household">
+                <p class="people">1 People</p>
+                <p class="month">1 Pack Every 1 Month</p>
+              </div>
+            </div>
+            <div class="col-md-2 px-1">
+              <div class="household">
+                <p class="people">4 People</p>
+                <p class="month">4 Packs Every 1 Month</p>
+              </div>
+            </div>
+            <div class="col-md-2 px-1">
+              <div class="household">
+                <p class="people">5 People</p>
+                <p class="month">5 Packs Every 1 Month</p>
+              </div>
+            </div>
+            <div class="col-md-2 px-1">
+              <div class="household">
+                <p class="people">6 People</p>
+                <p class="month">6 Packs Every 1 Month</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- How Large is Your Household? popup-->
+
   <!-- import scripts -->
   <script src='https://code.jquery.com/jquery-3.5.1.min.js'></script>
   <script src='https://unpkg.com/swiper@6.5.4/swiper-bundle.min.js'></script>
@@ -1939,6 +1656,7 @@
   <script src="./js/productCheckbox2.js"></script>
   <script src="./js/carousel.js"></script>
   <script src="./js/utils.js"></script>
+
 </body>
 
 </html>

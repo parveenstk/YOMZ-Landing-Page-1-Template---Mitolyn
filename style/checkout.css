@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+      font-family: "Roboto", sans-serif;
+}
+
+
+
+.container {
+    max-width: 994px;
+}
+
+.box-area{    padding: 1rem 1.5rem;        margin-bottom: 16px;
+        border-bottom: 2px solid #CDCDCD;
+        border: 2px solid #CDCDCD;
+        border-radius: 4px;} 
+
+.box-area h3 {
+        font-size: 1.25rem;
+    font-weight: 600;
+    color: #000000;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 12px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    background-color: transparent;
+}
+
+.box-areaaccordion{padding:0rem 0rem;  }
+.box-area-p-0 .payment-form{padding: 1rem 1.5rem;}
+.box-areaaccordion .heading{padding: 1rem 1.5rem;  }
+
+.box-area-p-0{padding: 0px;}
+
+
+.box-area .accordion .form-check-label img{width: 27%;}
+
+.accordion-button:not(.collapsed){background:none; box-shadow:none;}
+
+.accordion-button::after{display: none;}
+
+.form-check{width: 100%;}
+.form-check-label{width: 100%;}
+.lebel-text{font-size: 18px; font-weight: 600;}
+
+.form-check-input{    width: 1.1em;
+    height: 1.1em;}
+
+.gap-manation{margin-top: 2px;}
+
+
+.mui-17zii2p{    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex
+;
+    -webkit-box-flex-wrap: nowrap;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;}
+
+
+
+/******************************************* all section media *********************************/
+
+@media screen and (max-width: 767px) {}
+
+
+/******************************************* all section media *********************************/
