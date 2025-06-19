@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
 @font-face {
   font-family: 'century_gothic_paneuropeanXBd';
   src: url("../font/SuperCaramel.woff2") format("woff2"), url("../font/SuperCaramel.woff") format("woff");
@@ -52,8 +54,6 @@
   font-style: normal;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-
 @font-face {
   font-family: 'georgiaregular';
   src: url('../font/georgia-webfont.woff2') format('woff2'),
@@ -65,16 +65,14 @@
 }
 
 @font-face {
-    font-family: 'georgiabold';
-    src: url('../font/georgiab-webfont.woff2') format('woff2'),
-         url('../font/georgiab-webfont.woff') format('woff'),
-         url('../font/georgiab-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'georgiabold';
+  src: url('../font/georgiab-webfont.woff2') format('woff2'),
+    url('../font/georgiab-webfont.woff') format('woff'),
+    url('../font/georgiab-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 
 }
-
-
 
 #bonuses,
 #about,
@@ -117,8 +115,6 @@ body {
 
 /****************************** header *****************************/
 
-
-
 .header {
   background-color: #fff !important;
   -webkit-box-shadow: 0 3px 11px 0 rgba(0, 0, 0, .58);
@@ -155,7 +151,6 @@ body {
   font-weight: 700;
   font-size: 20px;
 }
-
 
 /****************************** header *****************************/
 /****************************** Banner *****************************/
@@ -249,7 +244,6 @@ body {
 }
 
 /****************************** Banner *****************************/
-
 
 /****************************** Products *****************************/
 .buying-background {
@@ -482,7 +476,6 @@ span.price.pricea {
   }
 }
 
-
 .badge-offer span {
   display: block;
   line-height: 10px !important;
@@ -518,8 +511,6 @@ span.price.pricea {
   color: #E6193C;
 }
 
-
-
 .popular .bsred {
   background: #196580;
 }
@@ -539,7 +530,6 @@ span.price.pricea {
 .popular .bounes {
   color: #196580;
 }
-
 
 .bundle .bsred {
   background: #1f94bd;
@@ -569,13 +559,10 @@ span.price.pricea {
   color: #1f94bd;
 }
 
-
 .fhc {
-
 
   background-image: url(../images/hand-cursor.png) !important;
 }
-
 
 .floating-hand {
   width: 100%;
@@ -656,7 +643,6 @@ span.price.pricea {
     transform: translate(0, 0)
   }
 }
-
 
 /****************************** Products *****************************/
 /****************************** Products *****************************/
@@ -1703,8 +1689,6 @@ p.people {
   max-width: 18%;
 }
 
-
-
 /*banner*/
 .smalgp {
   padding-left: 310px;
@@ -1788,7 +1772,6 @@ p.people {
   background-position: center;
   background-repeat: no-repeat;
 }
-
 
 .sqr-icons ul li:before {
   display: none;
@@ -2131,7 +2114,6 @@ p.people {
 /****************************** bonuses *****************************/
 /****************************** -That’s why there’s… *****************************/
 
-
 /****************************** -That’s why there’s… *****************************/
 /****************************** Shipping *****************************/
 .shipping {
@@ -2166,7 +2148,6 @@ p.people {
 .scienceexpert {
   padding: 40px 0;
 }
-
 
 .complese {
   font-family: 'century_gothic_paneuropean_Rg';
@@ -2242,9 +2223,7 @@ p.people {
   margin-bottom: 0px;
 }
 
-
 /****************************** Offering YOMZ  *****************************/
-
 
 /****************************** That’s why there’s… *****************************/
 .thatswhy {
@@ -2343,7 +2322,6 @@ p.people {
   font-size: 20px;
   margin-bottom: 7px;
 }
-
 
 .featured-image-with-text__text ul li:before {
   content: "";
@@ -2444,7 +2422,6 @@ p.vrify-reviews {
   background-size: 100%;
   border-radius: 12px;
 }
-
 
 .reviews-images {
   margin-bottom: 40px;
@@ -2607,7 +2584,6 @@ footer p {
     height: 25px;
   }
 
-
   .reviews-images .col-3 {
     padding-left: 0px;
     padding-right: 0px;
@@ -2633,7 +2609,6 @@ footer p {
     padding-bottom: 0px !important;
   }
 
-
   #bonuses,
   #about,
   #ingredients,
@@ -2646,7 +2621,6 @@ footer p {
     scroll-margin-block-end: 50px;
     /*Adds margin to the bottom of the viewport*/
   }
-
 
   .header {
     padding-left: 0px !important;
@@ -2695,9 +2669,6 @@ footer p {
     margin-left: 10px;
     height: 40px;
   }
-
-
-
 
   .pading-rote2 .product-slider img {
     padding-left: 45px;
@@ -4052,10 +4023,7 @@ footer p {
 /*Media*/
 /******************************************* all section media *********************************/
 
-
-
 @media screen and (max-width: 767px) {
-
 
   .top-reviews {
     padding-top: 20px;
@@ -4065,7 +4033,6 @@ footer p {
     width: 1.1em;
     height: 1.1em;
   }
-
 
   .banner {
     padding: 20px 0px 0px !important;
@@ -4132,8 +4099,6 @@ footer p {
     padding: 20px 0;
   }
 
-
-
   .offer-check-img .bhimage {
     position: absolute;
     width: 90px;
@@ -4179,7 +4144,6 @@ footer p {
 
   }
 
-
   .bonuses h3 {
     font-size: calc(8.4vw - 0px) !important;
     line-height: calc(1em + 1vw) !important;
@@ -4220,7 +4184,7 @@ footer p {
     line-height: calc(1em + 1vw) !important;
     margin-bottom: 10px;
     text-align: center;
-            font-size: 1.5rem !important;
+    font-size: 1.5rem !important;
   }
 
   .inside {
@@ -4232,8 +4196,6 @@ footer p {
     padding-left: 10px;
     padding-right: 10px;
   }
-
-
 
   .ins-header h3 {
     font-size: calc(8.9vw - 0px) !important;
@@ -4266,7 +4228,6 @@ footer p {
     display: block;
   }
 
-
   .ins-data p {
     font-size: 20px;
     line-height: normal;
@@ -4283,9 +4244,10 @@ footer p {
     word-break: break-all;
   }
 
-
-  .subhead-tag{font-size: calc(3.4vw - 0px) !important;
-    line-height: calc(1em + 1vw) !important;}
+  .subhead-tag {
+    font-size: calc(3.4vw - 0px) !important;
+    line-height: calc(1em + 1vw) !important;
+  }
 
   .ins-data .list-done {
     margin-top: 8px;
@@ -4306,10 +4268,8 @@ footer p {
     background: #eeeeee;
   }
 
-
-
   .scienceexpert h4 {
-    font-size: calc(6.7vw - 0px) !important;
+    font-size: calc(8.0vw - 0px) !important;
     line-height: calc(1em + 1vw) !important;
     margin-bottom: 5px;
     text-align: center;
@@ -4327,20 +4287,14 @@ footer p {
     margin-bottom: 8px;
   }
 
-
   .offeringyomz {
     padding: 30px 0;
   }
-
-
 
   .complese {
     font-size: calc(5.2vw - 0px) !important;
     line-height: calc(1em + 1vw) !important;
   }
-
-
-
 
   .bouns-box .bnrol {
     width: 80%;
@@ -4408,8 +4362,6 @@ footer p {
     margin-bottom: 20px;
   }
 
-
-
   .listdone-gap li {
     line-height: normal;
   }
@@ -4472,8 +4424,6 @@ footer p {
   .review-inner .none-p {
     margin-top: 5px !important;
   }
-
-
 
   .reviews .clt-face {
     width: 18%;
@@ -4641,13 +4591,10 @@ footer p {
     padding-top: 10px;
   }
 
-
   .products-image .badge-offer p {
     font-size: 10px !important;
     line-height: 11px !important;
   }
-
-
 
   .perday {
     background: #ec4f58;
@@ -4679,7 +4626,6 @@ footer p {
     margin-bottom: 10px;
   }
 
-
   .off-white-background .col-md-4 .row {
     padding-left: 0px;
     padding-right: 20px;
@@ -4687,7 +4633,6 @@ footer p {
     padding-top: 5px;
     padding-bottom: 10px;
   }
-
 
   .ullist {
     font-size: calc(5vw - 0px) !important;
@@ -4723,7 +4668,6 @@ footer p {
     margin-bottom: 0px;
     margin-top: 20px;
 
-
   }
 
   footer ul.list-unstyled li {
@@ -4747,7 +4691,7 @@ footer p {
 
 @media screen and (max-width: 404px) {
 
- h3.newdatefont {
+  h3.newdatefont {
     font-size: calc(5.5vw - 0px) !important;
   }
 
@@ -4759,23 +4703,24 @@ footer p {
     padding: 30px 5px 30px;
   }
 
-  .shipping p{font-size: 20px;}
+  .shipping p {
+    font-size: 20px;
+  }
 }
-
 
 @media screen and (max-width: 325px) {
-.shipping p{font-size: 18px;}
-
-}
-
-
-@media screen and (max-width: 304px) {
-
- h3.newdatefont {
-    font-size: calc(5vw - 0px) !important;
+  .shipping p {
+    font-size: 18px;
   }
 
 }
 
+@media screen and (max-width: 304px) {
+
+  h3.newdatefont {
+    font-size: calc(5vw - 0px) !important;
+  }
+
+}
 
 /******************************************* all section media *********************************/
