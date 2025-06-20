@@ -221,12 +221,18 @@ body {
   display: block;
 }
 
+#myVideo2 {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .play-pause-btn {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 42%;
-  max-width: 120px;
+  width: 22%;
+  max-width: 70px;
   transform: translate(-50%, -50%);
   cursor: pointer;
   z-index: 10;
@@ -4025,6 +4031,11 @@ footer p {
 
 @media screen and (max-width: 767px) {
 
+  .banner-left-side {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
   .top-reviews {
     padding-top: 20px;
   }
@@ -4035,7 +4046,7 @@ footer p {
   }
 
   .banner {
-    padding: 20px 0px 0px !important;
+    padding: 20px 0px 20px !important;
   }
 
   .right-side-info p {
@@ -4269,7 +4280,7 @@ footer p {
   }
 
   .scienceexpert h4 {
-    font-size: calc(8.0vw - 0px) !important;
+    font-size: calc(8.3vw - 0px) !important;
     line-height: calc(1em + 1vw) !important;
     margin-bottom: 5px;
     text-align: center;
@@ -4715,10 +4726,23 @@ footer p {
 
 }
 
+@media screen and (max-width: 320px) {
+  .scienceexpert h4 {
+    font-size: calc(8vw - 0px) !important;
+    line-height: calc(1em + 1vw) !important;
+  }
+
+}
+
 @media screen and (max-width: 304px) {
 
   h3.newdatefont {
     font-size: calc(5vw - 0px) !important;
+  }
+
+  .scienceexpert h4 {
+    font-size: calc(8vw - 0px) !important;
+    line-height: calc(1em + 1vw) !important;
   }
 
 }
