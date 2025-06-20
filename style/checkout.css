@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
-body{
-      font-family: "Roboto", sans-serif;
+
+body {
+    font-family: "Roboto", sans-serif;
 }
 
 
@@ -10,13 +12,28 @@ body{
     max-width: 994px;
 }
 
-.box-area{    padding: 1rem 1.5rem;        margin-bottom: 16px;
-        border-bottom: 2px solid #CDCDCD;
-        border: 2px solid #CDCDCD;
-        border-radius: 4px;} 
+.box-area {
+    padding: 1rem 1.5rem;
+    margin-bottom: 16px;
+    border-bottom: 2px solid #CDCDCD;
+    border: 2px solid #CDCDCD;
+    border-radius: 4px;
+}
+
+
+.box-area-top {
+    margin-bottom: 16px;
+    border-bottom: 2px solid #CDCDCD;
+    border: 2px solid #CDCDCD;
+    border-radius: 4px;
+}
+
+.box-area-1 {
+    padding: 1rem 1.5rem;
+}
 
 .box-area h3 {
-        font-size: 1.25rem;
+    font-size: 1.25rem;
     font-weight: 600;
     color: #000000;
     width: 100%;
@@ -32,34 +49,68 @@ body{
     background-color: transparent;
 }
 
-.box-areaaccordion{padding:0rem 0rem;  }
-.box-area-p-0 .payment-form{padding: 1rem 1.5rem;}
-.box-areaaccordion .heading{padding: 1rem 1.5rem;  }
+.box-areaaccordion {
+    padding: 0rem 0rem;
+}
 
-.box-area-p-0{padding: 0px;}
+.box-area-p-0 .payment-form {
+    padding: 1rem 1.5rem;
+}
 
+.box-areaaccordion .heading {
+    padding: 1rem 1.5rem;
+}
 
-.box-area .accordion .form-check-label img{width: 27%;}
-
-.accordion-button:not(.collapsed){background:none; box-shadow:none;}
-
-.accordion-button::after{display: none;}
-
-.form-check{width: 100%;}
-.form-check-label{width: 100%;}
-.lebel-text{font-size: 18px; font-weight: 600;}
-
-.form-check-input{    width: 1.1em;
-    height: 1.1em;}
-
-.gap-manation{margin-top: 2px;}
+.box-area-p-0 {
+    padding: 0px;
+}
 
 
-.mui-17zii2p{    display: -webkit-box;
+.heading h3 {
+    margin-bottom: 0px;
+}
+
+.box-area .accordion .form-check-label img {
+    width: 27%;
+}
+
+.accordion-button:not(.collapsed) {
+    background: none;
+    box-shadow: none;
+}
+
+.accordion-button::after {
+    display: none;
+}
+
+.form-check {
+    width: 100%;
+}
+
+.form-check-label {
+    width: 100%;
+}
+
+.lebel-text {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.form-check-input {
+    width: 1.1em;
+    height: 1.1em;
+}
+
+.gap-manation {
+    margin-top: 2px;
+}
+
+
+.mui-17zii2p {
+    display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex
-;
+    display: flex;
     -webkit-box-flex-wrap: nowrap;
     -webkit-flex-wrap: nowrap;
     -ms-flex-wrap: nowrap;
@@ -74,13 +125,235 @@ body{
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
-    justify-content: center;}
+    justify-content: center;
+}
 
+
+
+.summery-price-data {
+    font-family: "Figtree", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.total-price {
+    font-size: 20px;
+}
+
+.summery-price-data hr {
+    margin: 0.4em 0;
+}
+
+.off-color {
+    color: #15b400
+}
+
+.strike-red {
+    text-decoration: line-through;
+    text-decoration-color: red;
+    text-decoration-thickness: 2px;
+}
+
+.terms {
+    font-size: 13px;
+    color: #414141;
+}
+
+.checkout .form-floating .form-control {
+    border: 2px solid #868686;
+}
+
+.checkout .form-floating select {
+    border: 2px solid #868686;
+}
+
+
+.people-number p {
+    font-size: 18px;
+    color: #09509c;
+}
+
+.checkout-btn button.paypal-button {
+    background: #ffcf66;
+    color: #003087;
+    border: none;
+    width: 100%;
+    border-radius: 8px;
+    font-weight: 800;
+    min-height: 3.4rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+span.paypal-btn-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.paypal-btn-inner img {
+    width: 7.125rem;
+    height: auto;
+}
+
+.paypal-btn-inner {
+    font-size: 1.5rem;
+}
+
+.searcue {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.searcue img {
+    width: 300px;
+}
+
+.bottom-pra {
+    text-align: center;
+}
+
+.bottom-pra {
+    margin: 10px 0;
+    ;
+}
+
+.lock-area p {
+    margin-bottom: 0px;
+    font-weight: 600;
+}
+
+.lock-area {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.border-box-area {
+    background: rgb(227, 227, 232);
+    padding: 12px;
+}
+
+footer {
+    padding: 40px 0 0;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+p.head-info {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.inr-pra {
+    font-size: 14px;
+}
+
+.footer-info ul {
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.lastftr {
+    padding: 15px 10px;
+    background: #0153a0;
+    text-align: center;
+}
+
+.lastftr {
+    margin-top: 10px;
+}
+
+.lastftr p {
+    color: #fff;
+    margin-bottom: 0px;
+    font-size: 12px;
+}
+
+
+
+.image-gredient {
+    background: #0d98b8;
+    background: -moz-radial-gradient(circle, #12b2eb 41%, #004293 100%);
+    background: -webkit-radial-gradient(circle, #12b2eb 41%, #004293 100%);
+    background: radial-gradient(circle, #12b2eb 41%, #004293 100%);
+}
 
 
 /******************************************* all section media *********************************/
 
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 767px) {
+
+    .banner {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .mobile-pd {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .maange-role-padding .pxy {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .topbox {
+        border-top: 2px solid #CDCDCD;
+        border-left: 2px solid #CDCDCD;
+        border-right: 2px solid #CDCDCD;
+    }
+
+
+    .box-area {
+        border-bottom: 0px solid #CDCDCD;
+        border: 0px solid #CDCDCD;
+    }
+
+    .searcue {
+        text-align: center;
+        margin: 0px 0;
+    }
+
+    .box-areaaccordion .heading {
+        padding: 0.5rem 1.5rem 1rem;
+    }
+
+    .box-area {
+        margin-bottom: 0px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .accordion-body {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .box-area-p-0 .payment-form {
+        padding: 0rem 1rem;
+    }
+
+    footer {
+        padding: 0px 0 0;
+    }
+
+    .footer-info {
+        margin-bottom: 20px;
+    }
+
+    .bottom-pra {
+        margin: 20px 0 10px;
+        line-height: normal;
+    }
+
+}
 
 
 /******************************************* all section media *********************************/

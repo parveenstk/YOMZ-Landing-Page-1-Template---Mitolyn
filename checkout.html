@@ -14,6 +14,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -21,22 +26,123 @@
     <div class="checkout">
         <div class="container">
 
+
             <!-- banner -->
             <div class="row">
                 <div class="banner">
+                    <img src="images/chekout-banner.jpg" alt="" class="img-fluid d-none d-sm-none d-lg-block">
+                    <img src="images/chekout-banner-mobile.jpg" alt="" class="img-fluid d-sm-block d-lg-none">
                 </div>
             </div>
             <!-- banner -->
 
+            <div class="row">
+                <div class="col-12 mobile-pd">
+                    <div class="border-box-area">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="lock-area">
+                    <p><i class="fas fa-lock"></i> Secure Checkout</p>
+                </div>
+            </div>
+
+
             <!-- Checkout -->
             <form>
-                <div class="row">
+                <div class="row maange-role-padding">
 
-                    <div class="col-md-6">
+                    <div class="col-md-6 pxy topbox">
+                        <div class="box-area-1 d-sm-block d-lg-none">
+                            <div class="d-sm-block d-lg-none">
+                                <div class="people-number">
+                                    <p class="text-center"><i class="fas fa-eye"></i> <strong>35 people</strong> are
+                                        online
+                                        now on this page!</p>
+                                </div>
+
+                                <div class="cart-summerty">
+                                    <div class="products-image">
+                                        <img src="images/banner-bag.png" class="img-fluid">
+                                    </div>
+
+                                    <div class="summery-data text-center">
+                                        <p class="mb-0"><strong>Cart Summary</strong></p>
+                                        <h4 class="mb-0"><strong> 3 People - 3 Bags</strong></h4>
+                                        <p style="text-align:center"><span
+                                                style="background-color:rgba( 15 , 128 , 0 , 1 );color:rgba( 255 , 255 , 255 , 1 );font-family:'roboto' , sans-serif;font-size:14px"><strong>&nbsp;9.5&nbsp;</strong></span><span
+                                                style="background-color:rgba( 255 , 255 , 255 , 0.01 );font-family:'roboto' , sans-serif;font-size:14px"><strong>
+                                                </strong></span><span
+                                                style="background-color:rgba( 255 , 255 , 255 , 0.01 );color:rgba( 15 , 128 , 0 , 1 );font-family:'roboto' , sans-serif;font-size:14px"><strong>Excellent!</strong></span><span
+                                                style="font-family:'roboto' , sans-serif;font-size:14px"> </span><span
+                                                style="color:rgba( 132 , 132 , 132 , 1 );font-family:'roboto' , sans-serif;font-size:14px">(39,973
+                                                reviews)</span></p>
+                                    </div>
+
+
+                                    <div class="summery-price-data">
+                                        <div class="com-font normal">
+                                            <p class="mb-0 d-flex justify-content-between">
+                                                <span>Normally</span><span><del class="strike-red">$1182</del></span>
+                                            </p>
+                                        </div>
+                                        <div class="com-font coupon">
+                                            <p class="mb-0 d-flex justify-content-between">
+                                                <span>Coupon: <span class="off-color"><u>75%OFF</u></span></span>
+                                                <span class="off-color">$888</span>
+                                            </p>
+                                        </div>
+                                        <hr>
+                                        <div class="total-price">
+                                            <p class="mb-0 d-flex justify-content-between">
+                                                <span>Today's Price</span>
+                                                <span>$294</span>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="subtotal mt-3">
+                                        <p class="mb-0 d-flex justify-content-between">
+                                            <span>Subtotal</span>
+                                            <span>$28.284,25</span>
+                                        </p>
+                                        <p class="mb-0 d-flex justify-content-between">
+                                            <span>Envio e processamento</span>
+                                            <span>$1.919,28</span>
+                                        </p>
+                                        <p class="mb-0 d-flex justify-content-between">
+                                            <span>Imposto</span>
+                                            <span>$6.818,51</span>
+                                        </p>
+                                        <p class="mb-0 d-flex justify-content-between">
+                                            <span>TOTAL</span>
+                                            <span>$37.022,04</span>
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
                         <div class="box-area">
                             <h3>Customer Information</h3>
-                            <div class="form-floating mb-3">
+                            <div class="form-floating mb-1">
                                 <input type="email" class="form-control" id="floatingInput"
                                     placeholder="name@example.com">
                                 <label for="floatingInput">Email address</label>
@@ -58,8 +164,8 @@
                                             aria-controls="collapseOne">
                                             <div class="form-check">
                                                 <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                                    id="flexRadioDefault2">
-                                                <label class="form-check-label" for="flexRadioDefault2">
+                                                    id="flexRadioDefault1">
+                                                <label class="form-check-label" for="flexRadioDefault1">
                                                     <img src="images/PayPal.svg">
                                                 </label>
                                             </div>
@@ -134,9 +240,13 @@
                                     </div>
                                 </div>
 
+
                             </div>
 
+
+
                         </div>
+
 
                         <div class="box-area box-area-p-0">
 
@@ -144,7 +254,7 @@
                                 <h3>Shipping Information</h3>
                                 <div class="row">
                                     <div class="col-12">
-                                        <div class="form-floating mb-3">
+                                        <div class="form-floating mahesmall-font mb-3">
                                             <select class="form-select" id="floatingSelect"
                                                 aria-label="Floating label select example">
                                                 <option selected>Country</option>
@@ -303,14 +413,14 @@
                                 </div>
 
                                 <div class="row">
-                                    <div class="col-6">
+                                    <div class="col-md-6">
                                         <div class="form-floating mb-3">
                                             <input type="text" class="form-control" id="floatingInput"
                                                 placeholder="City">
                                             <label for="floatingInput">City</label>
                                         </div>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-md-6">
                                         <div class="form-floating mb-3">
                                             <input type="text" class="form-control" id="floatingInput"
                                                 placeholder="Postal Code">
@@ -320,120 +430,204 @@
 
                                 </div>
 
-                            </div>
-                            <img src="images/reviews.jpg" alt="" class="img-fluid">
-                        </div>
+                                <hr>
 
-                    </div>
+                                <p class="text-center mt-4 terms">By clicking Pay Now below, I agree to the <a
+                                        href="#">Terms of Sale</a>.</p>
+                                <div class="checkout-btn">
+                                    <button class="button paypal-button" tabindex="0" type="submit" id="CB-button-pay">
+                                        <span class="paypal-btn-inner"> Continue to <img
+                                                src="images/PayPal-checkout.svg" alt=""></span>
 
-                    <div class="col-md-6">
-                        <div class="box-area">
-                            <div class="people-number">
-                                <p class="text-center"><i class="fas fa-eye"></i> <strong>35 people</strong> are online
-                                    now on this page!</p>
-                            </div>
-
-                            <div class="cart-summerty">
-                                <div class="products-image">
-                                    <img src="images/banner-bag.png" class="img-fluid">
+                                    </button>
                                 </div>
-
-                                <div class="summery-data text-center">
-                                    <p class="mb-0">Cart Summary</p>
-                                    <h4 class="mb-0"><strong> Mitolyn - 6 Bottles</strong></h4>
-                                    <p style="text-align:center"><span
-                                            style="background-color:rgba( 15 , 128 , 0 , 1 );color:rgba( 255 , 255 , 255 , 1 );font-family:'roboto' , sans-serif;font-size:14px"><strong>&nbsp;9.5&nbsp;</strong></span><span
-                                            style="background-color:rgba( 255 , 255 , 255 , 0.01 );font-family:'roboto' , sans-serif;font-size:14px"><strong>
-                                            </strong></span><span
-                                            style="background-color:rgba( 255 , 255 , 255 , 0.01 );color:rgba( 15 , 128 , 0 , 1 );font-family:'roboto' , sans-serif;font-size:14px"><strong>Excellent!</strong></span><span
-                                            style="font-family:'roboto' , sans-serif;font-size:14px"> </span><span
-                                            style="color:rgba( 132 , 132 , 132 , 1 );font-family:'roboto' , sans-serif;font-size:14px">(39,973
-                                            reviews)</span></p>
+                                <img src="images/check-pay.png" class="img-fluid mt-2 mb-2">
+                                <div class="searcue">
+                                    <img src="images/searcure-icon.jpg" alt="" class="img-fluid">
                                 </div>
-
-                                <div class="summery-price-data">
-                                    <div class="com-font normal">
-                                        <p class="mb-0 d-flex justify-content-between">
-                                            <span>Normally</span><span><del>$1182</del></span>
-                                        </p>
-                                    </div>
-                                    <div class="com-font coupon">
-                                        <p class="mb-0 d-flex justify-content-between">
-                                            <span>Coupon:<span><strong><u>75%OFF</u></strong></span></span>
-                                            <span>$888</span>
-                                        </p>
-                                    </div>
-                                    <hr>
-                                    <div class="total-price">
-                                        <p class="mb-0 d-flex justify-content-between">
-                                            <span>Today's Price</span>
-                                            <span>$294</span>
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="subtotal mt-3">
-                                    <p class="mb-0 d-flex justify-content-between">
-                                        <span>Subtotal</span>
-                                        <span>$28.284,25</span>
-                                    </p>
-                                    <p class="mb-0 d-flex justify-content-between">
-                                        <span>Envio e processamento</span>
-                                        <span>$1.919,28</span>
-                                    </p>
-                                    <p class="mb-0 d-flex justify-content-between">
-                                        <span>Imposto</span>
-                                        <span>$6.818,51</span>
-                                    </p>
-                                    <p class="mb-0 d-flex justify-content-between">
-                                        <span>TOTAL</span>
-                                        <span>$37.022,04</span>
-                                    </p>
-
-                                </div>
-
-                                <p class="text-center mt-4">By clicking Pay Now below, I agree to the Terms of Sale.</p>
-
-                                <button class="btn btn-info"> pay now</button>
-                                <img src="images/check-pay.png" class="img-fluid">
-
-                                <div id="CB-security-logos-wrapper" class="mui-17zii2p">
-                                    <div class="digicert-container">
-                                        <div class="">
-                                            <a href="#" tabindex="0" aria-label="DigiCert Secured Site Seal"
-                                                style="display: block; text-align: center; cursor: pointer;">
-                                                <img src="images/seal.digicert.png" alt="DigiCert Secured Site Seal"
-                                                    style="display: block; margin: 0 auto; border: 0; background: transparent;">
-                                            </a>
-                                        </div>
-                                    </div><a
-                                        href="https://www.bbb.org/us/id/boise/profile/online-shopping/clickbank-1296-5004291/#sealclick"
-                                        target="_blank" rel="noreferrer" class="bbb-anchor"><img
-                                            src="https://seal-alaskaoregonwesternwashington.bbb.org/seals/blue-seal-160-82-bbb-5004291.png"
-                                            alt="ClickBank BBB Business Review" height="50"></a>
-                                    <div>
-                                        <div class="mfes-trustmark logo trusted-site-logo loaded" data-type="212"
-                                            data-width="90" data-height="50" data-ext="svg"
-                                            title="TrustedSite Certified" tabindex="0"
-                                            style="width: 90px; height: 37px; display: inline-block; background-image: url(&quot;https://cdn.ywxi.net/meter/orders.clickbank.net/212.svg?ts=1709846003968&amp;l=en&quot;); background-size: contain; background-position: center top; background-repeat: no-repeat; cursor: pointer;">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <p> <strong>You've made a great choice! Order now</strong> before someone else grabs
+                                <p class="bottom-pra"> <strong style="color: #0084ca;">You've made a great
+                                        choice!</strong> <strong>Order now</strong> before someone else grabs
                                     your discounted bottles from you!</p>
 
                             </div>
-
+                            <img src="images/reviews.jpg" alt="" class="img-fluid d-none d-sm-none d-lg-block">
                         </div>
+
+
+                    </div>
+
+                    <div class="col-md-6 pxy bottom-box">
+                        <div class="box-area-top">
+                            <div class="d-none d-sm-none d-lg-block">
+                                <div class="box-area-1">
+                                    <div class="people-number">
+                                        <p class="text-center"><i class="fas fa-eye"></i> <strong>35 people</strong> are
+                                            online
+                                            now on this page!</p>
+                                    </div>
+
+                                    <div class="cart-summerty">
+                                        <div class="products-image">
+                                            <img src="images/banner-bag.png" class="img-fluid">
+                                        </div>
+
+                                        <div class="summery-data text-center">
+                                            <p class="mb-0"><strong>Cart Summary</strong></p>
+                                            <h4 class="mb-0"><strong>3 People - 3 Bags</strong></h4>
+                                            <p style="text-align:center"><span
+                                                    style="background-color:rgba( 15 , 128 , 0 , 1 );color:rgba( 255 , 255 , 255 , 1 );font-family:'roboto' , sans-serif;font-size:14px"><strong>&nbsp;9.5&nbsp;</strong></span><span
+                                                    style="background-color:rgba( 255 , 255 , 255 , 0.01 );font-family:'roboto' , sans-serif;font-size:14px"><strong>
+                                                    </strong></span><span
+                                                    style="background-color:rgba( 255 , 255 , 255 , 0.01 );color:rgba( 15 , 128 , 0 , 1 );font-family:'roboto' , sans-serif;font-size:14px"><strong>Excellent!</strong></span><span
+                                                    style="font-family:'roboto' , sans-serif;font-size:14px">
+                                                </span><span
+                                                    style="color:rgba( 132 , 132 , 132 , 1 );font-family:'roboto' , sans-serif;font-size:14px">(39,973
+                                                    reviews)</span></p>
+                                        </div>
+
+
+                                        <div class="summery-price-data">
+                                            <div class="com-font normal">
+                                                <p class="mb-0 d-flex justify-content-between">
+                                                    <span>Normally</span><span><del
+                                                            class="strike-red">$1182</del></span>
+                                                </p>
+                                            </div>
+                                            <div class="com-font coupon">
+                                                <p class="mb-0 d-flex justify-content-between">
+                                                    <span>Coupon: <span class="off-color"><u>75%OFF</u></span></span>
+                                                    <span class="off-color">$888</span>
+                                                </p>
+                                            </div>
+                                            <hr>
+                                            <div class="total-price">
+                                                <p class="mb-0 d-flex justify-content-between">
+                                                    <span>Today's Price</span>
+                                                    <span>$294</span>
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="subtotal mt-3">
+                                            <p class="mb-0 d-flex justify-content-between">
+                                                <span>Subtotal</span>
+                                                <span>$28.284,25</span>
+                                            </p>
+                                            <p class="mb-0 d-flex justify-content-between">
+                                                <span>Envio e processamento</span>
+                                                <span>$1.919,28</span>
+                                            </p>
+                                            <p class="mb-0 d-flex justify-content-between">
+                                                <span>Imposto</span>
+                                                <span>$6.818,51</span>
+                                            </p>
+                                            <p class="mb-0 d-flex justify-content-between">
+                                                <span>TOTAL</span>
+                                                <span>$37.022,04</span>
+                                            </p>
+
+                                        </div>
+
+                                        <p class="text-center mt-4 terms">By clicking Pay Now below, I agree to the <a
+                                                href="#">Terms of Sale</a>.</p>
+
+
+                                        <div class="checkout-btn">
+                                            <button class="button paypal-button" tabindex="0" type="submit"
+                                                id="CB-button-pay">
+                                                <span class="paypal-btn-inner"> Continue to <img
+                                                        src="images/PayPal-checkout.svg" alt=""></span>
+
+                                            </button>
+                                        </div>
+
+
+                                        <img src="images/check-pay.png" class="img-fluid mt-2 mb-2">
+
+                                        <div class="searcue">
+                                            <img src="images/searcure-icon.jpg" alt="" class="img-fluid">
+                                        </div>
+
+                                        <p class="bottom-pra"> <strong style="color: #0084ca;">You've made a great
+                                                choice!</strong> <strong>Order now</strong> before someone else grabs
+                                            your discounted bottles from you!</p>
+
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="">
+                                <img src="images/manage-deatils.jpg" class="img-fluid">
+                                <img src="images/reviews.jpg" class="img-fluid d-sm-block d-lg-none mt-2">
+                            </div>
+                        </div>
+
+
                     </div>
 
                 </div>
             </form>
             <!-- Checkout -->
 
+
         </div>
+
     </div>
+
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row top-footer">
+                <div class="col-md-4">
+                    <div class="footer-info">
+                        <p class="head-info">ClickBank Guarantee</p>
+                        <p class="inr-pra">ClickBank will allow for the return or replacement of any product within 90
+                            days from the
+                            date of purchase. For more details see our <a href="#"><u>return policy.</u></a></p>
+                        <p class="inr-pra"><strong> Your purchase will appear on your bank statement under the name
+                                PAYPAL *CLICKBANK.</strong></p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="footer-info">
+                        <p class="head-info">Need Help?</p>
+                        <ul>
+                            <li>Visit our <a href="#"><u>Customer Support</u></a> page. Or</li>
+                            <li>call us at <a href="#"><u>1-800-390-6035.</u></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer-info">
+                        <img src="images/citybank.svg" alt="" class="img-fluid">
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+            <div class="row">
+                <div class="lastftr">
+                    <p>Affiliate ID = fceb9cwmwk4k9x2jsozk8kbkck</p>
+
+                    <p>Copyright 2025 © Click Sales Inc. ClickBank / 1444 S. Entertainment Ave / Suite 410 / Boise ID
+                        83709.</p>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </footer>
+
 
 </body>
 
