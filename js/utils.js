@@ -7,15 +7,16 @@ const formattedDate = now.toLocaleDateString('en-US', options);
 dateElement.textContent = formattedDate;
 
 // viday play/play functionality
-const video = document.getElementById("myVideo");
-const icon = document.getElementById("playPauseIcon");
-function togglePlayPause() {
+function togglePlayPause(videoId, iconId) {
+  const video = document.getElementById(videoId);
+  const icon = document.getElementById(iconId);
+
   if (video.paused) {
     video.play();
-    icon.src = "./images/pause.png";
+    icon.src = "../images/pause.png";
   } else {
     video.pause();
-    icon.src = "./images/play.webp";
+    icon.src = "../images/play.webp";
   }
 }
 
