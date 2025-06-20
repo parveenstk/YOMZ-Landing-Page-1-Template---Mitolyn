@@ -13,10 +13,10 @@ function togglePlayPause(videoId, iconId) {
 
   if (video.paused) {
     video.play();
-    icon.src = "../images/pause.png";
+    icon.src = "./images/pause.png";
   } else {
     video.pause();
-    icon.src = "../images/play.webp";
+    icon.src = "./images/play.webp";
   }
 }
 
