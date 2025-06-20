@@ -12,10 +12,10 @@ const icon = document.getElementById("playPauseIcon");
 function togglePlayPause() {
   if (video.paused) {
     video.play();
-    icon.src = "images/pluse.png";
+    icon.src = "./images/pause.png";
   } else {
     video.pause();
-    icon.src = "images/play.webp";
+    icon.src = "./images/play.webp";
   }
 }
 
