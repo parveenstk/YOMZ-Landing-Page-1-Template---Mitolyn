@@ -127,10 +127,10 @@
 
                         <div class="box-area">
                             <h3>Customer Information</h3>
+                            <!-- Email Address -->
                             <div class="form-floating mb-1">
-                                <input type="email" class="form-control" id="floatingInput"
-                                    placeholder="name@example.com">
-                                <label for="floatingInput">Email address</label>
+                                <input type="email" class="form-control" id="email-address" placeholder="Email address">
+                                <label for="email-address">Email address</label>
                             </div>
                             <small>To receive an email order confirmation.</small>
                         </div>
@@ -141,7 +141,9 @@
                                 <small>All transactions are secure and encrypted.</small>
                             </div>
 
+                            <!-- Payment Options -->
                             <div class="accordion" id="accordionExample">
+                                <!-- PayPal -->
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
                                         <button class="accordion-button" type="button" data-bs-toggle="collapse"
@@ -156,14 +158,14 @@
                                             </div>
                                         </button>
                                     </h2>
-
                                 </div>
+
+                                <!-- Credit Card -->
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
                                         <button class="accordion-button collapsed" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#collapseTwo"
                                             aria-expanded="false" aria-controls="collapseTwo">
-
                                             <div class="form-check">
                                                 <label class="form-check-label" for="flexRadioDefault2">
                                                     <input class="form-check-input" type="radio" name="flexRadioDefault"
@@ -187,34 +189,34 @@
                                                 <div class="row">
                                                     <div class="col-12">
                                                         <div class="form-floating mb-3">
-                                                            <input type="text" class="form-control" id="floatingInput2"
+                                                            <input type="text" class="form-control" id="card-number"
                                                                 placeholder="Card Number">
-                                                            <label for="floatingInput2">Card Number</label>
+                                                            <label for="card-number">Card Number</label>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-6">
                                                         <div class="form-floating mb-3">
-                                                            <input type="text" class="form-control" id="floatingInput3"
+                                                            <input type="text" class="form-control" id="expiration-date"
                                                                 placeholder="Expiration Date">
-                                                            <label for="floatingInput3">Expiration Date</label>
+                                                            <label for="expiration-date">Expiration Date</label>
                                                         </div>
                                                     </div>
                                                     <div class="col-6">
                                                         <div class="form-floating mb-3">
-                                                            <input type="text" class="form-control" id="floatingInput4"
+                                                            <input type="text" class="form-control" id="security-code"
                                                                 placeholder="Security Code">
-                                                            <label for="floatingInput4">Security Code</label>
+                                                            <label for="security-code">Security Code</label>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-12">
                                                         <div class="form-floating mb-3">
-                                                            <input type="text" class="form-control" id="floatingInput5"
+                                                            <input type="text" class="form-control" id="cardholder-name"
                                                                 placeholder="Cardholder Name">
-                                                            <label for="floatingInput5">Cardholder Name</label>
+                                                            <label for="cardholder-name">Cardholder Name</label>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -367,41 +369,39 @@
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating mb-3">
-                                            <input type="text" class="form-control" id="floatingInput6"
+                                            <input type="text" class="form-control" id="full-name"
                                                 placeholder="Full Name">
-                                            <label for="floatingInput6">Full Name</label>
+                                            <label for="full-name">Full Name</label>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating mb-3">
-                                            <input type="text" class="form-control" id="floatingInput7"
+                                            <input type="text" class="form-control" id="street-address"
                                                 placeholder="Street Address">
-                                            <label for="floatingInput7">Street Address</label>
+                                            <label for="street-address">Street Address</label>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating mb-3">
-                                            <input type="text" class="form-control" id="floatingInput8"
+                                            <input type="text" class="form-control" id="apt-suite-other"
                                                 placeholder="Apt / Suite / Other">
-                                            <label for="floatingInput8">Apt / Suite / Other</label>
+                                            <label for="apt-suite-other">Apt / Suite / Other</label>
                                         </div>
                                     </div>
-
                                 </div>
 
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-floating mb-3">
-                                            <input type="text" class="form-control" id="floatingInput9"
-                                                placeholder="City">
-                                            <label for="floatingInput9">City</label>
+                                            <input type="text" class="form-control" id="city" placeholder="City">
+                                            <label for="city">City</label>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-floating mb-3">
-                                            <input type="text" class="form-control" id="floatingInput10"
+                                            <input type="text" class="form-control" id="postal-code"
                                                 placeholder="Postal Code">
-                                            <label for="floatingInput10">Postal Code</label>
+                                            <label for="postal-code">Postal Code</label>
                                         </div>
                                     </div>
 
@@ -409,25 +409,29 @@
 
                                 <hr>
 
-                                <p class="text-center mt-4 terms">By clicking Pay Now below, I agree to the <a
-                                        href="#">Terms of Sale</a>.</p>
+                                <p class="text-center mt-4 terms">
+                                    By clicking Pay Now below, I agree to the
+                                    <a href="#">Terms of Sale</a>.
+                                </p>
                                 <div class="checkout-btn">
                                     <button class="button paypal-button" tabindex="0" type="submit" id="CB-button-pay">
-                                        <span class="paypal-btn-inner"> Continue to <img
-                                                src="images/PayPal-checkout.svg" alt=""></span>
-
+                                        <span class="paypal-btn-inner">
+                                            Continue to <img src="images/PayPal-checkout.svg" alt="payPal-logo">
+                                        </span>
                                     </button>
                                 </div>
                                 <img src="images/check-pay.png" class="img-fluid mt-2 mb-2">
                                 <div class="searcue">
                                     <img src="images/searcure-icon.jpg" alt="" class="img-fluid">
                                 </div>
-                                <p class="bottom-pra"> <strong style="color: #0084ca;">You've made a great
-                                        choice!</strong> <strong>Order now</strong> before someone else grabs
-                                    your discounted bottles from you!</p>
-
+                                <p class="bottom-pra">
+                                    <strong style="color: #0084ca;"> You've made a great choice!</strong>
+                                    <strong>Order now</strong>
+                                    before someone else grabs your discounted bottles from you!
+                                </p>
                             </div>
-                            <img src="images/reviews.jpg" alt="" class="img-fluid d-none d-sm-none d-lg-block">
+                            <img src="images/reviews.jpg" alt="reviews-img"
+                                class="img-fluid d-none d-sm-none d-lg-block">
                         </div>
 
                     </div>
@@ -437,9 +441,11 @@
                             <div class="d-none d-sm-none d-lg-block">
                                 <div class="box-area-1">
                                     <div class="people-number">
-                                        <p class="text-center"><i class="fas fa-eye"></i> <strong>35 people</strong> are
-                                            online
-                                            now on this page!</p>
+                                        <p class="text-center">
+                                            <i class="fas fa-eye"></i>
+                                            <strong>35 people</strong>
+                                            are online now on this page!
+                                        </p>
                                     </div>
 
                                     <div class="cart-summerty">
@@ -450,22 +456,32 @@
                                         <div class="summery-data text-center">
                                             <p class="mb-0"><strong>Cart Summary</strong></p>
                                             <h4 class="mb-0"><strong>3 People - 3 Bags</strong></h4>
-                                            <p style="text-align:center"><span
-                                                    style="background-color:rgba( 15 , 128 , 0 , 1 );color:rgba( 255 , 255 , 255 , 1 );font-family:'roboto' , sans-serif;font-size:14px"><strong>&nbsp;9.5&nbsp;</strong></span><span
-                                                    style="background-color:rgba( 255 , 255 , 255 , 0.01 );font-family:'roboto' , sans-serif;font-size:14px"><strong>
-                                                    </strong></span><span
-                                                    style="background-color:rgba( 255 , 255 , 255 , 0.01 );color:rgba( 15 , 128 , 0 , 1 );font-family:'roboto' , sans-serif;font-size:14px"><strong>Excellent!</strong></span><span
-                                                    style="font-family:'roboto' , sans-serif;font-size:14px">
-                                                </span><span
-                                                    style="color:rgba( 132 , 132 , 132 , 1 );font-family:'roboto' , sans-serif;font-size:14px">(39,973
-                                                    reviews)</span></p>
+                                            <p style="text-align:center">
+                                                <span
+                                                    style="background-color:rgba( 15 , 128 , 0 , 1 );color:rgba( 255 , 255 , 255 , 1 );font-family:'roboto' , sans-serif;font-size:14px">
+                                                    <strong>&nbsp;9.5&nbsp;</strong>
+                                                </span>
+                                                <span
+                                                    style="background-color:rgba( 255 , 255 , 255 , 0.01 );font-family:'roboto' , sans-serif;font-size:14px">
+                                                    <strong> </strong>
+                                                </span>
+                                                <span
+                                                    style="background-color:rgba( 255 , 255 , 255 , 0.01 );color:rgba( 15 , 128 , 0 , 1 );font-family:'roboto' , sans-serif;font-size:14px"><strong>Excellent!</strong>
+                                                </span>
+                                                <span style="font-family:'roboto' , sans-serif;font-size:14px"></span>
+                                                <span
+                                                    style="color:rgba( 132 , 132 , 132 , 1 );font-family:'roboto' , sans-serif;font-size:14px">
+                                                    (39,973 reviews)
+                                                </span>
+                                            </p>
                                         </div>
 
                                         <div class="summery-price-data">
                                             <div class="com-font normal">
                                                 <p class="mb-0 d-flex justify-content-between">
-                                                    <span>Normally</span><span><del
-                                                            class="strike-red">$1182</del></span>
+                                                    <span>Normally</span>
+                                                    <span><del class="strike-red">$1182</del>
+                                                    </span>
                                                 </p>
                                             </div>
                                             <div class="com-font coupon">
