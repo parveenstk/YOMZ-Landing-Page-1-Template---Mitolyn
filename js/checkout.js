@@ -1,3 +1,12 @@
+// Pay now & payPal buttons
+const payNowBtn = document.getElementById('payNow-button');
+const payPalBtn = document.getElementById('payPal-button');
+const buttonDesc = document.getElementById('description');
+
+const buttonDescMobile = document.getElementById('description-mobile');
+const payNowMobile = document.getElementById('payNow-button-mobile');
+const payPalMobile = document.getElementById('payPal-button-mobile');
+
 // which payment method is selected
 document.addEventListener("DOMContentLoaded", function () {
     const paypalRadio = document.getElementById("payPal-btn");
@@ -6,12 +15,35 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function togglePaymentSections() {
         if (paypalRadio.checked) {
-            // Hide credit card section
             creditCardCollapse.classList.remove("show");
 
+            // replace class to show 
+            const Ids = ['payPal-button', 'payPal-button-mobile'];
+            Ids.forEach((id) => {
+                replaceCls(id, 'hide', 'show')
+            });
+
+            // replace class to hide
+            const hideId = ['payNow-button', 'payNow-button-mobile'];
+            hideId.forEach((id) => {
+                replaceCls(id, 'show', 'hide')
+            });
+
         } else if (creditCardRadio.checked) {
-            // Show credit card section
             creditCardCollapse.classList.add("show");
+
+            // replace class to show 
+            const Ids = ['payNow-button', 'payNow-button-mobile'];
+            Ids.forEach((id) => {
+                replaceCls(id, 'hide', 'show')
+            });
+
+            // replace class to hide
+            const hideId = ['payPal-button', 'payPal-button-mobile'];
+            hideId.forEach((id) => {
+                replaceCls(id, 'show', 'hide')
+            });
+
         }
     }
 
@@ -22,6 +54,21 @@ document.addEventListener("DOMContentLoaded", function () {
     paypalRadio.addEventListener("change", togglePaymentSections);
     creditCardRadio.addEventListener("change", togglePaymentSections);
 });
+
+const addCls = (elementId, className) => {
+    const element = document.getElementById(elementId);
+    element.classList.add(className);
+};
+
+const removeCls = (elementId, className) => {
+    const element = document.getElementById(elementId);
+    element.classList.remove(className);
+};
+
+const replaceCls = (elementId, className1, className2) => {
+    const element = document.getElementById(elementId);
+    element.classList.replace(className1, className2);
+};
 
 // timer functionality
 let timeLeft = 9 * 60 + 45; // 585 seconds
