@@ -221,6 +221,8 @@ body {
   display: block;
 }
 
+
+
 .play-pause-btn {
   position: absolute;
   top: 50%;
@@ -2226,7 +2228,6 @@ p.people {
   font-size: 24px;
   text-align: center;
   color: #fff;
-  ;
 }
 
 .thatwy-data p {
@@ -3994,10 +3995,32 @@ footer p {
 /*Media*/
 /******************************************* all section media *********************************/
 @media screen and (max-width: 767px) {
+
+  
   .banner-left-side {
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
+
+  .banner-left-side img {
+    border: 3px solid #fff;
+    border-radius: 10px;
+}
+
+.banner-video .modal-header {
+    padding: 0px;
+}
+.banner-video .modal-body {padding: 0px;}
+
+    .banner-video .btn-close {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 6;
+        opacity: 10;
+        background: url(../images/cross.svg);
+        background-size: contain;
+    }
 
   .top-reviews {
     padding-top: 20px;
@@ -4153,11 +4176,11 @@ footer p {
   }
 
   .thatswhy h3 {
-    font-size: calc(8.5vw - 0px) !important;
+    font-size: calc(7.6vw - 0px) !important;
     line-height: calc(1em + 1vw) !important;
     margin-bottom: 10px;
     text-align: center;
-    font-size: 1.5rem !important;
+    /* font-size: 1.5rem !important; */
   }
 
 
@@ -4356,7 +4379,7 @@ footer p {
 
   .ext-icons h4 {
     margin-bottom: 0px;
-    font-size: calc(4.8vw - 0px) !important;
+    font-size: calc(4.6vw - 0px) !important;
     line-height: calc(1em + 1vw) !important;
     line-height: normal;
     word-break: break-all;
@@ -4639,7 +4662,7 @@ footer p {
   }
 
   .logo-thats {
-    width: 60%;
+    width: 90%;
   }
 
   .reviews-images {
@@ -4666,10 +4689,16 @@ footer p {
   }
 }
 
+
+
 @media screen and (max-width: 404px) {
   h3.newdatefont {
     font-size: calc(5.5vw - 0px) !important;
   }
+}
+@media screen and (max-width: 385px) {
+.thatswhy h3 {
+    font-size: calc(7.5vw - 0px) !important;}
 }
 
 @media screen and (max-width: 360px) {
@@ -4682,10 +4711,18 @@ footer p {
   }
 }
 
+@media screen and (max-width: 343px) {
+.thatswhy h3 {
+    font-size: calc(7.4vw - 0px) !important;}
+}
+
 @media screen and (max-width: 325px) {
   .shipping p {
     font-size: 18px;
   }
+
+    .ext-icons h4 {
+    font-size: calc(4.5vw - 0px) !important;}
 }
 
 @media screen and (max-width: 320px) {
@@ -4693,6 +4730,8 @@ footer p {
     font-size: calc(8vw - 0px) !important;
     line-height: calc(1em + 1vw) !important;
   }
+
+    
 }
 
 @media screen and (max-width: 304px) {

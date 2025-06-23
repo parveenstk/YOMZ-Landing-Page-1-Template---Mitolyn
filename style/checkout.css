@@ -5,6 +5,70 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+#timer-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    #timer-text {
+        margin: 0px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+    #clock-timer {
+        font-weight: 700;
+
+        color: red;
+
+        p {
+            margin: 0px;
+            font-size: 24px;
+            padding-bottom: 4px;
+        }
+    }
+}
+
+#mobiel-payment-section {
+    display: none;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: inline;
+}
+
+#creditCard-btn {
+    margin: 4px 8px 0px 11px;
+}
+
+.payPal-button {
+    display: flex;
+    width: 100%;
+
+    input {
+        margin: 8px 4px 0px 11px;
+    }
+
+}
+
+.btn-padding {
+    padding: 16px 20px 16px 8px !important;
+}
+
+.margin0 {
+    margin: 0px !important;
+}
+
+.padding0 {
+    padding: 0px !important;
+}
+
 .cursor {
     cursor: pointer !important;
 }
@@ -227,7 +291,7 @@ span.paypal-btn-inner {
 
 .border-box-area {
     background: rgb(227, 227, 232);
-    padding: 12px;
+    padding: 4px 0px 0px 0px;
 }
 
 footer {
@@ -280,6 +344,20 @@ p.head-info {
 /******************************************* all section media *********************************/
 
 @media screen and (max-width: 767px) {
+
+    #timer-text {
+        font-size: 16px !important;
+    }
+
+    #clock-timer {
+        p {
+            font-size: 20px !important;
+        }
+    }
+
+    #mobiel-payment-section {
+        display: inline;
+    }
 
     .banner {
         padding-left: 0px;

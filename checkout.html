@@ -34,7 +34,11 @@
 
             <div class="row">
                 <div class="col-12 mobile-pd">
-                    <div class="border-box-area">
+                    <div id="timer-box" class="border-box-area">
+                        <p id="timer-text"> YOUR ORDER IS RESERVED FOR </p>
+                        <div id="clock-timer">
+                            <p>09:45</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -143,16 +147,17 @@
 
                             <!-- Payment Options -->
                             <div class="accordion" id="accordionExample">
+
                                 <!-- PayPal -->
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                        <button class="accordion-button padding0" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
                                             aria-controls="collapseOne">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                                    id="flexRadioDefault1">
-                                                <label class="form-check-label cursor" for="flexRadioDefault1">
+                                            <div class="payPal-button">
+                                                <label class="form-check-label cursor btn-padding" for="payPal-btn">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                        id="payPal-btn" checked>
                                                     <img src="images/PayPal.svg">
                                                 </label>
                                             </div>
@@ -163,13 +168,13 @@
                                 <!-- Credit Card -->
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button"
+                                        <button class="accordion-button collapsed padding0" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#collapseTwo"
                                             aria-expanded="false" aria-controls="collapseTwo">
-                                            <div class="form-check">
-                                                <label class="form-check-label" for="flexRadioDefault2">
+                                            <div class="form-check margin0 padding0">
+                                                <label class="form-check-label btn-padding cursor" for="creditCard-btn">
                                                     <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                                        id="flexRadioDefault2">
+                                                        id="creditCard-btn">
                                                     <div class="d-flex justify-content-between gap-manation cursor">
                                                         <span class="lebel-text">Credit Card</span>
                                                         <span class="text-end">
@@ -181,10 +186,11 @@
                                             </div>
                                         </button>
                                     </h2>
+
+                                    <!-- Card Details -->
                                     <div id="collapseTwo" class="accordion-collapse collapse"
                                         data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-
                                             <div class="payment-form controlform">
                                                 <div class="row">
                                                     <div class="col-12">
@@ -377,7 +383,7 @@
                                     <div class="col-12">
                                         <div class="form-floating mb-3">
                                             <input type="text" class="form-control" id="street-address"
-                                                placeholder="Street Address">
+                                                placeholder="Street Address" autocomplete="street-address">
                                             <label for="street-address">Street Address</label>
                                         </div>
                                     </div>
@@ -400,35 +406,38 @@
                                     <div class="col-md-6">
                                         <div class="form-floating mb-3">
                                             <input type="text" class="form-control" id="postal-code"
-                                                placeholder="Postal Code">
+                                                placeholder="Postal Code" autocomplete="postal-code">
                                             <label for="postal-code">Postal Code</label>
                                         </div>
                                     </div>
 
                                 </div>
 
-                                <hr>
-
-                                <p class="text-center mt-4 terms">
-                                    By clicking Pay Now below, I agree to the
-                                    <a href="#">Terms of Sale</a>.
-                                </p>
-                                <div class="checkout-btn">
-                                    <button class="button paypal-button" tabindex="0" type="submit" id="CB-button-pay">
-                                        <span class="paypal-btn-inner">
-                                            Continue to <img src="images/PayPal-checkout.svg" alt="payPal-logo">
-                                        </span>
-                                    </button>
+                                <!-- Mobile Payment Button -->
+                                <div id="mobiel-payment-section">
+                                    <hr>
+                                    <p class="text-center mt-4 terms">
+                                        By clicking Pay Now below, I agree to the
+                                        <a href="#">Terms of Sale</a>.
+                                    </p>
+                                    <div class="checkout-btn">
+                                        <button class="button paypal-button" tabindex="0" type="submit"
+                                            id="CB-button-pay">
+                                            <span class="paypal-btn-inner">
+                                                Continue to <img src="images/PayPal-checkout.svg" alt="payPal-logo">
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <img src="images/check-pay.png" class="img-fluid mt-2 mb-2">
+                                    <div class="searcue">
+                                        <img src="images/searcure-icon.jpg" alt="" class="img-fluid">
+                                    </div>
+                                    <p class="bottom-pra">
+                                        <strong style="color: #0084ca;"> You've made a great choice!</strong>
+                                        <strong>Order now</strong>
+                                        before someone else grabs your discounted bottles from you!
+                                    </p>
                                 </div>
-                                <img src="images/check-pay.png" class="img-fluid mt-2 mb-2">
-                                <div class="searcue">
-                                    <img src="images/searcure-icon.jpg" alt="" class="img-fluid">
-                                </div>
-                                <p class="bottom-pra">
-                                    <strong style="color: #0084ca;"> You've made a great choice!</strong>
-                                    <strong>Order now</strong>
-                                    before someone else grabs your discounted bottles from you!
-                                </p>
                             </div>
                             <img src="images/reviews.jpg" alt="reviews-img"
                                 class="img-fluid d-none d-sm-none d-lg-block">
@@ -610,6 +619,9 @@
         </div>
         </div>
     </footer>
+
+    <!-- import function scrips -->
+    <script src="./js/checkout.js"></script>
 
 </body>
 
