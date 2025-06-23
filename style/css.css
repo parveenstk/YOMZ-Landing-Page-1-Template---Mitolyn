@@ -4160,6 +4160,9 @@ footer p {
     font-size: 1.5rem !important;
   }
 
+
+  .thatswhy .thatwy-data p{margin-bottom: 10px !important;}
+
   .inside {
     padding: 30px 0 30px;
   }
@@ -4236,7 +4239,7 @@ footer p {
   }
 
   .extraicons {
-    padding: 20px 0 20px;
+    padding: 20px 5px 20px;
     background: #eeeeee;
   }
 
@@ -4344,15 +4347,16 @@ footer p {
   }
 
   .extraicons .ext-icons .icon-square {
-    width: 16%;
+    width: 13%;
     border-radius: 77px;
     overflow: hidden;
-    margin-right: 7px !important;
+    margin-right: 4px !important;
+        margin-top: -5px;
   }
 
   .ext-icons h4 {
     margin-bottom: 0px;
-    font-size: calc(5vw - 0px) !important;
+    font-size: calc(4.8vw - 0px) !important;
     line-height: calc(1em + 1vw) !important;
     line-height: normal;
     word-break: break-all;
@@ -4362,6 +4366,11 @@ footer p {
     margin-bottom: 0px;
     margin-top: 10px;
   }
+
+  .extraicons .pd-rt-0 {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 
   .reviews {
     padding: 30px 0 30px;
