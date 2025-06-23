@@ -23,15 +23,25 @@ document.addEventListener("DOMContentLoaded", function () {
     creditCardRadio.addEventListener("change", togglePaymentSections);
 });
 
-// timer
-document.addEventListener("DOMContentLoaded", function () {
-    const timerBox = document.getElementById('timer-box');
+// timer functionality
+let timeLeft = 9 * 60 + 45; // 585 seconds
 
-    const timer = () => {
+const timerDisplay = document.getElementById('timer-display');
+const timerBox = document.getElementById('timer-box');
 
-        let secound = 60;
+function updateTimer() {
+    const minutes = String(Math.floor(timeLeft / 60)).padStart(2, '0');
+    const seconds = String(timeLeft % 60).padStart(2, '0');
+    timerDisplay.textContent = `${minutes}:${seconds}`;
 
+    if (timeLeft <= 0) {
+        clearInterval(timerInterval);
+        timerBox.style.display = 'none'; // Hide the timer box
     }
 
-    // timer();
-})
+    timeLeft--;
+}
+
+// Start timer on page load
+updateTimer(); // initial display
+const timerInterval = setInterval(updateTimer, 1000);
