@@ -5,6 +5,12 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+.subtotal {
+    font-weight: 400;
+    text-transform: capitalize;
+    font-family: "Roboto", sans-serif;
+}
+
 #payNow-button {
     background-color: #FFF500 !important;
     border: 3px solid #0400F4;
@@ -369,6 +375,92 @@ p.head-info {
     background: radial-gradient(circle, #12b2eb 41%, #004293 100%);
 }
 
+.manage-checkbox {
+    margin-top: 20px;
+}
+
+.manage-checkbox {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+    line-height: normal;
+}
+
+.manage-checkbox input[type="checkbox"] {
+    margin-top: 0px;
+    width: 20px;
+    height: 20px;
+}
+
+.manage-checkbox input[type="checkbox"] {
+    transform: scale(1.2);
+    /* Increase the checkbox size */
+    margin-right: 0px;
+    /* Optional spacing */
+}
+
+.cart-checkbox label {
+    font-size: 14px;
+    /* You can increase text size if needed */
+}
+
+.closing-shownmodal .modal-content {
+    background-color: rgb(162, 0, 0);
+    border: 4px solid rgb(247, 252, 6);
+    padding: 40px 10px 10px;
+    text-align: center;
+}
+
+.closing-shownmodal .modal-header {
+    padding: 0px;
+    border: none;
+}
+
+.closing h4 {
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+.closing p {
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+}
+
+.clickbutton {
+    background-color: rgba(0, 137, 153, 1);
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.closing span.paypal-btn-inner {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 18px;
+    width: 100%;
+    padding: 11px 11px;
+    font-weight: 600;
+}
+
+.closing button.paypal-button {
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.closing-shownmodal .btn-close {
+    filter: invert(1) !important;
+    opacity: 1;
+    margin-top: -20px;
+    margin-right: 10px;
+}
+
 /******************************************* all section media *********************************/
 
 @media screen and (max-width: 767px) {
@@ -454,6 +546,42 @@ p.head-info {
     .bottom-pra {
         margin: 20px 0 10px;
         line-height: normal;
+    }
+
+    .searcue img {
+        width: 240px;
+    }
+
+    .manage-checkbox {
+        margin-top: 10px;
+    }
+
+    .closing-shownmodal .modal-content {
+        background-color: rgb(162, 0, 0);
+        border: 4px solid rgb(247, 252, 6);
+        padding: 30px 0px 10px;
+        text-align: center;
+    }
+
+    .closing h4 {
+        margin-top: 0px;
+        line-height: normal;
+    }
+
+    .closing p {
+        line-height: normal;
+    }
+
+    .clickbutton {
+        display: inline;
+    }
+
+    .closing span.paypal-btn-inner {
+        line-height: normal;
+    }
+
+    .closing-shownmodal .modal-body {
+        padding: 10px;
     }
 
 }

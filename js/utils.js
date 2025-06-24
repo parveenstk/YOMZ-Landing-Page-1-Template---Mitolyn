@@ -71,3 +71,5 @@ document.addEventListener("DOMContentLoaded", () => {
     el.href = link;
   });
 });
+
+// Exit pop-up functaionality

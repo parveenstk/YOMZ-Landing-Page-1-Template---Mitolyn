@@ -116,8 +116,7 @@
                                                 </p>
                                             </div>
 
-
-                                            <div class="cart-checkbox">
+                                            <div class="cart-checkbox manage-checkbox">
                                                 <input id="cart-checkbox-mobile" class="cursor" type="checkbox">
                                                 <label for="cart-checkbox-mobile">
                                                     I do not want to receive exclusive content and promotion form this
@@ -127,7 +126,7 @@
                                         </div>
 
                                         <!-- Mobile - Card Prices -->
-                                        <!-- <div class="subtotal mt-3">
+                                        <div class="subtotal mt-3">
                                             <p class="mb-0 d-flex justify-content-between">
                                                 <span>Subtotal</span>
                                                 <span>$129.58</span>
@@ -144,9 +143,9 @@
                                                 <span>TOTAL</span>
                                                 <span>$181.70</span>
                                             </p>
-                                        </div> -->
+                                        </div>
                                     </div>
-                                    
+
                                 </div>
                                 <!-- Mobile Cart Summary End -->
                             </div>
@@ -552,7 +551,7 @@
                                                     </p>
                                                 </div>
 
-                                                <div class="cart-checkbox">
+                                                <div class="cart-checkbox manage-checkbox">
                                                     <input id="cart-checkbox" class="cursor" type="checkbox">
                                                     <label for="cart-checkbox">
                                                         I do not want to receive exclusive content and promotion form
@@ -560,7 +559,6 @@
                                                         vendor, and do not share my personal information.
                                                     </label>
                                                 </div>
-
 
                                                 <!-- Desktop - Cart Prices -->
                                                 <div class="subtotal mt-3">
@@ -629,6 +627,7 @@
                                     <img src="images/reviews.jpg" class="img-fluid d-sm-block d-lg-none mt-2">
                                 </div>
                             </div>
+                            
 
                         </div>
 
@@ -686,8 +685,47 @@
         </div>
     </footer>
 
+    <div class="modal fade closing-shownmodal" id="myModal" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="closing">
+                        <h4> <strong><u>WARNING:</u></strong> Closing this page will cancel your <strong>New Customer
+                                Discount Coupon.</strong></h4>
+                        <p>Your reserved bags of YOMZ will then be given to
+                            someone else. <strong><u>This action is final.</u></strong>
+                        </p>
+                        <p class="clickbutton">Tap the button below to complete your order.</p>
+                        <button class="button paypal-button show" tabindex="0" type="submit" id="payNow-button">
+                            <span class="paypal-btn-inner">
+                                <strong>Yes! I Accept the Discount! Give Me My YOMZ!</strong>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- import function scrips -->
     <script src="./js/checkout.js"></script>
+
+    <script>
+        let hasShownModal = false;
+
+        document.addEventListener("mouseleave", function (event) {
+            // Trigger only if mouse leaves from the top
+            if (event.clientY <= 0 && !hasShownModal) {
+                let myModal = new bootstrap.Modal(document.getElementById('myModal'));
+                myModal.show();
+                hasShownModal = true;
+            }
+        });
+    </script>
 
 </body>
 
