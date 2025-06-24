@@ -3,6 +3,7 @@ const payNowBtn = document.getElementById('payNow-button');
 const payPalBtn = document.getElementById('payPal-button');
 const buttonDesc = document.getElementById('description');
 
+// mobile elements
 const buttonDescMobile = document.getElementById('description-mobile');
 const payNowMobile = document.getElementById('payNow-button-mobile');
 const payPalMobile = document.getElementById('payPal-button-mobile');
@@ -29,6 +30,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 replaceCls(id, 'show', 'hide')
             });
 
+            // other elements
+            buttonDesc.innerHTML = 'By clicking Continue to PayPal below, I agree to the <a href="#">Terms of Sale</a>.'
+            buttonDescMobile.innerHTML = 'By clicking Continue to PayPal below, I agree to the <a href="#">Terms of Sale</a>.'
+
         } else if (creditCardRadio.checked) {
             creditCardCollapse.classList.add("show");
 
@@ -44,6 +49,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 replaceCls(id, 'show', 'hide')
             });
 
+            // other elements
+            buttonDescMobile.innerHTML = 'By clicking Pay Now below, I agree to the <a href = "#"> Terms of Sale</a>.'
+            buttonDesc.innerHTML = 'By clicking Pay Now below, I agree to the <a href = "#"> Terms of Sale</a>.';
         }
     }
 
