@@ -5,6 +5,34 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+#payNow-button {
+    background-color: #FFF500 !important;
+    border: 3px solid #0400F4;
+}
+
+#payNow-button-mobile {
+    background-color: #FFF500 !important;
+    border: 3px solid #0400F4;
+}
+
+.cart-checkbox {
+    display: flex;
+    gap: 12px;
+
+    label {
+        font-family: "Roboto", sans-serif;
+        font-size: 14px !important;
+        font-weight: 500;
+        margin: 0px !important;
+        text-transform: none;
+        cursor: pointer;
+    }
+}
+
+#phone-number {
+    margin-top: 10px;
+}
+
 #timer-box {
     display: flex;
     justify-content: center;
@@ -344,6 +372,12 @@ p.head-info {
 /******************************************* all section media *********************************/
 
 @media screen and (max-width: 767px) {
+
+    .payPal-button {
+        input {
+            margin: 5px 4px 0px 11px;
+        }
+    }
 
     #timer-text {
         font-size: 16px !important;

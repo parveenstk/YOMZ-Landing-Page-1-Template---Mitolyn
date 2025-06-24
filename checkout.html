@@ -65,6 +65,7 @@
                                         now on this page!</p>
                                 </div>
 
+                                <!-- Mobile Cart Summary Start -->
                                 <div class="cart-summerty">
                                     <div class="products-image">
                                         <img src="images/banner-bag.png" class="img-fluid">
@@ -73,14 +74,23 @@
                                     <div class="summery-data text-center">
                                         <p class="mb-0"><strong>Cart Summary</strong></p>
                                         <h4 class="mb-0"><strong> 3 People - 3 Bags</strong></h4>
-                                        <p style="text-align:center"><span
-                                                style="background-color:rgba( 15 , 128 , 0 , 1 );color:rgba( 255 , 255 , 255 , 1 );font-family:'roboto' , sans-serif;font-size:14px"><strong>&nbsp;9.5&nbsp;</strong></span><span
-                                                style="background-color:rgba( 255 , 255 , 255 , 0.01 );font-family:'roboto' , sans-serif;font-size:14px"><strong>
-                                                </strong></span><span
-                                                style="background-color:rgba( 255 , 255 , 255 , 0.01 );color:rgba( 15 , 128 , 0 , 1 );font-family:'roboto' , sans-serif;font-size:14px"><strong>Excellent!</strong></span><span
-                                                style="font-family:'roboto' , sans-serif;font-size:14px"> </span><span
-                                                style="color:rgba( 132 , 132 , 132 , 1 );font-family:'roboto' , sans-serif;font-size:14px">(39,973
-                                                reviews)</span></p>
+                                        <p style="text-align:center">
+                                            <span
+                                                style="background-color:rgba( 15 , 128 , 0 , 1 );color:rgba( 255 , 255 , 255 , 1 );font-family:'roboto' , sans-serif;font-size:14px">
+                                                <strong>&nbsp;4.5&nbsp;</strong>
+                                            </span>
+                                            <span
+                                                style="background-color:rgba( 255 , 255 , 255 , 0.01 );font-family:'roboto' , sans-serif;font-size:14px"><strong></strong></span>
+                                            <span
+                                                style="background-color:rgba( 255 , 255 , 255 , 0.01 );color:rgba( 15 , 128 , 0 , 1 );font-family:'roboto' , sans-serif;font-size:14px">
+                                                <strong>Excellent!</strong>
+                                            </span>
+                                            <span style="font-family:'roboto' , sans-serif;font-size:14px"></span>
+                                            <span
+                                                style="color:rgba( 132 , 132 , 132 , 1 );font-family:'roboto' , sans-serif;font-size:14px">
+                                                (2,797 reviews)
+                                            </span>
+                                        </p>
                                     </div>
 
                                     <div class="summery-price-data">
@@ -102,6 +112,14 @@
                                                 <span>$294</span>
                                             </p>
                                         </div>
+
+                                        <div class="cart-checkbox">
+                                            <input id="cart-checkbox-mobile" class="cursor" type="checkbox">
+                                            <label for="cart-checkbox-mobile">
+                                                I do not want to receive exclusive content and promotion form this
+                                                vendor, and do not share my personal information.
+                                            </label>
+                                        </div>
                                     </div>
 
                                     <div class="subtotal mt-3">
@@ -121,11 +139,9 @@
                                             <span>TOTAL</span>
                                             <span>$37.022,04</span>
                                         </p>
-
                                     </div>
-
                                 </div>
-
+                                <!-- Mobile Cart Summary End -->
                             </div>
                         </div>
 
@@ -137,6 +153,13 @@
                                 <label for="email-address">Email address</label>
                             </div>
                             <small>To receive an email order confirmation.</small>
+
+                            <!-- Phone Number -->
+                            <div class="form-floating mb-1">
+                                <input type="number" class="form-control" id="phone-number" placeholder="Phone number">
+                                <label for="phone-number">Phone number</label>
+                            </div>
+                            <small>To receive tracking information.</small>
                         </div>
 
                         <div class="box-area box-areaaccordion">
@@ -147,23 +170,6 @@
 
                             <!-- Payment Options -->
                             <div class="accordion" id="accordionExample">
-
-                                <!-- PayPal -->
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button padding0" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
-                                            aria-controls="collapseOne">
-                                            <div class="payPal-button">
-                                                <label class="form-check-label cursor btn-padding" for="payPal-btn">
-                                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                                        id="payPal-btn">
-                                                    <img src="images/PayPal.svg">
-                                                </label>
-                                            </div>
-                                        </button>
-                                    </h2>
-                                </div>
 
                                 <!-- Credit Card -->
                                 <div class="accordion-item">
@@ -230,6 +236,24 @@
                                         </div>
                                     </div>
                                 </div>
+
+                                <!-- PayPal -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button padding0" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            <div class="payPal-button">
+                                                <label class="form-check-label cursor btn-padding" for="payPal-btn">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                        id="payPal-btn">
+                                                    <img src="images/PayPal.svg">
+                                                </label>
+                                            </div>
+                                        </button>
+                                    </h2>
+                                </div>
+
                             </div>
                         </div>
 
@@ -241,20 +265,20 @@
                                     <div class="col-12">
                                         <div class="form-floating mahesmall-font mb-3">
                                             <select class="form-select" id="floatingSelect"
-                                                aria-label="Floating label select example">
+                                                aria-label="Floating label select example" disabled>
                                                 <option selected>Country</option>
-                                                <optgroup label="Common Countries">
-                                                    <option value="US">United States</option>
-                                                    <option value="GB">United Kingdom</option>
+                                                <option value="US" selected>United States</option>
+                                                <!-- <optgroup label="Common Countries"> -->
+                                                <!-- <option value="GB">United Kingdom</option>
                                                     <option value="CA">Canada</option>
                                                     <option value="AU">Australia</option>
                                                     <option value="FR">France</option>
                                                     <option value="DE">Germany</option>
                                                     <option value="NZ">New Zealand</option>
                                                     <option value="MX">Mexico</option>
-                                                    <option value="ES">Spain</option>
+                                                    <option value="ES">Spain</option> -->
                                                 </optgroup>
-                                                <optgroup label="Other Countries">
+                                                <!-- <optgroup label="Other Countries">
                                                     <option value="AL">Albania</option>
                                                     <option value="AS">American Samoa</option>
                                                     <option value="AD">Andorra</option>
@@ -308,7 +332,7 @@
                                                     <option value="GU">Guam</option>
                                                     <option value="HK">Hong Kong</option>
                                                     <option value="IS">Iceland</option>
-                                                    <option value="IN" selected="">India</option>
+                                                    <option value="IN">India</option>
                                                     <option value="ID">Indonesia</option>
                                                     <option value="IE">Ireland</option>
                                                     <option value="IL">Israel</option>
@@ -368,7 +392,7 @@
                                                     <option value="VU">Vanuatu</option>
                                                     <option value="VA">Vatican</option>
                                                     <option value="VN">Vietnam</option>
-                                                </optgroup>
+                                                </optgroup> -->
                                             </select>
                                             <label for="floatingSelect">Country</label>
                                         </div>
@@ -442,9 +466,9 @@
                                         <img src="images/searcure-icon.jpg" alt="" class="img-fluid">
                                     </div>
                                     <p class="bottom-pra">
-                                        <strong style="color: #0084ca;"> You've made a great choice!</strong>
+                                        <strong style="color: #0084ca;">You've made a great choice!</strong>
                                         <strong>Order now</strong>
-                                        before someone else grabs your discounted bottles from you!
+                                        before someone else grabs your discounted bags from you!
                                     </p>
                                 </div>
                                 <!-- Mobile Payment Button End -->
@@ -467,6 +491,7 @@
                                         </p>
                                     </div>
 
+                                    <!-- Desktop - Cart Summary -->
                                     <div class="cart-summerty">
                                         <div class="products-image">
                                             <img src="images/banner-bag.png" class="img-fluid">
@@ -478,19 +503,20 @@
                                             <p style="text-align:center">
                                                 <span
                                                     style="background-color:rgba( 15 , 128 , 0 , 1 );color:rgba( 255 , 255 , 255 , 1 );font-family:'roboto' , sans-serif;font-size:14px">
-                                                    <strong>&nbsp;9.5&nbsp;</strong>
+                                                    <strong>&nbsp;4.5&nbsp;</strong>
                                                 </span>
                                                 <span
                                                     style="background-color:rgba( 255 , 255 , 255 , 0.01 );font-family:'roboto' , sans-serif;font-size:14px">
                                                     <strong> </strong>
                                                 </span>
                                                 <span
-                                                    style="background-color:rgba( 255 , 255 , 255 , 0.01 );color:rgba( 15 , 128 , 0 , 1 );font-family:'roboto' , sans-serif;font-size:14px"><strong>Excellent!</strong>
+                                                    style="background-color:rgba( 255 , 255 , 255 , 0.01 );color:rgba( 15 , 128 , 0 , 1 );font-family:'roboto' , sans-serif;font-size:14px">
+                                                    <strong>Excellent!</strong>
                                                 </span>
                                                 <span style="font-family:'roboto' , sans-serif;font-size:14px"></span>
                                                 <span
                                                     style="color:rgba( 132 , 132 , 132 , 1 );font-family:'roboto' , sans-serif;font-size:14px">
-                                                    (39,973 reviews)
+                                                    (2,797 reviews)
                                                 </span>
                                             </p>
                                         </div>
@@ -515,6 +541,14 @@
                                                     <span>Today's Price</span>
                                                     <span>$294</span>
                                                 </p>
+                                            </div>
+
+                                            <div class="cart-checkbox">
+                                                <input id="cart-checkbox" class="cursor" type="checkbox">
+                                                <label for="cart-checkbox">
+                                                    I do not want to receive exclusive content and promotion form this
+                                                    vendor, and do not share my personal information.
+                                                </label>
                                             </div>
                                         </div>
 
@@ -565,11 +599,15 @@
                                             <img src="images/searcure-icon.jpg" alt="" class="img-fluid">
                                         </div>
 
-                                        <p class="bottom-pra"> <strong style="color: #0084ca;">You've made a great
-                                                choice!</strong> <strong>Order now</strong> before someone else grabs
-                                            your discounted bottles from you!</p>
+                                        <p class="bottom-pra">
+                                            <strong style="color: #0084ca;">You've made a great choice!</strong>
+                                            <strong>Order now</strong>
+                                            before
+                                            someone else grabs your discounted bags from you!
+                                        </p>
 
                                     </div>
+                                    <!-- Desktop - Cart Summary -->
 
                                 </div>
                             </div>
@@ -593,7 +631,7 @@
     <footer>
         <div class="container">
             <div class="row top-footer">
-                <div class="col-md-4">
+                <!-- <div class="col-md-4">
                     <div class="footer-info">
                         <p class="head-info">ClickBank Guarantee</p>
                         <p class="inr-pra">ClickBank will allow for the return or replacement of any product within 90
@@ -606,9 +644,9 @@
                             </strong>
                         </p>
                     </div>
-                </div>
+                </div> -->
 
-                <div class="col-md-4">
+                <!-- <div class="col-md-4">
                     <div class="footer-info">
                         <p class="head-info">Need Help?</p>
                         <ul>
@@ -616,25 +654,22 @@
                             <li>call us at <a href="#"><u>1-800-390-6035.</u></a></li>
                         </ul>
                     </div>
-                </div>
-                <div class="col-md-4">
+                </div> -->
+                <!-- <div class="col-md-4">
                     <div class="footer-info">
                         <img src="images/citybank.svg" alt="" class="img-fluid">
 
                     </div>
-                </div>
-
+                </div> -->
             </div>
 
-            <div class="row">
+            <!-- <div class="row">
                 <div class="lastftr">
                     <p>Affiliate ID = fceb9cwmwk4k9x2jsozk8kbkck</p>
-
                     <p>Copyright 2025 © Click Sales Inc. ClickBank / 1444 S. Entertainment Ave / Suite 410 / Boise ID
                         83709.</p>
                 </div>
-
-            </div>
+            </div> -->
         </div>
         </div>
     </footer>
