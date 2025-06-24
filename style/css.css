@@ -221,8 +221,6 @@ body {
   display: block;
 }
 
-
-
 .play-pause-btn {
   position: absolute;
   top: 50%;
@@ -3995,8 +3993,6 @@ footer p {
 /*Media*/
 /******************************************* all section media *********************************/
 @media screen and (max-width: 767px) {
-
-  
   .banner-left-side {
     padding-left: 0px;
     padding-right: 0px;
@@ -4005,22 +4001,25 @@ footer p {
   .banner-left-side img {
     border: 3px solid #fff;
     border-radius: 10px;
-}
+  }
 
-.banner-video .modal-header {
+  .banner-video .modal-header {
     padding: 0px;
-}
-.banner-video .modal-body {padding: 0px;}
+  }
 
-    .banner-video .btn-close {
-        position: absolute;
-        right: 20px;
-        top: 20px;
-        z-index: 6;
-        opacity: 10;
-        background: url(../images/cross.svg);
-        background-size: contain;
-    }
+  .banner-video .modal-body {
+    padding: 0px;
+  }
+
+  .banner-video .btn-close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 6;
+    opacity: 10;
+    background: url(../images/cross.svg);
+    background-size: contain;
+  }
 
   .top-reviews {
     padding-top: 20px;
@@ -4183,8 +4182,9 @@ footer p {
     /* font-size: 1.5rem !important; */
   }
 
-
-  .thatswhy .thatwy-data p{margin-bottom: 10px !important;}
+  .thatswhy .thatwy-data p {
+    margin-bottom: 10px !important;
+  }
 
   .inside {
     padding: 30px 0 30px;
@@ -4196,7 +4196,7 @@ footer p {
   }
 
   .ins-header h3 {
-    font-size: calc(8.9vw - 0px) !important;
+    font-size: calc(10.5vw - 0px) !important;
     line-height: calc(1em + 1vw) !important;
     margin-bottom: 5px;
     text-align: center;
@@ -4374,7 +4374,7 @@ footer p {
     border-radius: 77px;
     overflow: hidden;
     margin-right: 4px !important;
-        margin-top: -5px;
+    margin-top: -5px;
   }
 
   .ext-icons h4 {
@@ -4391,9 +4391,9 @@ footer p {
   }
 
   .extraicons .pd-rt-0 {
-        padding-left: 0px;
-        padding-right: 0px;
-    }
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 
   .reviews {
     padding: 30px 0 30px;
@@ -4689,16 +4689,16 @@ footer p {
   }
 }
 
-
-
 @media screen and (max-width: 404px) {
   h3.newdatefont {
     font-size: calc(5.5vw - 0px) !important;
   }
 }
+
 @media screen and (max-width: 385px) {
-.thatswhy h3 {
-    font-size: calc(7.5vw - 0px) !important;}
+  .thatswhy h3 {
+    font-size: calc(7.5vw - 0px) !important;
+  }
 }
 
 @media screen and (max-width: 360px) {
@@ -4712,8 +4712,9 @@ footer p {
 }
 
 @media screen and (max-width: 343px) {
-.thatswhy h3 {
-    font-size: calc(7.4vw - 0px) !important;}
+  .thatswhy h3 {
+    font-size: calc(7.4vw - 0px) !important;
+  }
 }
 
 @media screen and (max-width: 325px) {
@@ -4721,8 +4722,9 @@ footer p {
     font-size: 18px;
   }
 
-    .ext-icons h4 {
-    font-size: calc(4.5vw - 0px) !important;}
+  .ext-icons h4 {
+    font-size: calc(4.5vw - 0px) !important;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -4730,8 +4732,6 @@ footer p {
     font-size: calc(8vw - 0px) !important;
     line-height: calc(1em + 1vw) !important;
   }
-
-    
 }
 
 @media screen and (max-width: 304px) {
