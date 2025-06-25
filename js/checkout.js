@@ -56,6 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     };
 
+    // updating cart details
     updatedPack(productId);
 
     // Initial check

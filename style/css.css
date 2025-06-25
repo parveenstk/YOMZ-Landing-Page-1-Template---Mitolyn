@@ -4035,7 +4035,7 @@ footer p {
   }
 
   .right-side-info p {
-    font-size: calc(4vw - 0px) !important;
+    font-size: calc(6.4vw - 0px) !important;
     text-align: center;
     margin-bottom: 10px;
     font-weight: 600;
@@ -4280,7 +4280,7 @@ footer p {
   }
 
   .offeringyomz h3 {
-    font-size: calc(6vw - 0px) !important;
+    font-size: calc(6.4vw - 0px) !important;
     line-height: calc(1em + 1vw) !important;
     margin-bottom: 8px;
   }
@@ -4699,6 +4699,14 @@ footer p {
   .thatswhy h3 {
     font-size: calc(7.5vw - 0px) !important;
   }
+}
+
+@media screen and (max-width: 380px) {
+
+
+     .offeringyomz .mobile-block {
+        display: inline;
+    }
 }
 
 @media screen and (max-width: 360px) {
