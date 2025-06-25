@@ -82,41 +82,7 @@ const replaceCls = (elementId, className1, className2) => {
     element.classList.replace(className1, className2);
 };
 
-// timer functionality
-let timeLeft = 9 * 60 + 45; // 585 seconds
-
-const timerDisplay = document.getElementById('timer-display');
-const timerBox = document.getElementById('timer-box');
-
-function updateTimer() {
-    const minutes = String(Math.floor(timeLeft / 60)).padStart(2, '0');
-    const seconds = String(timeLeft % 60).padStart(2, '0');
-    timerDisplay.textContent = `${minutes}:${seconds}`;
-
-    if (timeLeft <= 0) {
-        clearInterval(timerInterval);
-        timerBox.style.display = 'none'; // Hide the timer box
-    }
-
-    timeLeft--;
-}
-// Start timer on page load
-updateTimer(); // initial display
-const timerInterval = setInterval(updateTimer, 1000);
-
-// Below today's price ( checkBox Functionality )
-document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll('.cart-checkbox').forEach((container) => {
-
-        container.addEventListener('click', (event) => {
-            const checkbox = container.querySelector('input[type="checkbox"]');
-            if (event.target === checkbox) return;
-            checkbox.checked = !checkbox.checked;
-        });
-    });
-});
-
-// Products Data
+// Products Data ( cart price, total, coupon discount, etc .)
 const packsPrice = {
     '1-person': {
         normallyPrice: '79.99',
@@ -140,6 +106,7 @@ const packsPrice = {
     },
 };
 
+// UpperCart ( Product image, Image heading )
 const upperCartData = {
     '1-person': {
         bagName: 'bag-1 Img',
@@ -198,8 +165,7 @@ const updatedPack = (productId) => {
                                 </span>
                             </p>
                         </div>
-                    </div>
-                            `
+                    </div> `;
 
         // Update the HTML (upperCartData)
         const cart = document.querySelectorAll('.upper-cart');
@@ -266,3 +232,20 @@ const updatedPack = (productId) => {
         });
     }
 };
+
+// Form elements 
+const email = document.getElementById('email-address');
+const phoneNumber = document.getElementById('phone-number');
+
+// card elements
+const cardNumber = document.getElementById('card-number');
+const cardExpiry = document.getElementById('expiration-date');
+const cardSecurityCode = document.getElementById('security-code');
+const cardHolderName = document.getElementById('cardholder-name');
+
+// Shipping information
+const fullName = document.getElementById('full-name');
+const streetAddress = document.getElementById('street-address');
+const apptsAddress = document.getElementById('apt-suite-other');
+const city = document.getElementById('city');
+const postalCode = document.getElementById('postal-code');

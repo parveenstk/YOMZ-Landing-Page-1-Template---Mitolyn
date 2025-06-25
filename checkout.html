@@ -116,25 +116,6 @@
                                                 </label>
                                             </div>
                                         </div>
-                                        <!-- Mobile - Card Prices -->
-                                        <!-- <div class="subtotal mt-3">
-                                            <p class="mb-0 d-flex justify-content-between">
-                                                <span>Subtotal</span>
-                                                <span>$129.58</span>
-                                            </p>
-                                            <p class="mb-0 d-flex justify-content-between">
-                                                <span>Shipping & Handling</span>
-                                                <span>$19.95</span>
-                                            </p>
-                                            <p class="mb-0 d-flex justify-content-between">
-                                                <span>Tax</span>
-                                                <span>$32.17</span>
-                                            </p>
-                                            <p class="mb-0 d-flex justify-content-between">
-                                                <span>TOTAL</span>
-                                                <span>$181.70</span>
-                                            </p>
-                                        </div> -->
                                     </div>
                                 </div>
                                 <!-- Mobile Cart Summary End -->
@@ -639,6 +620,8 @@
         </div>
         </div>
     </footer>
+
+    <!-- Pop-Up model - Start -->
     <div class="modal fade closing-shownmodal" id="myModal" data-bs-backdrop="static" data-bs-keyboard="false"
         tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -664,20 +647,11 @@
             </div>
         </div>
     </div>
+    <!-- Pop-Up model - End -->
 
     <!-- import function scrips -->
     <script src="./js/checkout.js"></script>
-    <script>
-        let hasShownModal = false;
-        document.addEventListener("mouseleave", function (event) {
-            // Trigger only if mouse leaves from the top
-            if (event.clientY <= 0 && !hasShownModal) {
-                let myModal = new bootstrap.Modal(document.getElementById('myModal'));
-                myModal.show();
-                hasShownModal = true;
-            }
-        });
-    </script>
+    <script src="./js/checkoutUtils.js"></script>
 </body>
 
 </html>
