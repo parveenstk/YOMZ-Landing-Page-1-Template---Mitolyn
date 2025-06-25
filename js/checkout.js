@@ -1,3 +1,4 @@
+// Form elements 
 // Pay now & payPal buttons
 const payNowBtn = document.getElementById('payNow-button');
 const payPalBtn = document.getElementById('payPal-button');
@@ -7,6 +8,23 @@ const buttonDesc = document.getElementById('description');
 const buttonDescMobile = document.getElementById('description-mobile');
 const payNowMobile = document.getElementById('payNow-button-mobile');
 const payPalMobile = document.getElementById('payPal-button-mobile');
+
+// // Customer information
+// const email = document.getElementById('email-address');
+// const phoneNumber = document.getElementById('phone-number');
+
+// // card elements
+// const cardNumber = document.getElementById('card-number');
+// const cardExpiry = document.getElementById('expiration-date');
+// const cardSecurityCode = document.getElementById('security-code');
+// const cardHolderName = document.getElementById('cardholder-name');
+
+// // Shipping information
+// const fullName = document.getElementById('full-name');
+// const streetAddress = document.getElementById('street-address');
+// const apptsAddress = document.getElementById('apt-suite-other');
+// const city = document.getElementById('city');
+// const postalCode = document.getElementById('postal-code');
 
 // which payment method is selected
 document.addEventListener("DOMContentLoaded", function () {
@@ -67,6 +85,48 @@ document.addEventListener("DOMContentLoaded", function () {
     creditCardRadio.addEventListener("change", togglePaymentSections);
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("checkout-form");
+
+    if (!form) {
+        console.error("Form with id 'checkout-form' not found.");
+        return;
+    }
+
+    form.addEventListener("submit", (event) => {
+        event.preventDefault(); // Prevent form refresh
+
+        // const emailValue = document.getElementById('email-address')?.value || '';
+        // const phoneNumberValue = document.getElementById('phone-number')?.value || '';
+        // const cardNumberValue = document.getElementById('card-number')?.value || '';
+        // const cardExpiryValue = document.getElementById('expiration-date')?.value || '';
+        // const cardSecurityCodeValue = document.getElementById('security-code')?.value || '';
+        // const cardHolderNameValue = document.getElementById('cardholder-name')?.value || '';
+        // const fullNameValue = document.getElementById('full-name')?.value || '';
+        // const streetAddressValue = document.getElementById('street-address')?.value || '';
+        // const apptsAddressValue = document.getElementById('apt-suite-other')?.value || '';
+        // const cityValue = document.getElementById('city')?.value || '';
+        // const postalCodeValue = document.getElementById('postal-code')?.value || '';
+
+        // console.log({
+        //     emailValue,
+        //     phoneNumberValue,
+        //     cardNumberValue,
+        //     cardExpiryValue,
+        //     cardSecurityCodeValue,
+        //     cardHolderNameValue,
+        //     fullNameValue,
+        //     streetAddressValue,
+        //     apptsAddressValue,
+        //     cityValue,
+        //     postalCodeValue,
+        // });
+
+        // email.value = '';
+
+    });
+});
+
 const addCls = (elementId, className) => {
     const element = document.getElementById(elementId);
     element.classList.add(className);
@@ -82,7 +142,7 @@ const replaceCls = (elementId, className1, className2) => {
     element.classList.replace(className1, className2);
 };
 
-// Products Data ( cart price, total, coupon discount, etc .)
+// Products Data ( cartprice, total, coupon discount, etc .)
 const packsPrice = {
     '1-person': {
         normallyPrice: '79.99',
@@ -232,20 +292,3 @@ const updatedPack = (productId) => {
         });
     }
 };
-
-// Form elements 
-const email = document.getElementById('email-address');
-const phoneNumber = document.getElementById('phone-number');
-
-// card elements
-const cardNumber = document.getElementById('card-number');
-const cardExpiry = document.getElementById('expiration-date');
-const cardSecurityCode = document.getElementById('security-code');
-const cardHolderName = document.getElementById('cardholder-name');
-
-// Shipping information
-const fullName = document.getElementById('full-name');
-const streetAddress = document.getElementById('street-address');
-const apptsAddress = document.getElementById('apt-suite-other');
-const city = document.getElementById('city');
-const postalCode = document.getElementById('postal-code');
