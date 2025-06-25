@@ -100,6 +100,9 @@ function updateTimer() {
 
     timeLeft--;
 }
+// Start timer on page load
+updateTimer(); // initial display
+const timerInterval = setInterval(updateTimer, 1000);
 
 // Below today's price ( checkBox Functionality )
 document.addEventListener("DOMContentLoaded", () => {
@@ -112,10 +115,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
-
-// Start timer on page load
-updateTimer(); // initial display
-const timerInterval = setInterval(updateTimer, 1000);
 
 // Products Data
 const packsPrice = {
