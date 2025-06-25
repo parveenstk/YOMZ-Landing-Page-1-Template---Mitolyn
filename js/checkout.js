@@ -101,6 +101,18 @@ function updateTimer() {
     timeLeft--;
 }
 
+// Below today's price ( checkBox Functionality )
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll('.cart-checkbox').forEach((container) => {
+
+        container.addEventListener('click', (event) => {
+            const checkbox = container.querySelector('input[type="checkbox"]');
+            if (event.target === checkbox) return;
+            checkbox.checked = !checkbox.checked;
+        });
+    });
+});
+
 // Start timer on page load
 updateTimer(); // initial display
 const timerInterval = setInterval(updateTimer, 1000);
@@ -220,12 +232,12 @@ const updatedPack = (productId) => {
                                 </p>
                             </div>
 
-                            <div class="cart-checkbox manage-checkbox">
-                                <input id="cart-checkbox" class="cursor" type="checkbox">
-                                <label for="cart-checkbox">
+                            <div class="cart-checkbox">
+                                <input name="cart-checkbox" class="cursor" type="checkbox">
+                                <p>
                                     I do not want to receive exclusive content and promotion form
                                     this vendor, and do not share my personal information.
-                                </label>
+                                </p>
                             </div>
 
                             <!-- Desktop - Cart Prices -->

@@ -38,9 +38,13 @@ body {
 
 .cart-checkbox {
     display: flex;
-    gap: 12px;
+    gap: 8px;
+    align-items: flex-start;
+    line-height: normal;
+    margin-top: 20px;
 
-    label {
+    label,
+    p {
         font-family: "Roboto", sans-serif;
         font-size: 14px !important;
         font-weight: 500;
@@ -48,6 +52,15 @@ body {
         text-transform: none;
         cursor: pointer;
     }
+}
+
+.cart-checkbox input[type="checkbox"] {
+    margin-top: 0px;
+    width: 20px;
+    height: 20px;
+    transform: scale(1.2);
+    margin-right: 0px;
+
 }
 
 #phone-number {
@@ -374,35 +387,6 @@ p.head-info {
     background: -moz-radial-gradient(circle, #12b2eb 41%, #004293 100%);
     background: -webkit-radial-gradient(circle, #12b2eb 41%, #004293 100%);
     background: radial-gradient(circle, #12b2eb 41%, #004293 100%);
-}
-
-.manage-checkbox {
-    margin-top: 20px;
-}
-
-.manage-checkbox {
-    display: flex;
-    gap: 8px;
-    align-items: flex-start;
-    line-height: normal;
-}
-
-.manage-checkbox input[type="checkbox"] {
-    margin-top: 0px;
-    width: 20px;
-    height: 20px;
-}
-
-.manage-checkbox input[type="checkbox"] {
-    transform: scale(1.2);
-    /* Increase the checkbox size */
-    margin-right: 0px;
-    /* Optional spacing */
-}
-
-.cart-checkbox label {
-    font-size: 14px;
-    /* You can increase text size if needed */
 }
 
 .closing-shownmodal .modal-content {
