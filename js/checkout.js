@@ -132,19 +132,19 @@ const packsPrice = {
 const upperCartData = {
     '1-person': {
         bagName: 'bag-1 Img',
-        imagePath: '/images/bags/desktop-bag-1.png',
+        imagePath: 'images/bags/desktop-bag-1.png',
         imageHeading: '1 Person - 1 Bag',
     },
 
     '2-people': {
         bagName: 'bag-2 Img',
-        imagePath: '/images/bags/desktop-bag-2.png',
+        imagePath: 'images/bags/desktop-bag-2.png',
         imageHeading: '2 People - 2 Bags',
     },
 
     '3-people': {
         bagName: 'bag-3 Img',
-        imagePath: '/images/bags/desktop-bag-3.png',
+        imagePath: 'images/bags/desktop-bag-3.png',
         imageHeading: '3 People - 3 Bags',
     },
 };
