@@ -5,6 +5,13 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+.terms {
+    font-size: 13px;
+    color: #414141;
+    text-transform: none;
+    font-weight: 500;
+}
+
 .bottom-pra {
     margin: 10px 0;
     font-weight: 500;
@@ -255,11 +262,6 @@ body {
     text-decoration: line-through;
     text-decoration-color: red;
     text-decoration-thickness: 2px;
-}
-
-.terms {
-    font-size: 13px;
-    color: #414141;
 }
 
 .checkout .form-floating .form-control {
