@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     };
 
-    // updatedPack(productId);
+    updatedPack(productId);
 
     // Initial check
     togglePaymentSections();
@@ -104,101 +104,101 @@ function updateTimer() {
 updateTimer(); // initial display
 const timerInterval = setInterval(updateTimer, 1000);
 
-// // Products Data
-// const packs = {
-//     '1-person': {
-//         imageHeading: '1 Person - 1 Bag',
-//         normallyPrice: '79.99',
-//         couponPercentage: '40%',
-//         couponPrice: '32',
-//         todayPrice: '47.99',
-//     },
+// Products Data
+const packs = {
+    '1-person': {
+        imageHeading: '1 Person - 1 Bag',
+        normallyPrice: '79.99',
+        couponPercentage: '40%',
+        couponPrice: '32',
+        todayPrice: '47.99',
+    },
 
-//     '2-people': {
-//         imageHeading: '2 People - 2 Bags',
-//         normallyPrice: '159.98',
-//         couponPercentage: '43%',
-//         couponPrice: '68.78',
-//         todayPrice: '91.20',
-//     },
+    '2-people': {
+        imageHeading: '2 People - 2 Bags',
+        normallyPrice: '159.98',
+        couponPercentage: '43%',
+        couponPrice: '68.78',
+        todayPrice: '91.20',
+    },
 
-//     '3-people': {
-//         imageHeading: '3 People - 3 Bags',
-//         normallyPrice: '239.97',
-//         couponPercentage: '46%',
-//         couponPrice: '110.39',
-//         todayPrice: '129.58',
-//     },
-// };
+    '3-people': {
+        imageHeading: '3 People - 3 Bags',
+        normallyPrice: '239.97',
+        couponPercentage: '46%',
+        couponPrice: '110.39',
+        todayPrice: '129.58',
+    },
+};
 
-// // Get query string from URL
-// const queryString = window.location.search;
-// const urlParams = new URLSearchParams(queryString);
-// const productId = urlParams.get('product');
-// console.log("productId:", productId);
+// Get query string from URL
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const productId = urlParams.get('product');
+console.log("productId:", productId);
 
-// // Update pack display
-// const updatedPack = (productId) => {
-//     const product = packs[productId];
-//     const totalPrice = parseFloat(product.todayPrice) + 19.95 + 32.17;
+// Update pack display
+const updatedPack = (productId) => {
+    const product = packs[productId];
+    const totalPrice = parseFloat(product.todayPrice) + 19.95 + 32.17;
 
-//     if (product) {
-//         const updatedPrice = `
-//                                         <div class="com-font normal">
-//                                                     <p class="mb-0 d-flex justify-content-between">
-//                                                         <span>Normally</span>
-//                                                         <span><del class="strike-red">$${product.normallyPrice}</del></span>
-//                                                     </p>
-//                                                 </div>
-//                                                 <div class="com-font coupon">
-//                                                     <p class="mb-0 d-flex justify-content-between">
-//                                                         <span>Coupon: <span
-//                                                                 class="off-color">${product.couponPercentage}<u></u></span></span>
-//                                                         <span class="off-color">$${product.couponPrice}</span>
-//                                                     </p>
-//                                                 </div>
-//                                                 <hr>
-//                                                 <div class="total-price">
-//                                                     <p class="mb-0 d-flex justify-content-between">
-//                                                         <span>Today's Price</span>
-//                                                         <span>$${product.todayPrice}</span>
-//                                                     </p>
-//                                                 </div>
+    if (product) {
+        const updatedPrice = `
+                                        <div class="com-font normal">
+                                                    <p class="mb-0 d-flex justify-content-between">
+                                                        <span>Normally</span>
+                                                        <span><del class="strike-red">$${product.normallyPrice}</del></span>
+                                                    </p>
+                                                </div>
+                                                <div class="com-font coupon">
+                                                    <p class="mb-0 d-flex justify-content-between">
+                                                        <span>Coupon: <span
+                                                                class="off-color">${product.couponPercentage}<u></u></span></span>
+                                                        <span class="off-color">$${product.couponPrice}</span>
+                                                    </p>
+                                                </div>
+                                                <hr>
+                                                <div class="total-price">
+                                                    <p class="mb-0 d-flex justify-content-between">
+                                                        <span>Today's Price</span>
+                                                        <span>$${product.todayPrice}</span>
+                                                    </p>
+                                                </div>
 
-//                                                 <div class="cart-checkbox manage-checkbox">
-//                                                     <input id="cart-checkbox" class="cursor" type="checkbox">
-//                                                     <label for="cart-checkbox">
-//                                                         I do not want to receive exclusive content and promotion form
-//                                                         this vendor, and do not share my personal information.
-//                                                     </label>
-//                                                 </div>
+                                                <div class="cart-checkbox manage-checkbox">
+                                                    <input id="cart-checkbox" class="cursor" type="checkbox">
+                                                    <label for="cart-checkbox">
+                                                        I do not want to receive exclusive content and promotion form
+                                                        this vendor, and do not share my personal information.
+                                                    </label>
+                                                </div>
 
-//                                                 <!-- Desktop - Cart Prices -->
-//                                                 <div class="subtotal mt-3">
-//                                                     <p class="mb-0 d-flex justify-content-between">
-//                                                         <span>Subtotal</span>
-//                                                         <span>$${product.todayPrice}</span>
-//                                                     </p>
-//                                                     <p class="mb-0 d-flex justify-content-between">
-//                                                         <span>Shipping & Handling</span>
-//                                                         <span>$19.95</span>
-//                                                     </p>
-//                                                     <p class="mb-0 d-flex justify-content-between">
-//                                                         <span>Tax</span>
-//                                                         <span>$32.17</span>
-//                                                     </p>
-//                                                     <p class="mb-0 d-flex justify-content-between">
-//                                                         <span>TOTAL</span>
-//                                                         <span>$${totalPrice}</span>
-//                                                     </p>
-//                                         </div>`;
+                                                <!-- Desktop - Cart Prices -->
+                                                <div class="subtotal mt-3">
+                                                    <p class="mb-0 d-flex justify-content-between">
+                                                        <span>Subtotal</span>
+                                                        <span>$${product.todayPrice}</span>
+                                                    </p>
+                                                    <p class="mb-0 d-flex justify-content-between">
+                                                        <span>Shipping & Handling</span>
+                                                        <span>$19.95</span>
+                                                    </p>
+                                                    <p class="mb-0 d-flex justify-content-between">
+                                                        <span>Tax</span>
+                                                        <span>$32.17</span>
+                                                    </p>
+                                                    <p class="mb-0 d-flex justify-content-between">
+                                                        <span>TOTAL</span>
+                                                        <span>$${totalPrice}</span>
+                                                    </p>
+                                        </div>`;
 
-//         // Update the HTML
-//         const priceContainers = document.querySelectorAll('.product-prices');
-//         console.log("priceContainer:", priceContainers);
+        // Update the HTML
+        const priceContainers = document.querySelectorAll('.product-prices');
+        console.log("priceContainer:", priceContainers);
 
-//         priceContainers.forEach(container => {
-//             container.innerHTML = updatedPrice;
-//         });
-//     }
-// };
+        priceContainers.forEach(container => {
+            container.innerHTML = updatedPrice;
+        });
+    }
+};
