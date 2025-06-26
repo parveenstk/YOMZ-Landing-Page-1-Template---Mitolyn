@@ -149,6 +149,7 @@ const packsPrice = {
         couponPercentage: '40%',
         couponPrice: '32',
         todayPrice: '47.99',
+        shipping: '9.95',
     },
 
     '2-people': {
@@ -156,6 +157,7 @@ const packsPrice = {
         couponPercentage: '43%',
         couponPrice: '68.78',
         todayPrice: '91.20',
+        shipping: '9.95',
     },
 
     '3-people': {
@@ -163,6 +165,7 @@ const packsPrice = {
         couponPercentage: '46%',
         couponPrice: '110.39',
         todayPrice: '129.58',
+        shipping: 'FREE',
     },
 };
 
@@ -197,7 +200,9 @@ const productId = urlParams.get('product');
 const updatedPack = (productId) => {
     const product = packsPrice[productId];
     const uprCart = upperCartData[productId];
-    const totalPrice = parseFloat(product.todayPrice) + 19.95 + 32.17;
+    const totalPrice = product.shipping === "FREE"
+        ? parseFloat(product.todayPrice)
+        : (parseFloat(product.todayPrice) + parseFloat(product.shipping));
 
     if (uprCart) {
         const updatedUprCart = `
@@ -209,14 +214,12 @@ const updatedPack = (productId) => {
                             <p class="mb-0"><strong>Cart Summary</strong></p>
                             <h4 class="mb-0"><strong>${uprCart.imageHeading}</strong></h4>
                             <p style="text-align:center">
-                                <span style="background-color:rgba( 15 , 128 , 0 , 1 );color:rgba( 255 , 255 , 255 , 1 );font-family:'roboto' , sans-serif;font-size:14px">
+                                <span class="ratings">
                                     <strong>&nbsp;4.5&nbsp;</strong>
                                 </span>
                                 <span
-                                    style="background-color:rgba( 255 , 255 , 255 , 0.01 );font-family:'roboto' , sans-serif;font-size:14px"><strong></strong></span>
-                                <span
-                                    style="background-color:rgba( 255 , 255 , 255 , 0.01 );color:rgba( 15 , 128 , 0 , 1 );font-family:'roboto' , sans-serif;font-size:14px">
-                                    <strong>Excellent!</strong>
+                                    style="background-color:rgba( 255 , 255 , 255 , 0.01 ); color:rgba( 15 , 128 , 0 , 1 );font-family:'roboto' , sans-serif;font-size:14px">
+                                    <strong>&nbsp;Excellent!</strong>
                                 </span>
                                 <span style="font-family:'roboto' , sans-serif;font-size:14px"></span>
                                 <span
@@ -246,7 +249,7 @@ const updatedPack = (productId) => {
                                 <p class="mb-0 d-flex justify-content-between">
                                     <span>Coupon: <span
                                             class="off-color">${product.couponPercentage}<u></u></span></span>
-                                    <span class="off-color">$${product.couponPrice}</span>
+                                    <span class="off-color">-$${product.couponPrice}</span>
                                 </p>
                             </div>
                             <hr>
@@ -273,11 +276,11 @@ const updatedPack = (productId) => {
                                 </p>
                                 <p class="mb-0 d-flex justify-content-between">
                                     <span>Shipping & Handling</span>
-                                    <span>$19.95</span>
+                                    <span>$${product.shipping}</span>
                                 </p>
                                 <p class="mb-0 d-flex justify-content-between">
                                     <span>Tax</span>
-                                    <span>$32.17</span>
+                                    <span>$0.00</span>
                                 </p>
                                 <p class="mb-0 d-flex justify-content-between">
                                     <span>TOTAL</span>

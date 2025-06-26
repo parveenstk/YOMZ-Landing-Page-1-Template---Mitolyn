@@ -5,6 +5,13 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+.ratings {
+    background-color: rgba(15, 128, 0, 1);
+    color: rgba(255, 255, 255, 1);
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+}
+
 .terms {
     font-size: 13px;
     color: #414141;
