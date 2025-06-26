@@ -61,15 +61,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-
-// link to checkout page
-document.addEventListener("DOMContentLoaded", () => {
-  const checkoutLinks = document.querySelectorAll('.checkout-link');
-  const link = "https://suretekinfosoft.com/demo106/funnel1/lp1/offer/checkout.html";
-
-  checkoutLinks.forEach(el => {
-    el.href = link;
-  });
-});
-
-// Exit pop-up functaionality
