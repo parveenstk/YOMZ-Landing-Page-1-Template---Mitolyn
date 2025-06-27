@@ -9,24 +9,24 @@ const buttonDescMobile = document.getElementById('description-mobile');
 const payNowMobile = document.getElementById('payNow-button-mobile');
 const payPalMobile = document.getElementById('payPal-button-mobile');
 
-// // Customer information
-// const email = document.getElementById('email-address');
-// const phoneNumber = document.getElementById('phone-number');
+// Customer information
+const email = document.getElementById('email-address');
+const phoneNumber = document.getElementById('phone-number');
 
-// // card elements
-// const cardNumber = document.getElementById('card-number');
-// const cardExpiry = document.getElementById('expiration-date');
-// const cardSecurityCode = document.getElementById('security-code');
-// const cardHolderName = document.getElementById('cardholder-name');
+// card elements
+const cardNumber = document.getElementById('card-number');
+const cardExpiry = document.getElementById('expiration-date');
+const cardSecurityCode = document.getElementById('security-code');
+const cardHolderName = document.getElementById('cardholder-name');
 
-// // Shipping information
-// const fullName = document.getElementById('full-name');
-// const streetAddress = document.getElementById('street-address');
-// const apptsAddress = document.getElementById('apt-suite-other');
-// const city = document.getElementById('city');
-// const postalCode = document.getElementById('postal-code');
+// Shipping information
+const fullName = document.getElementById('full-name');
+const streetAddress = document.getElementById('street-address');
+const apptsAddress = document.getElementById('apt-suite-other');
+const city = document.getElementById('city');
+const postalCode = document.getElementById('postal-code');
 
-// // which payment method is selected
+// which payment method is selected
 document.addEventListener("DOMContentLoaded", function () {
     const paypalRadio = document.getElementById("payPal-radio");
     const creditCardRadio = document.getElementById("creditCard-radio");
@@ -34,101 +34,143 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Bootstrap Collapse instance
     const collapseInstance = new bootstrap.Collapse(cardDetails, {
-        toggle: false  // Don't toggle immediately on instantiation
+        toggle: false // Don't toggle immediately on instantiation
     });
 
     function togglePaymentSections() {
         if (paypalRadio.checked) {
-            collapseInstance.hide();  // use Bootstrap's method for transition
+            collapseInstance.hide(); // Bootstrap collapse hide
 
-            // replace class to show 
-            const Ids = ['payPal-button', 'payPal-button-mobile'];
-            Ids.forEach((id) => {
-                replaceCls(id, 'hide', 'show')
+            ['payPal-button', 'payPal-button-mobile'].forEach(id => {
+                replaceCls(id, 'hide', 'show');
             });
 
-            // replace class to hide
-            const hideId = ['payNow-button', 'payNow-button-mobile'];
-            hideId.forEach((id) => {
-                replaceCls(id, 'show', 'hide')
+            ['payNow-button', 'payNow-button-mobile'].forEach(id => {
+                replaceCls(id, 'show', 'hide');
             });
 
-            // change button description
-            buttonDesc.innerHTML = 'By clicking Continue to PayPal below, I agree to the <a href="#">Terms of Sale</a>.';
-            buttonDescMobile.innerHTML = 'By clicking Continue to PayPal below, I agree to the <a href="#">Terms of Sale</a>.';
-
+            buttonDesc.innerHTML =
+                'By clicking Continue to PayPal below, I agree to the <a href="#">Terms of Sale</a>.';
+            buttonDescMobile.innerHTML =
+                'By clicking Continue to PayPal below, I agree to the <a href="#">Terms of Sale</a>.';
         } else if (creditCardRadio.checked) {
-            collapseInstance.show();  // use Bootstrap's method for transition
+            collapseInstance.show(); // Bootstrap collapse show
 
-            // replace class to show 
-            const Ids = ['payNow-button', 'payNow-button-mobile'];
-            Ids.forEach((id) => {
-                replaceCls(id, 'hide', 'show')
+            ['payNow-button', 'payNow-button-mobile'].forEach(id => {
+                replaceCls(id, 'hide', 'show');
             });
 
-            // replace class to hide
-            const hideId = ['payPal-button', 'payPal-button-mobile'];
-            hideId.forEach((id) => {
-                replaceCls(id, 'show', 'hide')
+            ['payPal-button', 'payPal-button-mobile'].forEach(id => {
+                replaceCls(id, 'show', 'hide');
             });
 
-            // change button description
-            buttonDesc.innerHTML = 'By clicking Pay Now below, I agree to the <a href="#">Terms of Sale</a>.';
-            buttonDescMobile.innerHTML = 'By clicking Pay Now below, I agree to the <a href="#">Terms of Sale</a>.';
+            buttonDesc.innerHTML =
+                'By clicking Pay Now below, I agree to the <a href="#">Terms of Sale</a>.';
+            buttonDescMobile.innerHTML =
+                'By clicking Pay Now below, I agree to the <a href="#">Terms of Sale</a>.';
         }
     }
-    // Initial check
+
+    // Initial toggle check
     togglePaymentSections();
 
     // Event listeners
     paypalRadio.addEventListener("change", togglePaymentSections);
     creditCardRadio.addEventListener("change", togglePaymentSections);
 
-    // updating cart details
+    // Updating cart details (you mentioned this is custom)
     updatedPack(productId);
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-    const form = document.getElementById("checkout-form");
+document.addEventListener("DOMContentLoaded", function () {
+    const filters = {
+        phone: value => value.replace(/[^0-9+()\-\s]/g, ''),
+        'card-number': value => value.replace(/\D/g, '').replace(/(.{4})/g, '$1 ').trim(),
+        expiry: value => {
+            let input = value.replace(/\D/g, '');
+            let month = input.slice(0, 2);
+            let year = input.slice(2, 4);
+            if (month.length === 2) {
+                let numericMonth = parseInt(month, 10);
+                if (numericMonth < 1) month = '01';
+                if (numericMonth > 12) month = '12';
+            }
+            return input.length > 2 ? `${month}/${year}` : month;
+        },
+        digits: value => value.replace(/\D/g, ''),
+        name: value => value.replace(/[^A-Za-z\s.'-]/g, ''),
+        city: value => value.replace(/[^A-Za-z\s.'-]/g, ''),
+        address: value => value.replace(/[^\w\s.,'\-\/]/g, ''),
+        apt: value => value.replace(/[^\w\s.#,\-\/]/g, ''),
+        postal: value => value.replace(/\D/g, '')
+    };
 
-    if (!form) {
-        console.error("Form with id 'checkout-form' not found.");
-        return;
-    }
-
-    form.addEventListener("submit", (event) => {
-        event.preventDefault(); // Prevent form refresh
-
-        // const emailValue = document.getElementById('email-address')?.value || '';
-        // const phoneNumberValue = document.getElementById('phone-number')?.value || '';
-        // const cardNumberValue = document.getElementById('card-number')?.value || '';
-        // const cardExpiryValue = document.getElementById('expiration-date')?.value || '';
-        // const cardSecurityCodeValue = document.getElementById('security-code')?.value || '';
-        // const cardHolderNameValue = document.getElementById('cardholder-name')?.value || '';
-        // const fullNameValue = document.getElementById('full-name')?.value || '';
-        // const streetAddressValue = document.getElementById('street-address')?.value || '';
-        // const apptsAddressValue = document.getElementById('apt-suite-other')?.value || '';
-        // const cityValue = document.getElementById('city')?.value || '';
-        // const postalCodeValue = document.getElementById('postal-code')?.value || '';
-
-        // console.log({
-        //     emailValue,
-        //     phoneNumberValue,
-        //     cardNumberValue,
-        //     cardExpiryValue,
-        //     cardSecurityCodeValue,
-        //     cardHolderNameValue,
-        //     fullNameValue,
-        //     streetAddressValue,
-        //     apptsAddressValue,
-        //     cityValue,
-        //     postalCodeValue,
-        // });
-
-        // email.value = '';
-
+    // Attach filters dynamically based on data-filter attribute
+    document.querySelectorAll('[data-filter]').forEach(input => {
+        const type = input.getAttribute('data-filter');
+        const filterFn = filters[type];
+        if (filterFn) {
+            input.addEventListener('input', function () {
+                this.value = filterFn(this.value);
+            });
+        }
     });
+
+    // Handle form submission
+    const form = document.getElementById('checkout-form');
+    if (form) {
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const values = {};
+
+            // Get selected payment method radio
+            const selectedPayment = form.querySelector('input[name="flexRadioDefault"]:checked');
+            console.log("selectedPayment:", selectedPayment);
+
+            if (selectedPayment) {
+                values['payment-method'] =
+                    selectedPayment.id === 'creditCard-radio'
+                        ? 'Credit Card'
+                        : selectedPayment.id === 'payPal-radio'
+                            ? 'PayPal'
+                            : 'Unknown';
+            } else {
+                values['payment-method'] = '';
+            }
+
+            // Get all non-radio inputs (text, checkboxes)
+            const inputs = form.querySelectorAll('input:not([type="radio"])');
+            inputs.forEach(input => {
+                const key = input.id || input.name || 'unknown';
+
+                if (input.type === 'checkbox') {
+                    // Show true if checked, otherwise false
+                    values[key] = input.checked;
+                } else {
+                    // Show value or empty string if empty
+                    values[key] = input.value ? input.value.trim() : '';
+                }
+            });
+
+            // all values are showing
+            // console.log('Form submitted with values:', values);
+
+            // Save to localStorage
+            localStorage.setItem('checkoutData', JSON.stringify(values));
+
+            // Reset the form
+            form.reset();
+
+            // Optional: Reset any payment section display
+            // togglePaymentSections(); // You can call this again to re-toggle UI if needed
+        });
+    }
 });
+
+// Saving data in localStorage
+const savedData = JSON.parse(localStorage.getItem('checkoutData'));
+console.log("savedData:", savedData);
 
 const addCls = (elementId, className) => {
     const element = document.getElementById(elementId);

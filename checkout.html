@@ -63,7 +63,7 @@
                                 <div class="cart-summerty">
                                     <div class="upper-cart">
                                         <div class="products-image">
-                                            <img src="images/banner-bag.png" class="img-fluid">
+                                            <img src="./images/bags/desktop-bag-3.png" class="img-fluid">
                                         </div>
                                         <div class="summery-data text-center">
                                             <p class="mb-0"><strong>Cart Summary</strong></p>
@@ -126,13 +126,16 @@
                             <h3>Customer Information</h3>
                             <!-- Email Address -->
                             <div class="form-floating mb-1">
-                                <input type="email" class="form-control" id="email-address" placeholder="Email address">
+                                <input type="email" class="form-control" id="email-address" placeholder="Email address"
+                                    maxlength="50" autocomplete="email" >
                                 <label for="email-address">Email address</label>
                             </div>
                             <small>To receive an email order confirmation.</small>
                             <!-- Phone Number -->
                             <div class="form-floating mb-1">
-                                <input type="number" class="form-control" id="phone-number" placeholder="Phone number">
+                                <input type="tel" class="form-control" id="phone-number" data-filter="phone"
+                                    placeholder="Phone number" maxlength="20" autocomplete="tel" inputmode="tel"
+                                    >
                                 <label for="phone-number">Phone number</label>
                             </div>
                             <small>To receive tracking information.</small>
@@ -175,7 +178,9 @@
                                                     <div class="col-12">
                                                         <div class="form-floating mb-3">
                                                             <input type="text" class="form-control" id="card-number"
-                                                                placeholder="Card Number">
+                                                                data-filter="card-number" placeholder="Card Number"
+                                                                inputmode="numeric" maxlength="19"
+                                                                autocomplete="cc-number" >
                                                             <label for="card-number">Card Number</label>
                                                         </div>
                                                     </div>
@@ -184,14 +189,19 @@
                                                     <div class="col-6">
                                                         <div class="form-floating mb-3">
                                                             <input type="text" class="form-control" id="expiration-date"
-                                                                placeholder="Expiration Date">
+                                                                data-filter="expiry" placeholder="MM/YY"
+                                                                inputmode="numeric" maxlength="5" autocomplete="cc-exp"
+                                                                >
                                                             <label for="expiration-date">Expiration Date</label>
                                                         </div>
                                                     </div>
                                                     <div class="col-6">
                                                         <div class="form-floating mb-3">
                                                             <input type="text" class="form-control" id="security-code"
-                                                                placeholder="Security Code">
+                                                                data-filter="digits" placeholder="Security Code"
+                                                                inputmode="numeric" maxlength="4" autocomplete="cc-csc"
+                                                                
+                                                                title="Please enter a 3 or 4 digit security code">
                                                             <label for="security-code">Security Code</label>
                                                         </div>
                                                     </div>
@@ -200,7 +210,8 @@
                                                     <div class="col-12">
                                                         <div class="form-floating mb-3">
                                                             <input type="text" class="form-control" id="cardholder-name"
-                                                                placeholder="Cardholder Name">
+                                                                data-filter="name" placeholder="Cardholder Name"
+                                                                autocomplete="cc-name" maxlength="50" >
                                                             <label for="cardholder-name">Cardholder Name</label>
                                                         </div>
                                                     </div>
@@ -368,22 +379,25 @@
                                     <!-- </div> -->
                                     <div class="col-12">
                                         <div class="form-floating mb-3">
-                                            <input type="text" class="form-control" id="full-name"
-                                                placeholder="Full Name">
+                                            <input type="text" class="form-control" id="full-name" name="full-name"
+                                                data-filter="name" placeholder="Full Name" autocomplete="name"
+                                                maxlength="50" >
                                             <label for="full-name">Full Name</label>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating mb-3">
                                             <input type="text" class="form-control" id="street-address"
-                                                placeholder="Street Address" autocomplete="street-address">
+                                                data-filter="address" name="street-address" placeholder="Street Address"
+                                                autocomplete="address-line1" maxlength="100" >
                                             <label for="street-address">Street Address</label>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating mb-3">
                                             <input type="text" class="form-control" id="apt-suite-other"
-                                                placeholder="Apt / Suite / Other">
+                                                data-filter="apt" placeholder="Apt / Suite / Other"
+                                                autocomplete="address-line2" maxlength="50">
                                             <label for="apt-suite-other">Apt / Suite / Other</label>
                                         </div>
                                     </div>
@@ -391,14 +405,17 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-floating mb-3">
-                                            <input type="text" class="form-control" id="city" placeholder="City">
+                                            <input type="text" class="form-control" id="city" name="city"
+                                                data-filter="city" placeholder="City" autocomplete="address-level2"
+                                                maxlength="50" >
                                             <label for="city">City</label>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-floating mb-3">
-                                            <input type="text" class="form-control" id="postal-code"
-                                                placeholder="Postal Code" autocomplete="postal-code">
+                                            <input type="text" class="form-control" id="postal-code" name="postal-code"
+                                                data-filter="postal" placeholder="Postal Code"
+                                                autocomplete="postal-code" maxlength="8" >
                                             <label for="postal-code">Postal Code</label>
                                         </div>
                                     </div>
@@ -457,7 +474,7 @@
                                     <div class="cart-summerty">
                                         <div class="upper-cart">
                                             <div class="products-image">
-                                                <img src="images/banner-bag.png" class="img-fluid">
+                                                <img src="./images/bags/desktop-bag-3.png" class="img-fluid">
                                             </div>
                                             <div class="summery-data text-center">
                                                 <p class="mb-0"><strong>Cart Summary</strong></p>
@@ -508,7 +525,8 @@
                                                     </p>
                                                 </div>
                                                 <div class="cart-checkbox manage-checkbox">
-                                                    <input id="cart-checkbox" class="cursor" type="checkbox">
+                                                    <input id="cart-checkbox" name="cart-checkbox" class="cursor"
+                                                        type="checkbox">
                                                     <label for="cart-checkbox">
                                                         I do not want to receive exclusive content and promotion form
                                                         this
