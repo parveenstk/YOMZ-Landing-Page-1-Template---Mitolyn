@@ -47,7 +47,7 @@
                     </p>
                 </div>
             </div>
-            
+
             <!-- checkOut form -->
             <form id="checkout-form">
                 <div class="row maange-role-padding">
@@ -77,7 +77,7 @@
                                                     style="background-color:rgba( 255 , 255 , 255 , 0.01 );font-family:'roboto' , sans-serif;font-size:14px"><strong></strong></span>
                                                 <span
                                                     style="background-color:rgba( 255 , 255 , 255 , 0.01 );color:rgba( 15 , 128 , 0 , 1 );font-family:'roboto' , sans-serif;font-size:14px">
-                                                    <strong>Excellent!</strong>
+                                                    <strong>&nbsp;Excellent!</strong>
                                                 </span>
                                                 <span style="font-family:'roboto' , sans-serif;font-size:14px"></span>
                                                 <span
@@ -147,13 +147,14 @@
                                 <!-- Credit Card -->
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed padding0" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                        <button id="credit-card-select" class="accordion-button collapsed padding0"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
                                             aria-expanded="false" aria-controls="collapseTwo">
                                             <div class="form-check margin0 padding0">
-                                                <label class="form-check-label btn-padding cursor" for="creditCard-btn">
+                                                <label class="form-check-label btn-padding cursor"
+                                                    for="creditCard-radio">
                                                     <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                                        id="creditCard-btn" checked>
+                                                        id="creditCard-radio" checked>
                                                     <div class="d-flex justify-content-between gap-manation cursor">
                                                         <span class="lebel-text">Credit Card</span>
                                                         <span class="text-end">
@@ -166,7 +167,7 @@
                                         </button>
                                     </h2>
                                     <!-- Card Details -->
-                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                    <div id="collapseTwo" class="accordion-collapse collapse show"
                                         data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
                                             <div class="payment-form controlform">
@@ -211,13 +212,13 @@
                                 <!-- PayPal -->
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
-                                        <button class="accordion-button padding0" type="button"
+                                        <button id="payPal-select" class="accordion-button padding0" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
                                             aria-controls="collapseOne">
                                             <div class="payPal-button">
-                                                <label class="form-check-label cursor btn-padding" for="payPal-btn">
+                                                <label class="form-check-label cursor btn-padding" for="payPal-radio">
                                                     <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                                        id="payPal-btn">
+                                                        id="payPal-radio">
                                                     <img src="images/PayPal.svg">
                                                 </label>
                                             </div>
@@ -472,7 +473,7 @@
                                                     </span>
                                                     <span
                                                         style="background-color:rgba( 255 , 255 , 255 , 0.01 );color:rgba( 15 , 128 , 0 , 1 );font-family:'roboto' , sans-serif;font-size:14px">
-                                                        <strong>Excellent!</strong>
+                                                        <strong>&nbsp;Excellent!</strong>
                                                     </span>
                                                     <span
                                                         style="font-family:'roboto' , sans-serif;font-size:14px"></span>
@@ -522,11 +523,11 @@
                                                     </p>
                                                     <p class="mb-0 d-flex justify-content-between">
                                                         <span>Shipping & Handling</span>
-                                                        <span>$19.95</span>
+                                                        <span>FREE</span>
                                                     </p>
                                                     <p class="mb-0 d-flex justify-content-between">
                                                         <span>Tax</span>
-                                                        <span>$32.17</span>
+                                                        <span>$0.00</span>
                                                     </p>
                                                     <p class="mb-0 d-flex justify-content-between">
                                                         <span>TOTAL</span>

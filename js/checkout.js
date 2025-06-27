@@ -26,15 +26,20 @@ const payPalMobile = document.getElementById('payPal-button-mobile');
 // const city = document.getElementById('city');
 // const postalCode = document.getElementById('postal-code');
 
-// which payment method is selected
+// // which payment method is selected
 document.addEventListener("DOMContentLoaded", function () {
-    const paypalRadio = document.getElementById("payPal-btn");
-    const creditCardRadio = document.getElementById("creditCard-btn");
-    const creditCardCollapse = document.getElementById("collapseTwo");
+    const paypalRadio = document.getElementById("payPal-radio");
+    const creditCardRadio = document.getElementById("creditCard-radio");
+    const cardDetails = document.getElementById("collapseTwo");
+
+    // Bootstrap Collapse instance
+    const collapseInstance = new bootstrap.Collapse(cardDetails, {
+        toggle: false  // Don't toggle immediately on instantiation
+    });
 
     function togglePaymentSections() {
         if (paypalRadio.checked) {
-            creditCardCollapse.classList.remove("show");
+            collapseInstance.hide();  // use Bootstrap's method for transition
 
             // replace class to show 
             const Ids = ['payPal-button', 'payPal-button-mobile'];
@@ -48,12 +53,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 replaceCls(id, 'show', 'hide')
             });
 
-            // other elements
-            buttonDesc.innerHTML = 'By clicking Continue to PayPal below, I agree to the <a href="#">Terms of Sale</a>.'
-            buttonDescMobile.innerHTML = 'By clicking Continue to PayPal below, I agree to the <a href="#">Terms of Sale</a>.'
+            // change button description
+            buttonDesc.innerHTML = 'By clicking Continue to PayPal below, I agree to the <a href="#">Terms of Sale</a>.';
+            buttonDescMobile.innerHTML = 'By clicking Continue to PayPal below, I agree to the <a href="#">Terms of Sale</a>.';
 
         } else if (creditCardRadio.checked) {
-            creditCardCollapse.classList.add("show");
+            collapseInstance.show();  // use Bootstrap's method for transition
 
             // replace class to show 
             const Ids = ['payNow-button', 'payNow-button-mobile'];
@@ -67,22 +72,20 @@ document.addEventListener("DOMContentLoaded", function () {
                 replaceCls(id, 'show', 'hide')
             });
 
-            // other elements
-            buttonDescMobile.innerHTML = 'By clicking Pay Now below, I agree to the <a href = "#"> Terms of Sale</a>.'
-            buttonDesc.innerHTML = 'By clicking Pay Now below, I agree to the <a href = "#"> Terms of Sale</a>.';
+            // change button description
+            buttonDesc.innerHTML = 'By clicking Pay Now below, I agree to the <a href="#">Terms of Sale</a>.';
+            buttonDescMobile.innerHTML = 'By clicking Pay Now below, I agree to the <a href="#">Terms of Sale</a>.';
         }
-
-    };
-
-    // updating cart details
-    updatedPack(productId);
-
+    }
     // Initial check
     togglePaymentSections();
 
     // Event listeners
     paypalRadio.addEventListener("change", togglePaymentSections);
     creditCardRadio.addEventListener("change", togglePaymentSections);
+
+    // updating cart details
+    updatedPack(productId);
 });
 
 document.addEventListener("DOMContentLoaded", () => {
