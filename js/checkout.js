@@ -162,6 +162,11 @@ document.addEventListener("DOMContentLoaded", function () {
             // Reset the form
             form.reset();
 
+            // after submit render to ( udsell offer_1 page )
+            setTimeout(() => {
+                window.location.href = 'https://suretekinfosoft.com/demo106/funnel1/lp1/offer/offer1.html';
+            }, 500);
+
             // Optional: Reset any payment section display
             // togglePaymentSections(); // You can call this again to re-toggle UI if needed
         });
@@ -293,7 +298,7 @@ const updatedPack = (productId) => {
                             <div class="com-font coupon">
                                 <p class="mb-0 d-flex justify-content-between">
                                     <span>Coupon: <span
-                                            class="off-color">${product.couponPercentage}<u></u></span></span>
+                                            class="off-color"><u>${product.couponPercentage}OFF</u></span></span>
                                     <span class="off-color">-$${product.couponPrice}</span>
                                 </p>
                             </div>
