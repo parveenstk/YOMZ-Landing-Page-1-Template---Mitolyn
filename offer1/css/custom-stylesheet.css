@@ -61,6 +61,15 @@ body {
     font-family: 'Century Gothic';
 }
 
+#timer-box {
+    #timer-display {
+        text-align: center !important;
+        font-size: 26px !important;
+        color: #e6193c !important;
+        font-weight: 700 !important;
+    }
+}
+
 .dsblockline {
     display: block;
 }
@@ -244,7 +253,7 @@ footer .ssl img {
 }
 
 .headinfbg {
-       background: #FFEB00;
+    background: #FFEB00;
     color: #E6193C;
     font-size: 20px;
     font-weight: 700;
@@ -415,7 +424,9 @@ a.tagroow {
     border-radius: 11px;
 }
 
-.offerpop .managecheckoutbtn:hover{ background: #d21131;}
+.offerpop .managecheckoutbtn:hover {
+    background: #d21131;
+}
 
 .pulse {
     animation-name: pulse;
@@ -518,7 +529,9 @@ a.tagroow {
 
 @media screen and (max-width: 767px) {
 
-    .manage-footersec p{    line-height: normal;}
+    .manage-footersec p {
+        line-height: normal;
+    }
 
     .products-image img {
         padding-top: 0px;
@@ -634,7 +647,7 @@ a.tagroow {
 
     .manage-footersec img {
         width: 30%;
-                margin-bottom: 10px;
+        margin-bottom: 10px;
     }
 
     .realtop-headinf {
@@ -648,7 +661,7 @@ a.tagroow {
         text-align: center;
         margin-top: 5px;
         margin-bottom: 0px;
-               font-size: calc(4.5vw - 0px) !important;
+        font-size: calc(4.5vw - 0px) !important;
         line-height: calc(0.9em + 1vw) !important;
 
     }
@@ -819,7 +832,7 @@ a.tagroow {
     }
 
     #repon-heading .repon-heading {
-                font-size: calc(7vw - 0px) !important;
+        font-size: calc(7vw - 0px) !important;
         line-height: calc(0.9em + 1vw) !important;
     }
 
@@ -1086,8 +1099,8 @@ input[name="other_flavor"]::placeholder {
         font-size: 20px !important;
     }
 
-       #repon-heading .repon-heading {
-                font-size: calc(6.5vw - 0px) !important;
+    #repon-heading .repon-heading {
+        font-size: calc(6.5vw - 0px) !important;
         line-height: calc(0.9em + 1vw) !important;
     }
 
