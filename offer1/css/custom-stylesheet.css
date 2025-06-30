@@ -64,9 +64,13 @@ body {
 #timer-box {
     #timer-display {
         text-align: center !important;
-        font-size: 26px !important;
+        font-size: 22px !important;
         color: #e6193c !important;
         font-weight: 700 !important;
+
+        #timer-text {
+            color: black !important;
+        }
     }
 }
 

@@ -7,11 +7,11 @@ function updateTimer() {
     const minutes = String(Math.floor(timeLeft / 60)).padStart(2, '0');
     const seconds = String(timeLeft % 60).padStart(2, '0');
     // timerDisplay.textContent = `${minutes}:${seconds}`;
-    timerDisplay.innerHTML = `Offer will be Expired in : ${minutes}:${seconds}`;
+    timerDisplay.innerHTML = `<span id="timer-text">Offer will be Expired in :</span> ${minutes}:${seconds}`;
 
     if (timeLeft <= 0) {
         clearInterval(timerInterval);
-        timerDisplay.innerHTML = `Offer Expired !`
+        timerDisplay.innerHTML = `<span id="timer-text">Offer Expired !</span>`
         // timerBox.style.display = 'none'; // or any other action
     }
 
