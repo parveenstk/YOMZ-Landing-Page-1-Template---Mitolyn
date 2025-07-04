@@ -87,44 +87,30 @@ document.addEventListener("DOMContentLoaded", function () {
         phone: value => value.replace(/[^0-9+()\-\s]/g, ''),
         'card-number': value => value.replace(/\D/g, '').replace(/(.{4})/g, '$1 ').trim(),
         expiry: value => {
-            const currentYearFull = new Date().getFullYear(); // e.g., 2025
-            const currentYearShort = parseInt(currentYearFull.toString().slice(-2)); // e.g., 25
-            const maxYearShort = (currentYearShort + 10) % 100; // e.g., 35 if current is 25
-
+            const currentYearShort = parseInt(new Date().getFullYear().toString().slice(-2));
             let input = value.replace(/\D/g, '');
             let month = input.slice(0, 2);
             let year = input.slice(2, 4);
 
             if (month.length === 2) {
-                let numericMonth = parseInt(month, 10);
-                if (numericMonth < 1) month = '01';
-                if (numericMonth > 12) month = '12';
+                let m = parseInt(month, 10);
+                if (m < 1) month = '01';
+                if (m > 12) month = '12';
             }
 
             if (year.length === 2) {
-                let numericYear = parseInt(year, 10);
-
-                // Adjust if year is less than current or more than max
-                if (numericYear < currentYearShort) {
-                    year = currentYearShort.toString().padStart(2, '0');
-                } else if (numericYear > maxYearShort) {
-                    year = maxYearShort.toString().padStart(2, '0');
-                }
+                let y = parseInt(year, 10);
+                if (y < currentYearShort) year = currentYearShort.toString().padStart(2, '0');
             }
 
             return input.length > 2 ? `${month}/${year}` : month;
-        },
-        digits: value => value.replace(/\D/g, ''),
-        name: value => value.replace(/[^A-Za-z\s.'-]/g, ''),
-        city: value => value.replace(/[^A-Za-z\s.'-]/g, ''),
-        address: value => value.replace(/[^\w\s.,'\-\/]/g, ''),
-        apt: value => value.replace(/[^\w\s.#,\-\/]/g, ''),
-        postal: value => value.replace(/\D/g, '')
+        }
     };
 
-    // Attach filters dynamically based on data-filter attribute
+    // Apply filters
     document.querySelectorAll('[data-filter]').forEach(input => {
         const type = input.getAttribute('data-filter');
+
         const filterFn = filters[type];
         if (filterFn) {
             input.addEventListener('input', function () {
@@ -133,61 +119,74 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Handle form submission
+    // Validators
+    const validators = {
+        email: val => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val),
+        phone: val => val.replace(/\D/g, '').length >= 10,
+        card: val => /^\d{16}$/.test(val.replace(/\s/g, '')),
+        expiry: val => {
+            const [month, year] = val.split('/');
+            if (!month || !year) return false;
+            const exp = new Date(`20${year}`, month);
+            return exp > new Date();
+        },
+        cvc: val => /^\d{3,4}$/.test(val),
+        name: val => /^[A-Za-z\s.'-]{2,}$/.test(val),
+        address: val => /^[\w\s.,'#/\\-]{5,}$/.test(val),
+        postal: val => /^\d{4,6}$/.test(val)
+    };
+
     const form = document.getElementById('checkout-form');
-    if (form) {
-        form.addEventListener('submit', function (e) {
-            e.preventDefault();
 
-            const values = {};
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
 
-            // Get selected payment method radio
-            const selectedPayment = form.querySelector('input[name="flexRadioDefault"]:checked');
-            console.log("selectedPayment:", selectedPayment);
+        const fields = [
+            { id: 'email-address', fn: validators.email, msg: 'Email Address is invalid' },
+            { id: 'phone-number', fn: validators.phone, msg: 'Invalid phone number' },
+            { id: 'card-number', fn: validators.card, msg: 'Card Number is required' },
+            { id: 'expiration-date', fn: validators.expiry, msg: 'Expiration Date is required' },
+            { id: 'security-code', fn: validators.cvc, msg: 'Security Code is required' },
+            { id: 'cardholder-name', fn: validators.name, msg: 'Cardholder Name is required' },
+            { id: 'full-name', fn: validators.name, msg: 'Full Name is required' },
+            { id: 'street-address', fn: validators.address, msg: 'Street Address is required' },
+            { id: 'city', fn: validators.name, msg: 'City is required' },
+            { id: 'postal-code', fn: validators.postal, msg: 'Postal code is required' }
+        ];
 
-            if (selectedPayment) {
-                values['payment-method'] =
-                    selectedPayment.id === 'creditCard-radio'
-                        ? 'Credit Card'
-                        : selectedPayment.id === 'payPal-radio'
-                            ? 'PayPal'
-                            : 'Unknown';
+        let isValid = true;
+
+        fields.forEach(({ id, fn, msg }) => {
+            const input = document.getElementById(id);
+            const errorSpan = document.getElementById(`${id}-error`);
+            const value = input.value.trim();
+
+            if (!fn(value)) {
+                input.classList.add('invalid');
+                if (errorSpan) errorSpan.textContent = msg;
+                isValid = false;
             } else {
-                values['payment-method'] = '';
+                input.classList.remove('invalid');
+                if (errorSpan) errorSpan.textContent = '';
             }
-
-            // Get all non-radio inputs (text, checkboxes)
-            const inputs = form.querySelectorAll('input:not([type="radio"])');
-            inputs.forEach(input => {
-                const key = input.id || input.name || 'unknown';
-
-                if (input.type === 'checkbox') {
-                    // Show true if checked, otherwise false
-                    values[key] = input.checked;
-                } else {
-                    // Show value or empty string if empty
-                    values[key] = input.value ? input.value.trim() : '';
-                }
-            });
-
-            // all values are showing
-            // console.log('Form submitted with values:', values);
-
-            // Save to localStorage
-            localStorage.setItem('checkoutData', JSON.stringify(values));
-
-            // Reset the form
-            form.reset();
-
-            // after submit render to ( udsell offer_1 page )
-            setTimeout(() => {
-                window.location.href = './offer1.html';
-            }, 500);
-
-            // Optional: Reset any payment section display
-            // togglePaymentSections(); // You can call this again to re-toggle UI if needed
         });
-    }
+
+        if (!isValid) return;
+
+        // Store to localStorage
+        const inputs = form.querySelectorAll('input:not([type="radio"])');
+        const values = {};
+        inputs.forEach(input => {
+            values[input.id] = input.value.trim();
+        });
+
+        localStorage.setItem('checkoutData', JSON.stringify(values));
+        form.reset();
+
+        setTimeout(() => {
+            window.location.href = './offer1.html';
+        }, 500);
+    });
 });
 
 // Saving data in localStorage

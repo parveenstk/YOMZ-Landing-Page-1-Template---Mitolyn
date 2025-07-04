@@ -5,6 +5,16 @@ body {
 	font-family: "Roboto", sans-serif;
 }
 
+.error-message {
+	color: #e6193b;
+	font-size: 0.8rem;
+	margin-top: 2px;
+}
+
+input.invalid {
+	border-color: #e6193b;
+}
+
 .ratings {
 	background-color: rgba(15, 128, 0, 1);
 	color: rgba(255, 255, 255, 1);
@@ -282,11 +292,11 @@ body {
 }
 
 .checkout .form-floating .form-control {
-	border: 2px solid #868686;
+	border-width: 2px;
 }
 
 .checkout .form-floating select {
-	border: 2px solid #868686;
+	border-width: 2px;
 }
 
 .people-number p {
@@ -355,51 +365,80 @@ p.head-info {
 	font-size: 16px;
 }
 
-.footer{ background: #0d98b8;
-    background: -moz-radial-gradient(circle, #12b2eb 41%, #004293 100%);
-    background: -webkit-radial-gradient(circle, #12b2eb 41%, #004293 100%);
-    background: radial-gradient(circle, #12b2eb 17%, #004293 100%);
-    padding: 40px 0; margin-top: 50px;}
+.footer {
+	background: #0d98b8;
+	background: -moz-radial-gradient(circle, #12b2eb 41%, #004293 100%);
+	background: -webkit-radial-gradient(circle, #12b2eb 41%, #004293 100%);
+	background: radial-gradient(circle, #12b2eb 17%, #004293 100%);
+	padding: 40px 0;
+	margin-top: 50px;
+}
 
 .inr-pra {
 	font-size: 14px;
 }
 
 .footer .container {
-    max-width: 1100px;
+	max-width: 1100px;
 }
 
-.footer .about p{font-size: 16px; color: #fff;}
-.list-manage ul{margin: 0; padding: 0; list-style: none;}
-.list-manage ul li a{color: #fff;}
-.list-manage {color: #fff;}
+.footer .about p {
+	font-size: 16px;
+	color: #fff;
+}
 
-.social-item ul{margin: 0; padding: 0; list-style: none;}
-.social-item li{display: inline-block;}
+.list-manage ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
 
-.footer a{text-decoration: none;}
+.list-manage ul li a {
+	color: #fff;
+}
+
+.list-manage {
+	color: #fff;
+}
+
+.social-item ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.social-item li {
+	display: inline-block;
+}
+
+.footer a {
+	text-decoration: none;
+}
 
 .social-item a {
-    display: flex;
-    height: 35px;
-    width: 35px;
-    align-items: center;
-    background: #fff500;
-    justify-content: center;
-    border-radius: 120px;
-    font-size: 18px;
-    color: #000000;
-    text-decoration: none;
-    gap: 20px;
+	display: flex;
+	height: 35px;
+	width: 35px;
+	align-items: center;
+	background: #fff500;
+	justify-content: center;
+	border-radius: 120px;
+	font-size: 18px;
+	color: #000000;
+	text-decoration: none;
+	gap: 20px;
 }
 
-.about h3{margin-bottom: 20px; margin-top: 20px; }
+.about h3 {
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
 
 .about h3 {
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 24px;
-    font-weight: 600;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: 600;
 }
 
 .footer-info ul {
@@ -419,9 +458,17 @@ p.head-info {
 	margin-top: 10px;
 }
 
-.subfooter{padding: 20px 0;}
-.subfooter{text-align: center;}
-.subfooter p{margin-bottom: 5px;}
+.subfooter {
+	padding: 20px 0;
+}
+
+.subfooter {
+	text-align: center;
+}
+
+.subfooter p {
+	margin-bottom: 5px;
+}
 
 .lastftr p {
 	color: #fff;
@@ -430,9 +477,9 @@ p.head-info {
 }
 
 .subfooter {
-    text-align: center;
-    background: #004394;
-    color: #fff;
+	text-align: center;
+	background: #004394;
+	color: #fff;
 }
 
 .image-gredient {
@@ -502,32 +549,37 @@ p.head-info {
 /******************************************* all section media *********************************/
 @media screen and (max-width: 767px) {
 
-        .footer{
-        margin-top: -19px;
-        padding: 20px 0;
-    }
+	.footer {
+		margin-top: -19px;
+		padding: 20px 0;
+	}
 
-    .footer .about p {
-    font-size: 12px;
-    color: #fff;
-    line-height: normal;
-}
+	.footer .about p {
+		font-size: 12px;
+		color: #fff;
+		line-height: normal;
+	}
 
-.list-manage ul li a
- {
-    color: #fff;
-    font-size: 12px;
-}
+	.list-manage ul li a {
+		color: #fff;
+		font-size: 12px;
+	}
 
-.list-manage ul{line-height: normal;}
+	.list-manage ul {
+		line-height: normal;
+	}
 
-.social-item a{font-size: 16px!important; width: 30px; height: 30px;}
+	.social-item a {
+		font-size: 16px !important;
+		width: 30px;
+		height: 30px;
+	}
 
-    .about h3 {
-    margin-bottom: 8px;
-    margin-top: 10px;
-    font-size: 14px;
-}
+	.about h3 {
+		margin-bottom: 8px;
+		margin-top: 10px;
+		font-size: 14px;
+	}
 
 	.payPal-button {
 		input {

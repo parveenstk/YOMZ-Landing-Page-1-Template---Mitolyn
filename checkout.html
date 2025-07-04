@@ -146,15 +146,17 @@
                             <!-- Email Address -->
                             <div class="form-floating mb-1">
                                 <input type="email" class="form-control" id="email-address" placeholder="Email address"
-                                    maxlength="50" autocomplete="email" required>
+                                    maxlength="50" autocomplete="email">
                                 <label for="email-address">Email address</label>
+                                <span class="error-message" id="email-address-error"></span>
                             </div>
                             <small>To receive an email order confirmation.</small>
                             <!-- Phone Number -->
                             <div class="form-floating mb-1">
                                 <input type="tel" class="form-control" id="phone-number" data-filter="phone"
-                                    placeholder="Phone number" maxlength="20" autocomplete="tel" inputmode="tel" required>
+                                    placeholder="Phone number" maxlength="20" autocomplete="tel" inputmode="tel">
                                 <label for="phone-number">Phone number</label>
+                                <span class="error-message" id="phone-number-error"></span>
                             </div>
                             <small>To receive tracking information.</small>
                         </div>
@@ -199,8 +201,9 @@
                                                             <input type="text" class="form-control" id="card-number"
                                                                 data-filter="card-number" placeholder="Card Number"
                                                                 inputmode="numeric" maxlength="19"
-                                                                autocomplete="cc-number" required>
+                                                                autocomplete="cc-number">
                                                             <label for="card-number">Card Number</label>
+                                                            <span class="error-message" id="card-number-error"></span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -210,8 +213,10 @@
                                                             <!-- Expiration Date -->
                                                             <input type="text" class="form-control" id="expiration-date"
                                                                 data-filter="expiry" placeholder="MM/YY"
-                                                                inputmode="numeric" maxlength="5" autocomplete="cc-exp" required>
+                                                                inputmode="numeric" maxlength="5" autocomplete="cc-exp">
                                                             <label for="expiration-date">Expiration Date</label>
+                                                            <span class="error-message"
+                                                                id="expiration-date-error"></span>
                                                         </div>
                                                     </div>
                                                     <div class="col-6">
@@ -220,8 +225,9 @@
                                                             <input type="text" class="form-control" id="security-code"
                                                                 data-filter="digits" placeholder="Security Code"
                                                                 inputmode="numeric" maxlength="4" autocomplete="cc-csc"
-                                                                title="Please enter a 3 or 4 digit security code" required>
+                                                                title="Please enter a 3 or 4 digit security code">
                                                             <label for="security-code">Security Code</label>
+                                                            <span class="error-message" id="security-code-error"></span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -231,8 +237,10 @@
                                                             <!-- Cardholder Name -->
                                                             <input type="text" class="form-control" id="cardholder-name"
                                                                 data-filter="name" placeholder="Cardholder Name"
-                                                                autocomplete="cc-name" maxlength="50" required>
+                                                                autocomplete="cc-name" maxlength="50">
                                                             <label for="cardholder-name">Cardholder Name</label>
+                                                            <span class="error-message"
+                                                                id="cardholder-name-error"></span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -402,8 +410,9 @@
                                             <!-- Full Name -->
                                             <input type="text" class="form-control" id="full-name" name="full-name"
                                                 data-filter="name" placeholder="Full Name" autocomplete="name"
-                                                maxlength="50" required>
+                                                maxlength="50">
                                             <label for="full-name">Full Name</label>
+                                            <span class="error-message" id="full-name-error"></span>
                                         </div>
                                     </div>
                                     <div class="col-12">
@@ -411,8 +420,9 @@
                                             <!-- Street Address -->
                                             <input type="text" class="form-control" id="street-address"
                                                 data-filter="address" name="street-address" placeholder="Street Address"
-                                                autocomplete="address-line1" maxlength="100" required>
+                                                autocomplete="address-line1" maxlength="100">
                                             <label for="street-address">Street Address</label>
+                                            <span class="error-message" id="street-address-error"></span>
                                         </div>
                                     </div>
                                     <div class="col-12">
@@ -420,7 +430,7 @@
                                             <!-- Apt / Suite / Other -->
                                             <input type="text" class="form-control" id="apt-suite-other"
                                                 data-filter="apt" placeholder="Apt / Suite / Other"
-                                                autocomplete="address-line2" maxlength="50" required>
+                                                autocomplete="address-line2" maxlength="50">
                                             <label for="apt-suite-other">Apt / Suite / Other</label>
                                         </div>
                                     </div>
@@ -431,8 +441,9 @@
                                             <!-- City -->
                                             <input type="text" class="form-control" id="city" name="city"
                                                 data-filter="city" placeholder="City" autocomplete="address-level2"
-                                                maxlength="50" required>
+                                                maxlength="50">
                                             <label for="city">City</label>
+                                            <span class="error-message" id="city-error"></span>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
@@ -440,8 +451,9 @@
                                             <!-- Postal Code -->
                                             <input type="text" class="form-control" id="postal-code" name="postal-code"
                                                 data-filter="postal" placeholder="Postal Code"
-                                                autocomplete="postal-code" maxlength="8" required>
+                                                autocomplete="postal-code" maxlength="8">
                                             <label for="postal-code">Postal Code</label>
+                                            <span class="error-message" id="postal-code-error"></span>
                                         </div>
                                     </div>
                                 </div>
