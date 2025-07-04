@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
         phone: value => value.replace(/[^0-9+()\-\s]/g, ''),
         'card-number': value => value.replace(/\D/g, '').replace(/(.{4})/g, '$1 ').trim(),
         expiry: value => {
-            const currentYearShort = parseInt(new Date().getFullYear().toString().slice(-2));
+
             let input = value.replace(/\D/g, '');
             let month = input.slice(0, 2);
             let year = input.slice(2, 4);
@@ -98,9 +98,19 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (m > 12) month = '12';
             }
 
+            const currentYearShort = parseInt(new Date().getFullYear().toString().slice(-2));
+            const maxYear = (currentYearShort + 10);
+
             if (year.length === 2) {
                 let y = parseInt(year, 10);
-                if (y < currentYearShort) year = currentYearShort.toString().padStart(2, '0');
+
+                if (y < currentYearShort) {
+                    y = currentYearShort;
+                } else if (y > maxYear) {
+                    y = maxYear;
+                }
+
+                year = y.toString().padStart(2, '0'); // always keep it a 2-digit string
             }
 
             return input.length > 2 ? `${month}/${year}` : month;
