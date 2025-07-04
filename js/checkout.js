@@ -86,29 +86,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const filters = {
         phone: value => value.replace(/[^0-9+()\-\s]/g, ''),
         'card-number': value => value.replace(/\D/g, '').replace(/(.{4})/g, '$1 ').trim(),
-        // expiry: value => {
-        //     const currentYear = new Date().getFullYear();
-        //     const lastDigitCurrentYear = currentYear.toString().slice(-2);
-        //     const maxYear = (+lastDigitCurrentYear + 10);
-        //     console.log('maxYear:', maxYear);
-        //     console.log('lastDigitCurrentYear:', lastDigitCurrentYear);
-
-        //     let input = value.replace(/\D/g, '');
-        //     let month = input.slice(0, 2);
-        //     let year = input.slice(2, 4);
-        //     if (year.length === 2) {
-        //         let numericYear = parseInt(year, 10);
-        //         if (numericYear > currentYear) year = currentYear
-        //         // console.log("numericYear:", numericYear);
-        //     }
-
-        //     if (month.length === 2) {
-        //         let numericMonth = parseInt(month, 10);
-        //         if (numericMonth < 1) month = '01';
-        //         if (numericMonth > 12) month = '12';
-        //     }
-        //     return input.length > 2 ? `${month}/${year}` : month;
-        // },
         expiry: value => {
             const currentYearFull = new Date().getFullYear(); // e.g., 2025
             const currentYearShort = parseInt(currentYearFull.toString().slice(-2)); // e.g., 25
