@@ -146,14 +146,14 @@
                             <!-- Email Address -->
                             <div class="form-floating mb-1">
                                 <input type="email" class="form-control" id="email-address" placeholder="Email address"
-                                    maxlength="50" autocomplete="email">
+                                    maxlength="50" autocomplete="email" required>
                                 <label for="email-address">Email address</label>
                             </div>
                             <small>To receive an email order confirmation.</small>
                             <!-- Phone Number -->
                             <div class="form-floating mb-1">
                                 <input type="tel" class="form-control" id="phone-number" data-filter="phone"
-                                    placeholder="Phone number" maxlength="20" autocomplete="tel" inputmode="tel">
+                                    placeholder="Phone number" maxlength="20" autocomplete="tel" inputmode="tel" required>
                                 <label for="phone-number">Phone number</label>
                             </div>
                             <small>To receive tracking information.</small>
@@ -195,10 +195,11 @@
                                                 <div class="row">
                                                     <div class="col-12">
                                                         <div class="form-floating mb-3">
+                                                            <!-- Card Number -->
                                                             <input type="text" class="form-control" id="card-number"
                                                                 data-filter="card-number" placeholder="Card Number"
                                                                 inputmode="numeric" maxlength="19"
-                                                                autocomplete="cc-number">
+                                                                autocomplete="cc-number" required>
                                                             <label for="card-number">Card Number</label>
                                                         </div>
                                                     </div>
@@ -206,18 +207,20 @@
                                                 <div class="row">
                                                     <div class="col-6">
                                                         <div class="form-floating mb-3">
+                                                            <!-- Expiration Date -->
                                                             <input type="text" class="form-control" id="expiration-date"
                                                                 data-filter="expiry" placeholder="MM/YY"
-                                                                inputmode="numeric" maxlength="5" autocomplete="cc-exp">
+                                                                inputmode="numeric" maxlength="5" autocomplete="cc-exp" required>
                                                             <label for="expiration-date">Expiration Date</label>
                                                         </div>
                                                     </div>
                                                     <div class="col-6">
                                                         <div class="form-floating mb-3">
+                                                            <!-- Security Code -->
                                                             <input type="text" class="form-control" id="security-code"
                                                                 data-filter="digits" placeholder="Security Code"
                                                                 inputmode="numeric" maxlength="4" autocomplete="cc-csc"
-                                                                title="Please enter a 3 or 4 digit security code">
+                                                                title="Please enter a 3 or 4 digit security code" required>
                                                             <label for="security-code">Security Code</label>
                                                         </div>
                                                     </div>
@@ -225,9 +228,10 @@
                                                 <div class="row">
                                                     <div class="col-12">
                                                         <div class="form-floating mb-3">
+                                                            <!-- Cardholder Name -->
                                                             <input type="text" class="form-control" id="cardholder-name"
                                                                 data-filter="name" placeholder="Cardholder Name"
-                                                                autocomplete="cc-name" maxlength="50">
+                                                                autocomplete="cc-name" maxlength="50" required>
                                                             <label for="cardholder-name">Cardholder Name</label>
                                                         </div>
                                                     </div>
@@ -395,25 +399,28 @@
                                     <!-- </div> -->
                                     <div class="col-12">
                                         <div class="form-floating mb-3">
+                                            <!-- Full Name -->
                                             <input type="text" class="form-control" id="full-name" name="full-name"
                                                 data-filter="name" placeholder="Full Name" autocomplete="name"
-                                                maxlength="50">
+                                                maxlength="50" required>
                                             <label for="full-name">Full Name</label>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating mb-3">
+                                            <!-- Street Address -->
                                             <input type="text" class="form-control" id="street-address"
                                                 data-filter="address" name="street-address" placeholder="Street Address"
-                                                autocomplete="address-line1" maxlength="100">
+                                                autocomplete="address-line1" maxlength="100" required>
                                             <label for="street-address">Street Address</label>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating mb-3">
+                                            <!-- Apt / Suite / Other -->
                                             <input type="text" class="form-control" id="apt-suite-other"
                                                 data-filter="apt" placeholder="Apt / Suite / Other"
-                                                autocomplete="address-line2" maxlength="50">
+                                                autocomplete="address-line2" maxlength="50" required>
                                             <label for="apt-suite-other">Apt / Suite / Other</label>
                                         </div>
                                     </div>
@@ -421,17 +428,19 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-floating mb-3">
+                                            <!-- City -->
                                             <input type="text" class="form-control" id="city" name="city"
                                                 data-filter="city" placeholder="City" autocomplete="address-level2"
-                                                maxlength="50">
+                                                maxlength="50" required>
                                             <label for="city">City</label>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-floating mb-3">
+                                            <!-- Postal Code -->
                                             <input type="text" class="form-control" id="postal-code" name="postal-code"
                                                 data-filter="postal" placeholder="Postal Code"
-                                                autocomplete="postal-code" maxlength="8">
+                                                autocomplete="postal-code" maxlength="8" required>
                                             <label for="postal-code">Postal Code</label>
                                         </div>
                                     </div>

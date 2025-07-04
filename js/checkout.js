@@ -86,15 +86,55 @@ document.addEventListener("DOMContentLoaded", function () {
     const filters = {
         phone: value => value.replace(/[^0-9+()\-\s]/g, ''),
         'card-number': value => value.replace(/\D/g, '').replace(/(.{4})/g, '$1 ').trim(),
+        // expiry: value => {
+        //     const currentYear = new Date().getFullYear();
+        //     const lastDigitCurrentYear = currentYear.toString().slice(-2);
+        //     const maxYear = (+lastDigitCurrentYear + 10);
+        //     console.log('maxYear:', maxYear);
+        //     console.log('lastDigitCurrentYear:', lastDigitCurrentYear);
+
+        //     let input = value.replace(/\D/g, '');
+        //     let month = input.slice(0, 2);
+        //     let year = input.slice(2, 4);
+        //     if (year.length === 2) {
+        //         let numericYear = parseInt(year, 10);
+        //         if (numericYear > currentYear) year = currentYear
+        //         // console.log("numericYear:", numericYear);
+        //     }
+
+        //     if (month.length === 2) {
+        //         let numericMonth = parseInt(month, 10);
+        //         if (numericMonth < 1) month = '01';
+        //         if (numericMonth > 12) month = '12';
+        //     }
+        //     return input.length > 2 ? `${month}/${year}` : month;
+        // },
         expiry: value => {
+            const currentYearFull = new Date().getFullYear(); // e.g., 2025
+            const currentYearShort = parseInt(currentYearFull.toString().slice(-2)); // e.g., 25
+            const maxYearShort = (currentYearShort + 10) % 100; // e.g., 35 if current is 25
+
             let input = value.replace(/\D/g, '');
             let month = input.slice(0, 2);
             let year = input.slice(2, 4);
+
             if (month.length === 2) {
                 let numericMonth = parseInt(month, 10);
                 if (numericMonth < 1) month = '01';
                 if (numericMonth > 12) month = '12';
             }
+
+            if (year.length === 2) {
+                let numericYear = parseInt(year, 10);
+
+                // Adjust if year is less than current or more than max
+                if (numericYear < currentYearShort) {
+                    year = currentYearShort.toString().padStart(2, '0');
+                } else if (numericYear > maxYearShort) {
+                    year = maxYearShort.toString().padStart(2, '0');
+                }
+            }
+
             return input.length > 2 ? `${month}/${year}` : month;
         },
         digits: value => value.replace(/\D/g, ''),
@@ -164,7 +204,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // after submit render to ( udsell offer_1 page )
             setTimeout(() => {
-                window.location.href = 'https://suretekinfosoft.com/demo106/funnel1/lp1/offer/offer1.html';
+                window.location.href = './offer1.html';
             }, 500);
 
             // Optional: Reset any payment section display
