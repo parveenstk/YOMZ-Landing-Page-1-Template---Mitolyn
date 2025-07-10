@@ -322,8 +322,8 @@ a:visited {
 	padding: 30px 0 !important;
 }
 
-@media screen and (max-width:1000px) {
-
+@media screen and (max-width: 1000px) {
+	
 	.selectBox,
 	#subscribebox {
 		width: 100%;
@@ -362,7 +362,7 @@ a:visited {
 	}
 }
 
-@media only screen and (max-device-width:1200px) {
+	@media screen and (max-width: 1200px) {
 
 	#exitLink,
 	#innerBar {
@@ -374,7 +374,8 @@ a:visited {
 	}
 }
 
-@media only screen and (max-device-width:800px) {
+	@media screen and (max-width: 800px) {
+
 	.mainBox {
 		width: 97%;
 		padding: 10px
@@ -395,7 +396,7 @@ a:visited {
 	}
 }
 
-@media only screen and (max-device-width:767px) {
+	@media screen and (max-width: 767px) {
 
 	.mainHeadbox {
 		height: 100% !important;
@@ -534,7 +535,7 @@ a:visited {
 .selectBox{padding-left: 10px; padding-right: 10px;}
 }
 
-@media only screen and (max-device-width:567px) {
+	@media screen and (max-width: 567px) {
 
 	.centerHead,
 	#innerBar,
