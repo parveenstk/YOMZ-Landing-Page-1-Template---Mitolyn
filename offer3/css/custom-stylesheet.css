@@ -35,7 +35,7 @@ body {
 }
 
 .secound-heading {
-    text-align: center;
+	text-align: center;
 	padding-top: 10px;
 }
 
@@ -45,7 +45,7 @@ body {
 	margin-bottom: 0px;
 }
 
-.secound-heading  p {
+.secound-heading p {
 	color: #000;
 	font-weight: 600;
 	margin-bottom: 0px;
@@ -93,15 +93,15 @@ a.textLink:hover {
 }
 
 .inputButton .btn {
-    border: thin outset black;
-    color: #FFEB00;
-    padding: .75em 0.8em;
-    font-weight: bold;
-    font-size: 22px;
-    background-color: #E6193C;
-    display: inline-block;
-    border: none;
-    border-radius: 8px;
+	border: thin outset black;
+	color: #FFEB00;
+	padding: .75em 0.8em;
+	font-weight: bold;
+	font-size: 22px;
+	background-color: #E6193C;
+	display: inline-block;
+	border: none;
+	border-radius: 8px;
 }
 
 .inputButton .btn:hover {
@@ -337,8 +337,14 @@ a:visited {
 	padding: 30px 0 !important;
 }
 
-.products-left-side-details h3{font-size: 28px; font-weight: 700;}
-.products-left-side-details ul{font-size: 16px;}
+.products-left-side-details h3 {
+	font-size: 28px;
+	font-weight: 700;
+}
+
+.products-left-side-details ul {
+	font-size: 16px;
+}
 
 @media screen and (max-width:1000px) {
 
@@ -415,7 +421,17 @@ a:visited {
 
 @media only screen and (max-device-width:767px) {
 
-	.pd-lr{    --bs-gutter-x: 0rem Im !important;}
+	.just-pay {
+		font-size: 12px;
+	}
+
+	.block {
+		display: block;
+	}
+
+	.pd-lr {
+		--bs-gutter-x: 0rem Im !important;
+	}
 
 	.mainHeadbox {
 		height: 100% !important;
@@ -428,22 +444,29 @@ a:visited {
 	}
 
 	.first-heading {
-    text-align: center;
-    padding: 0px 10px 0;
-}
-.secound-heading{padding-left: 10px; padding-right: 10px;}
-.secound-heading h2 {font-size: 30px;}
+		text-align: center;
+		padding: 0px 10px 0;
+	}
 
-.secound-heading span {
-    margin-bottom: 13px !important;
-    display: inline-block;
-}
+	.secound-heading {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 
-.products-left-side-details {
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-top: 20px;
-}
+	.secound-heading h2 {
+		font-size: 30px;
+	}
+
+	.secound-heading span {
+		margin-bottom: 13px !important;
+		display: inline-block;
+	}
+
+	.products-left-side-details {
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-top: 20px;
+	}
 
 	.leftHead,
 	.rightHead,
