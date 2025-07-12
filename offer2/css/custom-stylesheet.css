@@ -7,6 +7,9 @@ body {
 }
 
 #timer-box {
+
+	margin-top: 18px;
+
 	#timer-display {
 		text-align: center !important;
 		font-size: 38px !important;
@@ -420,10 +423,6 @@ a:visited {
 
 @media screen and (max-width: 767px) {
 
-	#timer-box {
-		margin-top: 16px;
-	}
-
 	.shiptake a {
 		font-size: 14px;
 	}
@@ -610,7 +609,6 @@ a:visited {
 		height: 40px;
 	}
 
-	.mainHeadbox .col-4 {}
 }
 
 @media screen and (max-width: 567px) {
