@@ -94,7 +94,7 @@ a.textLink:hover {
 	background-color: #E6193C;
 	display: inline-block;
 	border: none;
-	border-radius: 0px;
+	border-radius: 10px;
 }
 
 .inputButton .btn:hover {
@@ -129,7 +129,7 @@ a.textLink:hover {
 }
 
 .popTitle {
-	font-size: 26px;
+	font-size: 35px;
 	color: #1EB9F0;
 	line-height: normal;
 	margin-bottom: 10px;
@@ -137,8 +137,11 @@ a.textLink:hover {
 }
 
 .popText {
-	font-size: 16px;
-	color: #222
+	font-size: 20px;
+	color: #222;
+	line-height: normal;
+	padding-left: 50px;
+	padding-right: 50px;
 }
 
 #popButton {
@@ -304,16 +307,16 @@ a:visited {
 }
 
 .buttonRight .btn {
-	color: #FFEB00;
-	padding: .6em 1.3em;
-	font-weight: bold;
-	font-size: 1.2em;
-	background-color: #E6193C;
-	display: inline-block;
-	border: none;
-	border-radius: 0px;
-	margin-bottom: 10px;
-	margin-top: 20px;
+    color: #FFEB00;
+    padding: .6em 1.3em;
+    font-weight: bold;
+    font-size: 1.7em;
+    background-color: #E6193C;
+    display: inline-block;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 20px;
 }
 
 .buttonRight .btn:hover {
@@ -401,7 +404,23 @@ a:visited {
 }
 
 @media screen and (max-width: 767px) {
+	.shiptake a {
+    font-size: 14px;
+}
 
+	.popTitle{        font-size: calc(6.2vw - 0px) !important;
+        line-height: calc(1em + 1vw) !important; margin-left: 0px; margin-right: 0px; width: 100%; text-align: center;}
+
+		.popText {
+            font-size: calc(3.5vw - 0px) !important;
+        line-height: calc(1em + 1vw) !important;
+    color: #222;
+    line-height: normal;
+    padding-left: 0px;
+    padding-right: 0px;
+	width: 100%;
+	display: block;
+}
 	.top-bar {
     border-bottom: 0px solid #e9e4dd;
 }
@@ -445,7 +464,7 @@ a:visited {
         display: block;
         width: 100%;
         margin-bottom: 0px !important;
-        font-size: calc(6.2vw - 0px) !important;
+        font-size: calc(7vw - 0px) !important;
         line-height: calc(0.9em + 1vw) !important;
         padding: .6em 0.3em;
     }
@@ -536,7 +555,6 @@ a:visited {
         background-color: #E6193C;
         display: block;
         border: none;
-        border-radius: 0px;
         width: 100%;
         line-height: normal !important;
     }
@@ -562,6 +580,12 @@ a:visited {
 }
 
 @media screen and (max-width: 567px) {
+
+	.buttonRight .btn {
+
+        margin-bottom: 0px !important;
+        font-size: calc(7.5vw - 0px) !important;
+    }
 
 	.centerHead,
 	#innerBar,
@@ -620,6 +644,12 @@ a:visited {
 		    .leftHead, .rightHead, .centerHead {
         height: 35px;
     }
+
+	.popText {
+    font-size: 13px;
+    color: #222;
+    line-height: normal;
+}
     
 }
 
