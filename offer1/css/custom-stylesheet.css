@@ -533,10 +533,6 @@ a.tagroow {
 
 @media screen and (max-width: 767px) {
 
-
-
-
-
     .othanks {
     font-size: 8px;
 }
@@ -1082,8 +1078,6 @@ input[name="other_flavor"]::placeholder {
         font-size: 19px !important;
     }
 }
-
-
 
 @media screen and (max-width: 401px) {
 

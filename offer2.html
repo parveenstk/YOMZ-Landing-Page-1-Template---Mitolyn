@@ -31,9 +31,10 @@
                         class="mobile-dsblock under-line-height"><span class="undercolor">
                             under $39</span> per bag</span></h2>
         </div>
-        <div class="mainBg"> 
-        <img src="offer2/images/upsell.jpg" class="img-fluid d-none d-sm-none d-lg-block" /> 
-        <img src="offer2/images/upsell-mobile.jpg" class="img-fluid d-sm-block d-lg-none" /></div>
+        <div class="mainBg">
+            <img src="offer2/images/upsell.jpg" class="img-fluid d-none d-sm-none d-lg-block" />
+            <img src="offer2/images/upsell-mobile.jpg" class="img-fluid d-sm-block d-lg-none" />
+        </div>
 
         <!-- <div class="sec-head text-center">
             <h3>YOMZ<br> It’s your ONLY CHANCE to get YOMZ Original Gummies<br> as gifts for friends & family for<br>
@@ -90,8 +91,15 @@
                     <div class="popTitle">WAIT! For the<br>
                         NEXT 3 MINUTES <u>ONLY</u>,<br>
                         GET 60% OFF A 3-Bag Supply!</div>
-                    <div class="popText">Special discount applied. Click below to get your 3 Bag Supply for only $95.99!
+                    <div class="popText">Special discount applied.
+                        Click below to get your 3 Bag Supply for only $95.99!
                     </div>
+
+                    <!-- Timer -->
+                    <div id="timer-box">
+                        <p id="timer-display">03:00</p>
+                    </div>
+
                     <div id="popButton">
                         <div class="buttonRight">
                             <div onclick="selectProduct(302)">
@@ -106,8 +114,11 @@
             </div>
         </div>
     </div>
+
+    <!-- Import scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="offer1/js/bootstrap.bundle.min.js"></script>
+    <script src="./offer2/js/timer.js"></script>
     </body>
 
 </html>

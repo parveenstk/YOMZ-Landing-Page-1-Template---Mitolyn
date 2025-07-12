@@ -6,6 +6,24 @@ body {
 	font-family: "Roboto", sans-serif !important;
 }
 
+#timer-box {
+
+	margin-top: 18px;
+
+	#timer-display {
+		text-align: center !important;
+		font-size: 38px !important;
+		color: #e6193c !important;
+		font-weight: 700 !important;
+
+		#timer-text {
+			color: black !important;
+			font-size: 18px;
+			display: block;
+		}
+	}
+}
+
 .mobile-dsblock {
 	display: block;
 }
@@ -424,10 +442,14 @@ a:visited {
 
 @media screen and (max-width: 767px) {
 
-	.popTitle{font-size: calc(7.5vw - 0px) !important;
-        line-height: calc(1em + 1vw) !important;}
+	.popTitle {
+		font-size: calc(7.5vw - 0px) !important;
+		line-height: calc(1em + 1vw) !important;
+	}
 
-	.popText{font-size: 15px;}
+	.popText {
+		font-size: 15px;
+	}
 
 	.top-bar {
 		border-bottom: 0dvi solid #e9e4dd;
@@ -505,7 +527,8 @@ a:visited {
 	}
 
 	.shiptake a {
-    font-size: 15px;}
+		font-size: 15px;
+	}
 
 	.products-left-side-details ul {
 		margin-bottom: 10px;
@@ -654,10 +677,10 @@ a:visited {
 	}
 
 	.products-left-side-details ul {
-    font-size: 16px;
-    padding: 0px 0px 0px 14px;
-    line-height: normal;
-}
+		font-size: 16px;
+		padding: 0px 0px 0px 14px;
+		line-height: normal;
+	}
 }
 
 @media screen and (max-width: 567px) {
@@ -712,7 +735,9 @@ a:visited {
 
 @media screen and (max-width: 380px) {
 
-	.popText{font-size: 13px;}
+	.popText {
+		font-size: 13px;
+	}
 
 	.mainHeadbox .col-4 {
 		font-size: 10px !important;
@@ -731,8 +756,8 @@ a:visited {
 @media screen and (max-width: 320px) {
 
 	.popText {
-        font-size: 12px;
-    }
+		font-size: 12px;
+	}
 
 }
 
