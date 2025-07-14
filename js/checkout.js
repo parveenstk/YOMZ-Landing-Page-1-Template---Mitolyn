@@ -147,7 +147,6 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     const form = document.getElementById('checkout-form');
-
     form.addEventListener('submit', function (e) {
         e.preventDefault();
 
@@ -155,7 +154,7 @@ document.addEventListener("DOMContentLoaded", function () {
             { id: 'email-address', fn: validators.email, msg: 'Email Address is invalid' },
             { id: 'phone-number', fn: validators.phone, msg: 'Invalid phone number' },
             { id: 'card-number', fn: validators.card, msg: 'Card Number is required' },
-            { id: 'expiration-date', fn: validators.expiry, msg: 'Expiration Date is required' },
+            { id: 'expiration-date', fn: validators.expiry, msg: 'Card Expiry is required' },
             { id: 'security-code', fn: validators.cvc, msg: 'Security Code is required' },
             { id: 'cardholder-name', fn: validators.name, msg: 'Cardholder Name is required' },
             { id: 'full-name', fn: validators.name, msg: 'Full Name is required' },
@@ -371,3 +370,42 @@ const updatedPack = (productId) => {
         });
     }
 };
+
+// Live udpate the input fileds status
+const inputFields = document.querySelectorAll('.input-feilds');
+const inputErrors = document.querySelectorAll('.error-message');
+
+// Loop through each input field
+inputFields.forEach((inputField, index) => {
+    const errorMessageEl = inputErrors[index];
+
+    // Input event: validate as user types
+    inputField.addEventListener('input', function () {
+        const inputValue = inputField.value;
+        const placeHolder = inputField.getAttribute('placeholder')
+        // console.log('placeHolder:', placeHolder);
+
+        if (inputValue.length > 0) {
+            inputField.classList.add('is-valid');
+            inputField.classList.replace('is-invalid', 'is-valid');
+            errorMessageEl.classList.add('hide');
+        } else {
+            inputField.classList.replace('is-valid', 'is-invalid');
+            errorMessageEl.classList.remove('hide');
+            errorMessageEl.innerText = placeHolder === 'MM/YY' ? 'Card Expiry is required' : `${placeHolder} is required`;
+        }
+    });
+
+    // Blur event: check when user leaves the field
+    inputField.addEventListener('blur', function () {
+        const inputValue = inputField.value.trim();
+        const placeHolder = inputField.getAttribute('placeholder')
+
+        if (inputValue === '') {
+            inputField.classList.remove('is-valid');
+            inputField.classList.add('is-invalid');
+            errorMessageEl.classList.remove('hide');
+            errorMessageEl.innerText = placeHolder === 'MM/YY' ? 'Card Expiry is required' : `${placeHolder} is required`;
+        }
+    });
+});
