@@ -2087,7 +2087,7 @@ p.people {
   font-size: 32px;
   color: #fff;
   margin-top: 20px;
-  font-weight: 800;
+  /* font-weight: 800; */
   line-height: calc(.5em + 1vw) !important;
   font-family: 'century_gothic_paneuropeanXBd';
 }
@@ -2518,6 +2518,53 @@ p.vrify-reviews {
   font-size: 12px;
 }
 
+/************************************ Policy ***********************************/
+
+.policy {
+  padding: 40px 0;
+}
+
+.policy h1 {
+  margin-bottom: 30px;
+}
+
+.policy p {
+  font-size: 18px;
+  text-align: justify;
+}
+
+.banner.policy-banner {
+  text-align: center;
+  color: #fff;
+  padding-top: 60px;
+}
+
+.form-set {
+  position: relative;
+  transition: box-shadow .25s, -webkit-box-shadow .25s;
+  border-radius: 2px;
+  padding: 40px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .12), 0 1px 5px 0 rgba(0, 0, 0, .2);
+}
+
+.form-set p{text-align: center;}
+
+.form-set label{font-size: 18px;}
+
+.form-set .btn {
+    background: #e6193c;
+    color: #fff;
+    border: none;
+    font-size: 22px;
+    text-transform: uppercase;
+    padding: 10px 35px;
+    font-weight: 600;
+}
+
+.form-set .btn:hover{ background: #cf1132;}
+
+/************************************ Policy ***********************************/
+
 /****************************** Scientific References *****************************/
 footer {
   padding: 50px 0;
@@ -2560,6 +2607,22 @@ footer p {
 }
 
 @media screen and (max-width: 767px) {
+
+  .form-set{padding: 10px; box-shadow: none;}
+  
+  .banner.policy-banner{padding-top: 30px!important; padding-bottom: 30px !important;}
+  .policy {
+    padding: 30px 0;
+  }
+
+  .policy h1 {
+    margin-bottom: 15px;
+  }
+
+  .policy p {
+    font-size: 14px;
+  }
+
   .sqr-icons ul li span {
     padding: 2px;
     width: 41px;
@@ -4697,22 +4760,26 @@ footer p {
 
 @media screen and (max-width: 398px) {
 
-.offeringyomz p {
+  .offeringyomz p {
     font-size: 22px;
-}
+  }
 }
 
 @media screen and (max-width: 385px) {
   .thatswhy h3 {
     font-size: calc(7.5vw - 0px) !important;
   }
-  .manage-ltf-paddig{padding-left: 0px; padding-right: 0px;}
+
+  .manage-ltf-paddig {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 
 }
 
 @media screen and (max-width: 380px) {
 
-     /* .offeringyomz .mobile-block {
+  /* .offeringyomz .mobile-block {
         display: inline;
     } */
 }
@@ -4735,13 +4802,15 @@ footer p {
 
   .offeringyomz p {
     font-size: 21px;
+  }
 }
-}
+
 @media screen and (max-width: 336px) {
- .offeringyomz p {
+  .offeringyomz p {
     font-size: 20px;
+  }
 }
-}
+
 @media screen and (max-width: 325px) {
   .shipping p {
     font-size: 18px;
@@ -4760,9 +4829,9 @@ footer p {
 }
 
 @media screen and (max-width: 315px) {
- .offeringyomz p {
+  .offeringyomz p {
     font-size: 19px;
-}
+  }
 }
 
 @media screen and (max-width: 304px) {
