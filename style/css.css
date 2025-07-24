@@ -72,6 +72,18 @@
   font-style: normal;
 }
 
+.box-align {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.error-message {
+  color: #e6193b;
+  font-size: 14px;
+  padding-left: 4px;
+}
+
 #bonuses,
 #about,
 #ingredients,
@@ -2547,21 +2559,27 @@ p.vrify-reviews {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .12), 0 1px 5px 0 rgba(0, 0, 0, .2);
 }
 
-.form-set p{text-align: center;}
-
-.form-set label{font-size: 18px;}
-
-.form-set .btn {
-    background: #e6193c;
-    color: #fff;
-    border: none;
-    font-size: 22px;
-    text-transform: uppercase;
-    padding: 10px 35px;
-    font-weight: 600;
+.form-set p {
+  text-align: center;
 }
 
-.form-set .btn:hover{ background: #cf1132;}
+.form-set label {
+  font-size: 18px;
+}
+
+.form-set .btn {
+  background: #e6193c;
+  color: #fff;
+  border: none;
+  font-size: 22px;
+  text-transform: uppercase;
+  padding: 10px 35px;
+  font-weight: 600;
+}
+
+.form-set .btn:hover {
+  background: #cf1132;
+}
 
 /************************************ Policy ***********************************/
 
@@ -2608,9 +2626,16 @@ footer p {
 
 @media screen and (max-width: 767px) {
 
-  .form-set{padding: 10px; box-shadow: none;}
-  
-  .banner.policy-banner{padding-top: 30px!important; padding-bottom: 30px !important;}
+  .form-set {
+    padding: 10px;
+    box-shadow: none;
+  }
+
+  .banner.policy-banner {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+
   .policy {
     padding: 30px 0;
   }

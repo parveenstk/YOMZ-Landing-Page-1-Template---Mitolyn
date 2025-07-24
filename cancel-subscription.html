@@ -76,32 +76,69 @@
               once the cancellation is complete.
             </p>
 
-            <form>
-              <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="floatingInput" placeholder="Full Name">
-                <label for="floatingInput">Full Name</label>
-              </div>
-              <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInput1" placeholder="name@example.com">
-                <label for="floatingInput1">Email address</label>
-              </div>
-              <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
-                <label for="floatingPassword">Phone</label>
-              </div>
-              <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="floatingPassword1" placeholder="Order ID">
-                <label for="floatingPassword1">Order ID</label>
+            <form id="cancellation-form">
+
+              <!-- full name -->
+              <div class=" mb-3 box-align">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="full-name" name="full-name" placeholder="Full Name"
+                    title="Please enter letters only">
+                  <label for="full-name">Full Name</label>
+                </div>
+                <span class="error-message hide" id="full-name-error"></span>
               </div>
 
-              <div class="form-floating mb-3">
-                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                  style="height: 100px"></textarea>
-                <label for="floatingTextarea2">Comments</label>
+              <!-- Email Address -->
+              <div class="mb-3 box-align">
+                <div class="form-floating">
+                  <input type="email" class="form-control" id="email-address" name="email-address"
+                    placeholder="name@example.com" aria-label="Email address" autocomplete="email"
+                    pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+                  <label for="email-address">Email address</label>
+                </div>
+                <span class="error-message hide" id="email-address-error"></span>
               </div>
+
+              <!-- Phone -->
+              <div class="mb-3 box-align">
+                <div class="form-floating">
+                  <!-- <input type="tel" class="form-control" id="phone-number" name="phone-number"
+                    placeholder="Phone Number" aria-label="Phone number" autocomplete="tel"> -->
+
+                  <input type="tel" class="form-control" id="phone-number" name="phone-number"
+                    placeholder="Phone Number" aria-label="Phone number" autocomplete="tel" pattern="/[0-9]/"
+                    title="Enter a valid phone number (7–15 digits only)">
+
+                  <label for="phone-number">Phone</label>
+                </div>
+                <span class="error-message hide" id="phone-number-error"></span>
+              </div>
+
+              <!-- Order ID -->
+              <div class="mb-3 box-align">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="order-id" name="order-id" placeholder="Order ID"
+                    aria-label="Order ID">
+                  <label for="order-id">Order ID</label>
+                </div>
+                <span class="error-message hide" id="order-id-error"></span>
+              </div>
+
+              <!-- Comments -->
+              <div class="mb-3 box-align">
+                <div class="form-floating">
+                  <textarea class="form-control" id="comments-input" name="comments" placeholder="Leave a comment here"
+                    style="height: 100px" aria-label="Comments"></textarea>
+                  <label for="comments-input">Comments</label>
+                </div>
+                <span class="error-message hide" id="comments-input-error"></span>
+              </div>
+
+              <!-- Submit Button -->
               <div class="form-floating text-center">
                 <button class="btn btn-primary" type="submit">Submit</button>
               </div>
+
             </form>
           </div>
         </div>
