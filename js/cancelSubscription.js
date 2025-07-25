@@ -5,6 +5,7 @@ const email = document.getElementById('email-address');
 const phoneNumber = document.getElementById('phone-number');
 const orderId = document.getElementById('order-id');
 const commentBox = document.getElementById('comments-input');
+const successMess = document.getElementById('successfull-message');
 
 const regexPatterns = {
     'full-name': {
@@ -76,6 +77,8 @@ document.addEventListener('DOMContentLoaded', function () {
         };
 
         console.log("✅ : Form is submitted successfully. ");
+        successMess.classList.remove('hide');
+        hideMessage();
 
         // Store data in local storage
         const cancelSubsData = {
@@ -156,4 +159,10 @@ const resetValue = () => {
     phoneNumber.value = '';
     orderId.value = '';
     commentBox.value = '';
+};
+
+const hideMessage = () => {
+    setTimeout(() => {
+        successMess.classList.add('hide')
+    }, 4000)
 };

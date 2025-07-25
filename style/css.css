@@ -72,6 +72,23 @@
   font-style: normal;
 }
 
+.submit-align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  button {
+    width: fit-content;
+  }
+}
+
+.successfull-message {
+  margin: 12px 0px 0px 0px;
+  color: green;
+  font-weight: 700;
+}
+
 .box-align {
   display: flex;
   flex-direction: column;
@@ -4081,6 +4098,11 @@ footer p {
 /*Media*/
 /******************************************* all section media *********************************/
 @media screen and (max-width: 767px) {
+
+  .successfull-message {
+    font-size: 18px;
+  }
+
   .banner-left-side {
     padding-left: 0px;
     padding-right: 0px;
