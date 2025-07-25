@@ -92,8 +92,7 @@
               <div class="mb-3 box-align">
                 <div class="form-floating">
                   <input type="email" class="form-control" id="email-address" name="email-address"
-                    placeholder="name@example.com" aria-label="Email address" autocomplete="email"
-                    pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+                    placeholder="name@example.com" aria-label="Email address" autocomplete="email">
                   <label for="email-address">Email address</label>
                 </div>
                 <span class="error-message hide" id="email-address-error"></span>
@@ -106,7 +105,7 @@
                     placeholder="Phone Number" aria-label="Phone number" autocomplete="tel"> -->
 
                   <input type="tel" class="form-control" id="phone-number" name="phone-number"
-                    placeholder="Phone Number" aria-label="Phone number" autocomplete="tel" pattern="/[0-9]/"
+                    placeholder="Phone Number" aria-label="Phone number" autocomplete="tel" pattern="^\d{7,15}$"
                     title="Enter a valid phone number (7–15 digits only)">
 
                   <label for="phone-number">Phone</label>
