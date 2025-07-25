@@ -20,10 +20,16 @@ const regexPatterns = {
     },
 
     'phone-number': {
-        regex: /^\d{7,15}$/,
+        regex: /^\d{10,15}$/,
         clean: /[^\d]/g,
-        error: "Please enter a valid phone number (7–15 digits)."
-    }
+        error: "Please enter a valid phone number (10–15 digits)."
+    },
+
+    'order-id': {
+        regex: /^[a-zA-Z0-9#$\[\]]+$/,
+        clean: /[^a-zA-Z0-9#$\[\]]/g,
+        error: "Please see on the invoice."
+    },
 };
 
 // Everything will work properly after load
@@ -33,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
     form.addEventListener('submit', function (e) {
         e.preventDefault();
 
-        const fields = [fullName, email, phoneNumber, orderId, commentBox];
+        const fields = [fullName, email, phoneNumber, orderId];
         let invalid = false; // Track if there's at least one empty input
 
         for (let field of fields) {
@@ -43,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (!field.value.trim()) {
                 invalid = true;
                 if (errorSpan) {
-                    errorSpan.textContent = 'This field is required.';
+                    errorSpan.textContent = regexPatterns[field.id].error;
                     errorSpan.classList.remove('hide');
                     field.classList.add('is-invalid');
                 }
@@ -119,6 +125,7 @@ const handleChange = (e) => {
         const isValid = pattern.regex.test(cleanedValue);
 
         if (!isValid) {
+
             if (errorElement) {
                 errorElement.textContent = pattern.error;
                 errorElement.classList.remove('hide');
