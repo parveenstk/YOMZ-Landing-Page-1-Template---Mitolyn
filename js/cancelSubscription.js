@@ -90,6 +90,7 @@ document.addEventListener('DOMContentLoaded', function () {
         window.localStorage.setItem('CancelSubsData', JSON.stringify(cancelSubsData));
         const cancelDetails = window.localStorage.getItem('CancelSubsData');
         console.log('cancelDetails:', JSON.parse(cancelDetails));
+        // console.log('cancelDetails:', JSON.stringify(JSON.parse(cancelDetails), null, 2)); // print data in object form 
 
         // Reset form values
         resetValue();
