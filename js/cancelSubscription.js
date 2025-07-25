@@ -12,18 +12,21 @@ const regexPatterns = {
         clean: /[^a-zA-ZÀ-ÿ' -]/g,
         error: "Please enter a valid name."
     },
+
     'email-address': {
         regex: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
         clean: /[^a-zA-Z0-9@._%+-]/g,
         error: "Please enter a valid email address."
     },
+
     'phone-number': {
-        regex: /^\d{7,15}$/,       // only digits, length 7–15
-        clean: /[^\d]/g,           // remove everything except digits
+        regex: /^\d{7,15}$/,
+        clean: /[^\d]/g,
         error: "Please enter a valid phone number (7–15 digits)."
     }
 };
 
+// Everything will work properly after load
 document.addEventListener('DOMContentLoaded', function () {
 
     // Handle form submission
@@ -39,34 +42,55 @@ document.addEventListener('DOMContentLoaded', function () {
 
             if (!field.value.trim()) {
                 invalid = true;
-
-                // Show error message
                 if (errorSpan) {
                     errorSpan.textContent = 'This field is required.';
                     errorSpan.classList.remove('hide');
+                    field.classList.add('is-invalid');
                 }
-
-                // Optional: Add red border
-                field.classList.add('is-invalid');
             } else {
-                // Clear error if field is valid
+                invalid = false;
                 if (errorSpan) {
                     errorSpan.textContent = '';
                     errorSpan.classList.add('hide');
+                    field.classList.remove('is-invalid');
                 }
-
-                field.classList.remove('is-invalid');
             }
         };
 
         // If any field had an error, do NOT submit
         if (invalid) {
-            console.log('⚠️ Please fill in all required fields.');
-            return;
-        }
+            for (let field of fields) {
+                if (field.value.length === 0) {
+                    console.log(`⚠️ Please fill ${field.id} field.`)
+                } else {
+                    console.log(`✅ ${field.id} : ${field.value}`);
+                }
+            }
+            return
+        };
 
-        console.log("✅ Yes, form is submitting.");
+        console.log("✅ : Form is submitted successfully. ");
+
+        // Store data in local storage
+        const cancelSubsData = {
+            fullName: fullName.value,
+            email: email.value,
+            phoneNumber: phoneNumber.value,
+            orderId: orderId.value,
+            commentBox: commentBox.value
+        };
+
+        // Saved value in localStorage
+        window.localStorage.setItem('CancelSubsData', JSON.stringify(cancelSubsData));
+        const cancelDetails = window.localStorage.getItem('CancelSubsData');
+        console.log('cancelDetails:', JSON.parse(cancelDetails));
+
+        // Reset form values
         resetValue();
+
+        for (let field of fields) {
+            field.classList.remove('is-valid');
+        }
     });
 
     // hanlde Input Change
@@ -75,6 +99,7 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 });
 
+// checking value while input
 const handleChange = (e) => {
     const { name } = e.target;
     let { value } = e.target;
@@ -97,11 +122,15 @@ const handleChange = (e) => {
             if (errorElement) {
                 errorElement.textContent = pattern.error;
                 errorElement.classList.remove('hide');
+                outputElement.classList.remove('is-valid');
+                outputElement.classList.add('is-invalid');
             }
         } else {
             if (errorElement) {
                 errorElement.textContent = '';
                 errorElement.classList.add('hide');
+                outputElement.classList.add('is-valid');
+                outputElement.classList.remove('is-invalid');
             }
         }
 
