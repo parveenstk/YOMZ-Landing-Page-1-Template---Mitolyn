@@ -276,7 +276,7 @@ const packsPrice = {
         couponPercentage: '40%',
         couponPrice: 31.99,
         todayPrice: 48.00,
-        shipping: '$9.95',
+        shipping: 9.95,
     },
 
     '2-people': {
@@ -328,8 +328,10 @@ const updatedPack = (productId) => {
     const product = packsPrice[productId];
     const uprCart = upperCartData[productId];
     const totalPrice = product.shipping === "FREE"
-        ? parseFloat(product.todayPrice)
-        : (parseFloat(product.todayPrice) + parseFloat(product.shipping));
+        ? product.todayPrice
+        : product.todayPrice + product.shipping;
+
+    const formattedShipping = product.shipping === "FREE" ? "FREE" : `$${product.shipping.toFixed(2)}`;
 
     if (uprCart) {
         const updatedUprCart = `
@@ -403,7 +405,7 @@ const updatedPack = (productId) => {
                                 </p>
                                 <p class="mb-0 d-flex justify-content-between">
                                     <span>Shipping & Handling</span>
-                                    <span>${product.shipping}</span>
+                                    <span>${formattedShipping}</span>
                                 </p>
                                 <p class="mb-0 d-flex justify-content-between">
                                     <span>Tax</span>
