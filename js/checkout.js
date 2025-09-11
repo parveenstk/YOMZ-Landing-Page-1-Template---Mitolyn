@@ -82,122 +82,6 @@ document.addEventListener("DOMContentLoaded", function () {
     updatedPack(productId);
 });
 
-// document.addEventListener("DOMContentLoaded", function () {
-//     const filters = {
-//         phone: value => value.replace(/[^0-9+()\-\s]/g, ''),
-//         'card-number': value => value.replace(/\D/g, '').replace(/(.{4})/g, '$1 ').trim(),
-//         expiry: value => {
-
-//             let input = value.replace(/\D/g, '');
-//             let month = input.slice(0, 2);
-//             let year = input.slice(2, 4);
-
-//             if (month.length === 2) {
-//                 let m = parseInt(month, 10);
-//                 if (m < 1) month = '01';
-//                 if (m > 12) month = '12';
-//             }
-
-//             const currentYearShort = parseInt(new Date().getFullYear().toString().slice(-2));
-//             const maxYear = (currentYearShort + 10);
-
-//             if (year.length === 2) {
-//                 let y = parseInt(year, 10);
-
-//                 if (y < currentYearShort) {
-//                     y = currentYearShort;
-//                 } else if (y > maxYear) {
-//                     y = maxYear;
-//                 }
-
-//                 year = y.toString().padStart(2, '0'); // always keep it a 2-digit string
-//             }
-
-//             return input.length > 2 ? `${month}/${year}` : month;
-//         }
-//     };
-
-//     // Apply filters
-//     document.querySelectorAll('[data-filter]').forEach(input => {
-//         const type = input.getAttribute('data-filter');
-
-//         const filterFn = filters[type];
-//         if (filterFn) {
-//             input.addEventListener('input', function () {
-//                 this.value = filterFn(this.value);
-//             });
-//         }
-//     });
-
-//     // Validators
-//     const validators = {
-//         email: val => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val),
-//         phone: val => val.replace(/\D/g, '').length >= 10,
-//         card: val => /^\d{16}$/.test(val.replace(/\s/g, '')),
-//         expiry: val => {
-//             const [month, year] = val.split('/');
-//             if (!month || !year) return false;
-//             const exp = new Date(`20${year}`, month);
-//             return exp > new Date();
-//         },
-//         cvc: val => /^\d{3,4}$/.test(val),
-//         name: val => /^[A-Za-z\s.'-]{2,}$/.test(val),
-//         address: val => /^[\w\s.,'#/\\-]{5,}$/.test(val),
-//         postal: val => /^\d{4,6}$/.test(val)
-//     };
-
-//     const form = document.getElementById('checkout-form');
-//     form.addEventListener('submit', function (e) {
-//         e.preventDefault();
-
-//         const fields = [
-//             { id: 'email-address', fn: validators.email, msg: 'Email Address is invalid' },
-//             { id: 'phone-number', fn: validators.phone, msg: 'Invalid phone number' },
-//             { id: 'card-number', fn: validators.card, msg: 'Card Number is required' },
-//             { id: 'expiration-date', fn: validators.expiry, msg: 'Card Expiry is required' },
-//             { id: 'security-code', fn: validators.cvc, msg: 'Security Code is required' },
-//             { id: 'cardholder-name', fn: validators.name, msg: 'Cardholder Name is required' },
-//             { id: 'full-name', fn: validators.name, msg: 'Full Name is required' },
-//             { id: 'street-address', fn: validators.address, msg: 'Street Address is required' },
-//             { id: 'city', fn: validators.name, msg: 'City is required' },
-//             { id: 'postal-code', fn: validators.postal, msg: 'Postal code is required' }
-//         ];
-
-//         let isValid = true;
-
-//         fields.forEach(({ id, fn, msg }) => {
-//             const input = document.getElementById(id);
-//             const errorSpan = document.getElementById(`${id}-error`);
-//             const value = input.value.trim();
-
-//             if (!fn(value)) {
-//                 input.classList.add('is-invalid');
-//                 if (errorSpan) errorSpan.textContent = msg;
-//                 isValid = false;
-//             } else {
-//                 input.classList.remove('is-invalid');
-//                 if (errorSpan) errorSpan.textContent = '';
-//             }
-//         });
-
-//         if (!isValid) return;
-
-//         // Store to localStorage
-//         const inputs = form.querySelectorAll('input:not([type="radio"])');
-//         const values = {};
-//         inputs.forEach(input => {
-//             values[input.id] = input.value.trim();
-//         });
-
-//         localStorage.setItem('checkoutData', JSON.stringify(values));
-//         form.reset();
-
-//         setTimeout(() => {
-//             window.location.href = './offer1.html';
-//         }, 500);
-//     });
-// });
-
 document.addEventListener("DOMContentLoaded", function () {
     const filters = {
         phone: value => value.replace(/[^0-9+()\-\s]/g, ''),
@@ -361,28 +245,54 @@ const replaceCls = (elementId, className1, className2) => {
 };
 
 // Products Data ( cartprice, total, coupon discount, etc .)
+// const packsPrice = {
+//     '1-person': {
+//         normallyPrice: '79.99',
+//         couponPercentage: '40%',
+//         couponPrice: '32',
+//         todayPrice: '47.99',
+//         shipping: '9.95',
+//     },
+
+//     '2-people': {
+//         normallyPrice: '159.98',
+//         couponPercentage: '43%',
+//         couponPrice: '68.78',
+//         todayPrice: '91.20',
+//         shipping: '9.95',
+//     },
+
+//     '3-people': {
+//         normallyPrice: '239.97',
+//         couponPercentage: '46%',
+//         couponPrice: '110.39',
+//         todayPrice: '129.58',
+//         shipping: 'FREE',
+//     },
+// };
+
 const packsPrice = {
     '1-person': {
-        normallyPrice: '79.99',
+        normallyPrice: 79.99,
         couponPercentage: '40%',
-        couponPrice: '32',
-        todayPrice: '47.99',
-        shipping: '9.95',
+        couponPrice: 31.99,
+        todayPrice: 48.00,
+        shipping: '$9.95',
     },
 
     '2-people': {
-        normallyPrice: '159.98',
-        couponPercentage: '43%',
-        couponPrice: '68.78',
-        todayPrice: '91.20',
-        shipping: '9.95',
+        normallyPrice: 159.98,
+        couponPercentage: '51.24%',
+        couponPrice: 81.98,
+        todayPrice: 78.00,
+        shipping: 'FREE',
     },
 
     '3-people': {
-        normallyPrice: '239.97',
-        couponPercentage: '46%',
-        couponPrice: '110.39',
-        todayPrice: '129.58',
+        normallyPrice: 239.97,
+        couponPercentage: '59.99%',
+        couponPrice: '143.97',
+        todayPrice: 96.00,
         shipping: 'FREE',
     },
 };
@@ -460,7 +370,7 @@ const updatedPack = (productId) => {
                     <div class="com-font normal">
                                 <p class="mb-0 d-flex justify-content-between">
                                     <span>Normally</span>
-                                    <span><del class="strike-red">$${product.normallyPrice}</del></span>
+                                    <span><del class="strike-red">$${product.normallyPrice.toFixed(2)}</del></span>
                                 </p>
                             </div>
                             <div class="com-font coupon">
@@ -474,7 +384,7 @@ const updatedPack = (productId) => {
                             <div class="total-price">
                                 <p class="mb-0 d-flex justify-content-between">
                                     <span>Today's Price</span>
-                                    <span>$${product.todayPrice}</span>
+                                    <span>$${product.todayPrice.toFixed(2)}</span>
                                 </p>
                             </div>
 
@@ -490,11 +400,11 @@ const updatedPack = (productId) => {
                             <div class="subtotal mt-3">
                                 <p class="mb-0 d-flex justify-content-between">
                                     <span>Subtotal</span>
-                                    <span>$${product.todayPrice}</span>
+                                    <span>$${product.todayPrice.toFixed(2)}</span>
                                 </p>
                                 <p class="mb-0 d-flex justify-content-between">
                                     <span>Shipping & Handling</span>
-                                    <span>$${product.shipping}</span>
+                                    <span>${product.shipping}</span>
                                 </p>
                                 <p class="mb-0 d-flex justify-content-between">
                                     <span>Tax</span>
@@ -502,7 +412,7 @@ const updatedPack = (productId) => {
                                 </p>
                                 <p class="mb-0 d-flex justify-content-between">
                                     <span>TOTAL</span>
-                                    <span>$${totalPrice}</span>
+                                    <span>$${totalPrice.toFixed(2)}</span>
                                 </p>
                     </div>`;
 
@@ -513,42 +423,3 @@ const updatedPack = (productId) => {
         });
     }
 };
-
-// // Live udpate the input fileds status
-// const inputFields = document.querySelectorAll('.input-feilds');
-// const inputErrors = document.querySelectorAll('.error-message');
-
-// // Loop through each input field
-// inputFields.forEach((inputField, index) => {
-//     const errorMessageEl = inputErrors[index];
-
-//     // Input event: validate as user types
-//     inputField.addEventListener('input', function () {
-//         const inputValue = inputField.value;
-//         const placeHolder = inputField.getAttribute('placeholder')
-//         // console.log('placeHolder:', placeHolder);
-
-//         if (inputValue.length > 0) {
-//             inputField.classList.add('is-valid');
-//             inputField.classList.replace('is-invalid', 'is-valid');
-//             errorMessageEl.classList.add('hide');
-//         } else {
-//             inputField.classList.replace('is-valid', 'is-invalid');
-//             errorMessageEl.classList.remove('hide');
-//             errorMessageEl.innerText = placeHolder === 'MM/YY' ? 'Card Expiry is required' : `${placeHolder} is required`;
-//         }
-//     });
-
-//     // Blur event: check when user leaves the field
-//     inputField.addEventListener('blur', function () {
-//         const inputValue = inputField.value.trim();
-//         const placeHolder = inputField.getAttribute('placeholder')
-
-//         if (inputValue === '') {
-//             inputField.classList.remove('is-valid');
-//             inputField.classList.add('is-invalid');
-//             errorMessageEl.classList.remove('hide');
-//             errorMessageEl.innerText = placeHolder === 'MM/YY' ? 'Card Expiry is required' : `${placeHolder} is required`;
-//         }
-//     });
-// });
