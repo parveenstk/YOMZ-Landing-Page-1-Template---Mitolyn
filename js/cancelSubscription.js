@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (invalid) {
             for (let field of fields) {
                 if (field.value.length === 0) {
-                    console.log(`⚠️ Please fill ${field.id} field.`)
+                    console.log(`⚠️ Please fill ${field.id} field.`);
                 } else {
                     console.log(`✅ ${field.id} : ${field.value}`);
                 }
@@ -91,8 +91,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Saved value in localStorage
         window.localStorage.setItem('CancelSubsData', JSON.stringify(cancelSubsData));
-        const cancelDetails = window.localStorage.getItem('CancelSubsData');
-        console.log('cancelDetails:', JSON.parse(cancelDetails));
+        const cancelDetails = JSON.parse(localStorage.getItem('CancelSubsData'));
+        console.log('cancelDetails:', cancelDetails);
         updateSheet(cancelDetails);
 
         // Reset form values
@@ -187,7 +187,7 @@ const updateSheet = async (formData) => {
 
     try {
         await fetch("https://yomz-pages-data.vercel.app/api/cancelSubscription", requestOptions)
-        // await fetch("http://localhost:3000/api/cancelSubscription", requestOptions)
+            // await fetch("http://localhost:3000/api/cancelSubscription", requestOptions)
             .then((response) => response.text())
             .then((result) => console.log(result))
             .catch((error) => console.error(error));

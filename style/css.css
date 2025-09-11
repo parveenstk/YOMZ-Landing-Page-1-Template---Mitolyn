@@ -2125,6 +2125,8 @@ p.people {
   color: #84e7ff;
 }
 
+.last-offer-colm-padding{margin-top: 50px;}
+
 .clr-yellow {
   color: #FFEB00;
 }
@@ -2194,6 +2196,7 @@ p.people {
 
 .listdone-gap li {
   font-style: italic;
+  word-wrap: break-word;
 }
 
 .listdone-gap p {
@@ -2642,7 +2645,7 @@ footer p {
 }
 
 @media screen and (max-width: 767px) {
-
+.last-offer-colm-padding{margin-top: 10px;}
   .form-set {
     padding: 10px;
     box-shadow: none;
@@ -4152,7 +4155,7 @@ footer p {
   }
 
   .right-side-info h1 {
-    font-size: calc(8.5vw - 0px) !important;
+    font-size: calc(10.3vw - 0px) !important;
     line-height: calc(0.8em + 1vw) !important;
     text-align: center;
     margin-bottom: 2px;
@@ -4313,12 +4316,14 @@ footer p {
   }
 
   .ins-header p {
-    font-size: 28px;
+      font-size: calc(6.5vw - 0px) !important;
     text-align: center;
     line-height: normal;
     margin-bottom: 0px;
     line-height: 1.01;
   }
+
+  .ins-header span{display: block;}
 
   .listdone-gap {
     margin-top: 0px;
@@ -4839,6 +4844,8 @@ footer p {
   .shipping p {
     font-size: 20px;
   }
+
+  .right-side-info p{font-size: calc(6.3vw - 0px) !important;}
 
 }
 
