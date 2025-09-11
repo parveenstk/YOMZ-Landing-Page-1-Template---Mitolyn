@@ -227,7 +227,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Saving data in localStorage
 const savedData = JSON.parse(localStorage.getItem('checkoutData'));
-console.log("savedData:", savedData);
 
 const addCls = (elementId, className) => {
     const element = document.getElementById(elementId);

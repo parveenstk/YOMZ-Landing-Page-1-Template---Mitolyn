@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (productBox && container.contains(productBox)) {
             const clickedId = productBox.dataset.id;
-            // window.location.href = `http://127.0.0.1:5501/checkout.html?product=${clickedId}`
-            window.location.href = `https://suretekinfosoft.com/demo106/funnel1/lp1/offer/checkout.html?product=${clickedId}`
+            window.location.href = `http://127.0.0.1:5501/checkout.html?product=${clickedId}`
+            // window.location.href = `https://suretekinfosoft.com/demo106/funnel1/lp1/offer/checkout.html?product=${clickedId}`
 
             // Perform action based on the clickedId
             switch (clickedId) {
