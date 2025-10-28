@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>YOMZ | Offer2</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="title" content="Offer Page - 2">
+    <meta name="description" content="WAIT! SPECIAL OFFER! - Upsell Page Offer - 2">
     <link rel="shortcut icon" href="images/light.png" type="image/ico">
     <link href="offer2/css/custom-stylesheet.css" rel="stylesheet">
     <link href="offer2/css/bootstrap.css" rel="stylesheet">
@@ -15,60 +17,72 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <div class="top-bar">
-        <div id="innerBar"> <img src="images/logo.png" class="logo" style="margin-top:10px;" /> </div>
+        <div id="innerBar"> <img src="images/logo.png" alt="logo.png" class="logo" style="margin-top:10px;" /> </div>
     </div>
     <!-- HEADER END -->
     <!-- MAIN CONTENT START -->
-    <div class="mainBox">
-        <div class="mainHeadbox row">
-            <div class="leftHead col-4"> STEP 1: <span class="bl-block">ORDER PAGE</span> </div>
-            <div class="centerHead col-4"> STEP 2: <span class="bl-block">SPECIAL OFFER</span> </div>
-            <div class="rightHead col-4"> STEP 3: <span class="bl-block">CONFIRMATION</span> </div>
-            <div class="clear"></div>
-        </div>
-        <div class="headText">
-            <h1>WAIT! <span class="mobile-dsblock"> SPECIAL OFFER!</span> </h1>
-            <h2>A 1-TIME-ONLY chance <span class="mobile-dsblock">to get YOMZ for <span
-                        class="mobile-dsblock under-line-height"><span class="undercolor">
-                            under $39</span> per bag</span></h2>
-        </div>
-        <div class="mainBg">
-            <img src="offer2/images/upsell.jpg" class="img-fluid d-none d-sm-none d-lg-block" />
-            <img src="offer2/images/upsell-mobile.jpg" class="img-fluid d-sm-block d-lg-none" />
-        </div>
-        <br>
-        <div class="selectBox">
-            <select id="select" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                <option value="296" selected>5 Bags: $38.40 each </option>
-                <option value="297">4 Bags: $40.79 each </option>
-                <option value="298">3 Bags: $43.19 each</option>
-                <option value="299">2 Bags: $45.60 each </option>
-                <option value="300">1 Bag: $47.99 </option>
-            </select>
-        </div>
 
-        <div class="inputButton">
-            <button type="button" value="Complete My Checkout" class="btn pulse">Complete My Checkout</button>
-        </div>
+    <main>
+        <div class="mainBox">
+            <div class="mainHeadbox row">
+                <div class="leftHead col-4"> STEP 1: <span class="bl-block">ORDER PAGE</span> </div>
+                <div class="centerHead col-4"> STEP 2: <span class="bl-block">SPECIAL OFFER</span> </div>
+                <div class="rightHead col-4"> STEP 3: <span class="bl-block">CONFIRMATION</span> </div>
+                <div class="clear"></div>
+            </div>
+            <div class="headText">
+                <h1>WAIT! <span class="mobile-dsblock"> SPECIAL OFFER!</span> </h1>
+                <h2>A 1-TIME-ONLY chance <span class="mobile-dsblock">to get YOMZ for <span
+                            class="mobile-dsblock under-line-height"><span class="undercolor">
+                                under $39</span> per bag</span></h2>
+            </div>
+            <div class="mainBg">
+                <img src="offer2/images/upsell.jpg" alt="upsell.jpg-img"
+                    class="img-fluid d-none d-sm-none d-lg-block" />
+                <img src="offer2/images/upsell-mobile.jpg" alt="upsell-mobile.jpg-img"
+                    class="img-fluid d-sm-block d-lg-none" />
+            </div>
+            <br>
+            <div class="selectBox">
+                <select id="select" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                    <option value="296" selected>5 Bags: $38.40 each </option>
+                    <option value="297">4 Bags: $40.79 each </option>
+                    <option value="298">3 Bags: $43.19 each</option>
+                    <option value="299">2 Bags: $45.60 each </option>
+                    <option value="300">1 Bag: $47.99 </option>
+                </select>
+            </div>
 
-        <div class="shiptake">
-            <a id="timer-popUp" href="javascript:void(0)" class="tagroow" data-bs-toggle="modal"
-                data-bs-target="#exampleModal"> No
-                thanks, I don't want this exclusive 1-time offer.</a>
+            <div class="inputButton">
+                <!-- <button type="button" value="Complete My Checkout" class="btn pulse">Complete My Checkout</button> -->
+                <button type="button" class="btn pulse" onclick="window.location.href='./thankyou.html'">
+                    Complete My Checkout
+                </button>
+            </div>
+
+            <div class="timer-popUp-box">
+                <!-- Replaced <a> with <button> for modal trigger -->
+                <button id="timer-popUp" type="button" class="tagroow timer-popUp" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    No thanks, I don't want this exclusive 1-time offer.
+                </button>
+            </div>
+
+            <!-- UPSELL END -->
+            <div id="secureImg"> <img src="offer2/images/ssl.jpg" alt="ssl.jpg-img" width="100%" /> </div>
         </div>
-        <!-- UPSELL END -->
-        <div id="secureImg"> <img src="offer2/images/ssl.jpg" width="100%" /> </div>
-    </div>
+    </main>
     <!-- MAIN CONTENT END -->
+
     <!-- FOOTER START -->
     <div id="footerText">
         <p>Copyright 2025 - YOMZ - All Rights Reserved</p>
         <p>
             <a href="//www.dmca.com/Protection/Status.aspx?ID=a98f4c31-931e-439a-9367-dd6bdd6f22e9"
-                title="DMCA.com Protection Status" class="dmca-badge"> <img
-                    src="https://images.dmca.com/Badges/dmca-badge-w200-5x1-10.png?ID=a98f4c31-931e-439a-9367-dd6bdd6f22e9"
-                    alt="DMCA.com Protection Status" /></a>
-            <!-- <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script> -->
+                title="DMCA.com Protection Status" class="dmca-badge">
+                <img src="https://images.dmca.com/Badges/dmca-badge-w200-5x1-10.png?ID=a98f4c31-931e-439a-9367-dd6bdd6f22e9"
+                    alt="DMCA.com Protection Status" />
+            </a>
             <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js">
             </script>
         </p>
