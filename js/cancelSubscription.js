@@ -187,7 +187,7 @@ const updateSheet = async (formData) => {
 
     try {
         await fetch("https://yomz-pages-data.vercel.app/api/cancelSubscription", requestOptions)
-            // await fetch("http://localhost:3000/api/cancelSubscription", requestOptions)
+        // await fetch("http://localhost:3000/api/cancelSubscription", requestOptions)
             .then((response) => response.text())
             .then((result) => console.log(result))
             .catch((error) => console.error(error));
