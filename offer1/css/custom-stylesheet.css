@@ -61,6 +61,19 @@ body {
     font-family: 'Century Gothic';
 }
 
+.timer-popUp-box {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    text-decoration: underline;
+
+    .timer-popUp {
+        border-style: none;
+        background-color: white;
+        text-align: center;
+    }
+}
+
 #timer-box {
     #timer-display {
         text-align: center !important;
@@ -200,7 +213,7 @@ body {
     flex-direction: row;
     align-items: center;
     flex-wrap: nowrap;
-    
+
     cursor: pointer;
     text-align: center;
     /* text-transform: capitalize; */
@@ -223,7 +236,7 @@ body {
     text-transform: uppercase;
     font-size: 18px;
     padding: 14px 30px;
-    
+
     display: block;
 }
 
@@ -286,6 +299,15 @@ h4.thsnlh4 {
     text-align: center;
     margin-top: 0px;
     line-height: normal;
+}
+
+.heading-3 {
+    font-size: 24px;
+    color: black;
+    text-align: center;
+    line-height: normal;
+    margin-top: 0px;
+    font-family: "Century Gothic";
 }
 
 a.tagroow {
@@ -360,7 +382,7 @@ a.tagroow {
     background: #2BBFDF;
     color: #fff;
     padding: 20px 25px;
-    
+
     text-decoration: none;
     display: block;
     font-size: 24px;
@@ -427,7 +449,7 @@ a.tagroow {
     margin-bottom: 5px;
     font-family: 'century_gothic_paneuropeanXBd';
     border-radius: 11px;
-    
+
 }
 
 .offerpop .managecheckoutbtn:hover {
@@ -488,7 +510,7 @@ a.tagroow {
 
 .min-text {
     font-size: 22px;
-    
+
 }
 
 .color-red {
@@ -527,19 +549,20 @@ a.tagroow {
         width: 85%;
         margin: 0px auto;
         margin-bottom: 5px;
-        
+
     }
 }
 
 @media screen and (max-width: 767px) {
 
-
-
-
+    .timer-popUp {
+        font-size: calc(3.2vw - 0px) !important;
+        line-height: calc(0.9em + 1vw) !important;
+    }
 
     .othanks {
-    font-size: 8px;
-}
+        font-size: 8px;
+    }
 
     .manage-footersec p {
         line-height: normal;
@@ -558,7 +581,7 @@ a.tagroow {
     }
 
     .offerpop .modal-body {
-               padding: 20px 5px 15px;
+        padding: 20px 5px 15px;
     }
 
     .offerpop h4 {
@@ -585,16 +608,16 @@ a.tagroow {
 
     .offerpop .managecheckoutbtn {
         white-space: normal;
-                font-size: calc(4.7vw - 0px) !important;
+        font-size: calc(4.7vw - 0px) !important;
         line-height: calc(1.4em + 1vw) !important;
         display: block;
         text-decoration: none;
         width: 99%;
         margin: 0px auto;
-        margin-bottom: 5px;        
+        margin-bottom: 5px;
         padding: 20px 5px;
         line-height: normal;
-                margin-bottom: 0px;
+        margin-bottom: 0px;
     }
 
     .first-data h3 {
@@ -641,7 +664,7 @@ a.tagroow {
     .offerbtn-2 a {
 
         color: #fff;
-        padding: 12px 7px;        
+        padding: 12px 7px;
         text-decoration: none;
         display: block;
         font-size: 15px;
@@ -674,6 +697,14 @@ a.tagroow {
         font-size: calc(4.5vw - 0px) !important;
         line-height: calc(0.9em + 1vw) !important;
 
+    }
+
+    .heading-3 {
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 0px;
+        font-size: calc(4.5vw - 0px) !important;
+        line-height: calc(0.9em + 1vw) !important;
     }
 
     .offer-images img {
@@ -783,7 +814,7 @@ a.tagroow {
         flex-direction: row;
         align-items: center;
         flex-wrap: nowrap;
-        
+
         cursor: pointer;
         text-align: center;
         /* text-transform: capitalize; */
@@ -796,7 +827,7 @@ a.tagroow {
         text-transform: uppercase;
         font-size: 14px;
         padding: 14px 30px;
-        
+
         display: block;
     }
 
@@ -851,29 +882,37 @@ a.tagroow {
 
 @media screen and (max-width: 600px) {
 
-    .offerpop .managecheckoutbtn{        font-size: calc(6.7vw - 0px) !important;
-        line-height: calc(1.2em + 1vw) !important;}
+    .offerpop .managecheckoutbtn {
+        font-size: calc(6.7vw - 0px) !important;
+        line-height: calc(1.2em + 1vw) !important;
+    }
 
 }
 
 @media screen and (max-width: 380px) {
 
-    .offerpop .managecheckoutbtn{        font-size: calc(6.5vw - 0px) !important;
-        line-height: calc(1.2em + 1vw) !important;}
+    .offerpop .managecheckoutbtn {
+        font-size: calc(6.5vw - 0px) !important;
+        line-height: calc(1.2em + 1vw) !important;
+    }
 
 }
 
 @media screen and (max-width: 330px) {
 
-    .offerpop .managecheckoutbtn{        font-size: calc(6.4vw - 0px) !important;
-        line-height: calc(1.2em + 1vw) !important;}
+    .offerpop .managecheckoutbtn {
+        font-size: calc(6.4vw - 0px) !important;
+        line-height: calc(1.2em + 1vw) !important;
+    }
 
 }
 
 @media screen and (max-width: 301px) {
 
-    .offerpop .managecheckoutbtn{        font-size: calc(6.3vw - 0px) !important;
-        line-height: calc(1.2em + 1vw) !important;}
+    .offerpop .managecheckoutbtn {
+        font-size: calc(6.3vw - 0px) !important;
+        line-height: calc(1.2em + 1vw) !important;
+    }
 
 }
 
@@ -985,6 +1024,10 @@ input[name="other_flavor"]::placeholder {
     h4.thsnlh4 {
         font-size: 13px;
     }
+
+    .heading-3 {
+        font-size: 13px;
+    }
 }
 
 @media screen and (max-width: 401px) {
@@ -1003,6 +1046,10 @@ input[name="other_flavor"]::placeholder {
     }
 
     h4.thsnlh4 {
+        font-size: 12px;
+    }
+
+    .heading-3 {
         font-size: 12px;
     }
 }
@@ -1037,6 +1084,10 @@ input[name="other_flavor"]::placeholder {
     }
 
     h4.thsnlh4 {
+        font-size: 11px;
+    }
+
+    .heading-3 {
         font-size: 11px;
     }
 }
@@ -1082,8 +1133,6 @@ input[name="other_flavor"]::placeholder {
         font-size: 19px !important;
     }
 }
-
-
 
 @media screen and (max-width: 401px) {
 
