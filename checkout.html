@@ -2,9 +2,10 @@
 <html lang="en">
 
 <head>
-    <title>Checkout - YOMZ</title>
+    <title>Checkout – YOMZ Gummies</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Secure checkout for YOMZ Gummies. Complete your purchase safely and quickly.">
     <link rel="shortcut icon" href="images/light.png" type="image/ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -20,390 +21,67 @@
 </head>
 
 <body>
-    <div class="checkout">
-        <div class="container">
-            <!-- Banner -->
-            <div class="row">
-                <div class="banner">
-                    <img src="images/chekout-banner.jpg" alt="" class="img-fluid d-none d-sm-none d-lg-block">
-                    <img src="images/chekout-banner-mobile.jpg" alt="" class="img-fluid d-sm-block d-lg-none">
+
+    <main>
+        <div class="checkout">
+            <div class="container">
+                <!-- Banner -->
+                <div class="row">
+                    <div class="banner">
+                        <img src="images/chekout-banner.jpg" alt="chekout-banner.jpg-img"
+                            class="img-fluid d-none d-sm-none d-lg-block" />
+                        <img src="images/chekout-banner-mobile.jpg" alt="chekout-banner-mobile-img"
+                            class="img-fluid d-sm-block d-lg-none" />
+                    </div>
                 </div>
-            </div>
-            <!-- Banner -->
-            <div class="row">
-                <div class="col-12 mobile-pd">
-                    <div id="timer-box" class="border-box-area">
-                        <p id="timer-text"> YOUR ORDER IS RESERVED FOR </p>
-                        <div id="clock-timer">
-                            <p id="timer-display">09:45</p>
+                <!-- Banner -->
+                <div class="row">
+                    <div class="col-12 mobile-pd">
+                        <div id="timer-box" class="border-box-area">
+                            <p id="timer-text"> YOUR ORDER IS RESERVED FOR </p>
+                            <div id="clock-timer">
+                                <p id="timer-display">09:45</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="lock-area">
-                    <p>
-                        <i class="fas fa-lock"></i>
-                        Secure Checkout
-                    </p>
-                </div>
-            </div>
-
-            <!-- checkOut form -->
-            <form id="checkout-form">
-                <div class="row maange-role-padding">
-                    <div class="col-md-6 pxy topbox">
-                        <div class="box-area-1 d-sm-block d-lg-none">
-                            <div class="d-sm-block d-lg-none">
-                                <div class="people-number">
-                                    <p class="text-center"><i class="fas fa-eye"></i> <strong>35 people</strong> are
-                                        online
-                                        now on this page!</p>
-                                </div>
-                                <!-- Mobile Cart Summary Start -->
-                                <div class="cart-summerty">
-                                    <div class="upper-cart">
-                                        <div class="products-image">
-                                            <img src="./images/bags/desktop-bag-3.png" class="img-fluid">
-                                        </div>
-                                        <div class="summery-data text-center">
-                                            <p class="mb-0"><strong>Cart Summary</strong></p>
-                                            <h4 class="mb-0"><strong> 3 People - 3 Bags</strong></h4>
-                                            <p style="text-align:center">
-                                                <span
-                                                    style="background-color:rgba( 15 , 128 , 0 , 1 );color:rgba( 255 , 255 , 255 , 1 );font-family:'roboto' , sans-serif;font-size:14px">
-                                                    <strong>&nbsp;4.5&nbsp;</strong>
-                                                </span>
-                                                <span
-                                                    style="background-color:rgba( 255 , 255 , 255 , 0.01 );font-family:'roboto' , sans-serif;font-size:14px"><strong></strong></span>
-                                                <span
-                                                    style="background-color:rgba( 255 , 255 , 255 , 0.01 );color:rgba( 15 , 128 , 0 , 1 );font-family:'roboto' , sans-serif;font-size:14px">
-                                                    <strong>&nbsp;Excellent!</strong>
-                                                </span>
-                                                <span style="font-family:'roboto' , sans-serif;font-size:14px"></span>
-                                                <span
-                                                    style="color:rgba( 132 , 132 , 132 , 1 );font-family:'roboto' , sans-serif;font-size:14px">
-                                                    (2,797 reviews)
-                                                </span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <!-- Mobile - Product Prices -->
-                                    <div class="summery-price-data">
-                                        <div class="product-prices">
-                                            <div class="com-font normal">
-                                                <p class="mb-0 d-flex justify-content-between">
-                                                    <span>Normally</span>
-                                                    <span><del class="strike-red">$239.97</del></span>
-                                                </p>
-                                            </div>
-                                            <div class="com-font coupon">
-                                                <p class="mb-0 d-flex justify-content-between">
-                                                    <span>Coupon: <span class="off-color"><u>46%OFF</u></span></span>
-                                                    <span class="off-color">$110.39</span>
-                                                </p>
-                                            </div>
-                                            <hr>
-                                            <div class="total-price">
-                                                <p class="mb-0 d-flex justify-content-between">
-                                                    <span>Today's Price</span>
-                                                    <span>$129.58</span>
-                                                </p>
-                                            </div>
-                                            <div class="cart-checkbox manage-checkbox">
-                                                <input id="cart-checkbox-mobile" class="cursor" type="checkbox">
-                                                <label for="cart-checkbox-mobile">
-                                                    I do not want to receive exclusive content and promotion form this
-                                                    vendor, and do not share my personal information.
-                                                </label>
-                                            </div>
-                                            <!-- Mobile - Cart Prices -->
-                                            <div class="subtotal mt-3">
-                                                <p class="mb-0 d-flex justify-content-between">
-                                                    <span>Subtotal</span>
-                                                    <span>$129.58</span>
-                                                </p>
-                                                <p class="mb-0 d-flex justify-content-between">
-                                                    <span>Shipping & Handling</span>
-                                                    <span>FREE</span>
-                                                </p>
-                                                <p class="mb-0 d-flex justify-content-between">
-                                                    <span>Tax</span>
-                                                    <span>$0.00</span>
-                                                </p>
-                                                <p class="mb-0 d-flex justify-content-between">
-                                                    <span>TOTAL</span>
-                                                    <span>$181.70</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Mobile Cart Summary End -->
-                            </div>
-                        </div>
-                        <div class="box-area">
-                            <h3>Customer Information</h3>
-
-                            <!-- Email Address -->
-                            <div class="form-floating mb-1">
-                                <input type="email" class="form-control input-feilds" id="email-address"
-                                    placeholder="Email address" maxlength="50" autocomplete="email">
-                                <label for="email-address">Email address</label>
-                                <span class="error-message" id="email-address-error"></span>
-                            </div>
-                            <small>To receive an email order confirmation.</small>
-
-                            <!-- Phone Number -->
-                            <div class="form-floating mb-1">
-                                <input type="tel" class="form-control input-feilds" id="phone-number"
-                                    data-filter="phone" placeholder="Phone number" maxlength="20" autocomplete="tel"
-                                    inputmode="tel">
-                                <label for="phone-number">Phone number</label>
-                                <span class="error-message" id="phone-number-error"></span>
-                            </div>
-                            <small>To receive tracking information.</small>
-                        </div>
-                        <div class="box-area box-areaaccordion">
-                            <div class="heading">
-                                <h3>Payment Information</h3>
-                                <small>All transactions are secure and encrypted.</small>
-                            </div>
-                            <!-- Payment Options -->
-                            <div class="accordion" id="accordionExample">
-                                <!-- Credit Card -->
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button id="credit-card-select" class="accordion-button collapsed padding0"
-                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                            aria-expanded="false" aria-controls="collapseTwo">
-                                            <div class="form-check margin0 padding0">
-                                                <label class="form-check-label btn-padding cursor"
-                                                    for="creditCard-radio">
-                                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                                        id="creditCard-radio" checked>
-                                                    <div class="d-flex justify-content-between gap-manation cursor">
-                                                        <span class="lebel-text">Credit Card</span>
-                                                        <span class="text-end">
-                                                            <img src="images/visa.svg">
-                                                            <img src="images/cc-mastercard.svg">
-                                                        </span>
-                                                    </div>
-                                                </label>
-                                            </div>
-                                        </button>
-                                    </h2>
-                                    <!-- Card Details -->
-                                    <div id="collapseTwo" class="accordion-collapse collapse show"
-                                        data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <div class="payment-form controlform">
-                                                <div class="row">
-                                                    <div class="col-12">
-                                                        <div class="form-floating mb-3">
-                                                            <!-- Card Number -->
-                                                            <input type="text" class="form-control input-feilds"
-                                                                id="card-number" data-filter="card-number"
-                                                                placeholder="Card Number" inputmode="numeric"
-                                                                maxlength="19" autocomplete="cc-number">
-                                                            <label for="card-number">Card Number</label>
-                                                            <span class="error-message" id="card-number-error"></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-6">
-                                                        <div class="form-floating mb-3">
-                                                            <!-- Expiration Date -->
-                                                            <input type="text" class="form-control input-feilds"
-                                                                id="expiration-date" data-filter="expiry"
-                                                                placeholder="MM/YY" inputmode="numeric" maxlength="5"
-                                                                autocomplete="cc-exp">
-                                                            <label for="expiration-date">Expiration Date</label>
-                                                            <span class="error-message"
-                                                                id="expiration-date-error"></span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <div class="form-floating mb-3">
-                                                            <!-- Security Code -->
-                                                            <input type="text" class="form-control input-feilds"
-                                                                id="security-code" data-filter="digits"
-                                                                placeholder="Security Code" inputmode="numeric"
-                                                                maxlength="4" autocomplete="cc-csc"
-                                                                title="Please enter a 3 or 4 digit security code">
-                                                            <label for="security-code">Security Code</label>
-                                                            <span class="error-message" id="security-code-error"></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-12">
-                                                        <div class="form-floating mb-3">
-                                                            <!-- Cardholder Name -->
-                                                            <input type="text" class="form-control input-feilds"
-                                                                id="cardholder-name" data-filter="name"
-                                                                placeholder="Cardholder Name" autocomplete="cc-name"
-                                                                maxlength="50">
-                                                            <label for="cardholder-name">Cardholder Name</label>
-                                                            <span class="error-message"
-                                                                id="cardholder-name-error"></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- PayPal -->
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button id="payPal-select" class="accordion-button padding0" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
-                                            aria-controls="collapseOne">
-                                            <div class="payPal-button">
-                                                <label class="form-check-label cursor btn-padding" for="payPal-radio">
-                                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                                        id="payPal-radio">
-                                                    <img src="images/PayPal.svg">
-                                                </label>
-                                            </div>
-                                        </button>
-                                    </h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box-area box-area-p-0">
-                            <div class="payment-form controlform">
-                                <h3>Shipping Information</h3>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="form-floating mb-3">
-
-                                            <!-- Full Name -->
-                                            <input type="text" class="form-control input-feilds" id="full-name"
-                                                name="full-name" data-filter="name" placeholder="Full Name"
-                                                autocomplete="name" maxlength="50">
-                                            <label for="full-name">Full Name</label>
-                                            <span class="error-message" id="full-name-error"></span>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-floating mb-3">
-
-                                            <!-- Street Address -->
-                                            <input type="text" class="form-control input-feilds" id="street-address"
-                                                data-filter="address" name="street-address" placeholder="Street Address"
-                                                autocomplete="address-line1" maxlength="100">
-                                            <label for="street-address">Street Address</label>
-                                            <span class="error-message" id="street-address-error"></span>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-floating mb-3">
-
-                                            <!-- Apt / Suite / Other -->
-                                            <input type="text" class="form-control" id="apt-suite-other"
-                                                data-filter="apt" placeholder="Apt / Suite / Other"
-                                                autocomplete="address-line2" maxlength="50">
-                                            <label for="apt-suite-other">Apt / Suite / Other</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-floating mb-3">
-
-                                            <!-- City -->
-                                            <input type="text" class="form-control input-feilds" id="city" name="city"
-                                                data-filter="city" placeholder="City" autocomplete="address-level2"
-                                                maxlength="50">
-                                            <label for="city">City</label>
-                                            <span class="error-message" id="city-error"></span>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-floating mb-3">
-
-                                            <!-- Postal Code -->
-                                            <input type="text" class="form-control input-feilds" id="postal-code"
-                                                name="postal-code" data-filter="postal" placeholder="Postal Code"
-                                                autocomplete="postal-code" maxlength="8">
-                                            <label for="postal-code">Postal Code</label>
-                                            <span class="error-message" id="postal-code-error"></span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Mobile Payment Button Start -->
-                                <div id="mobiel-payment-section">
-                                    <hr>
-                                    <p id="description-mobile" class="text-center mt-4 terms">
-                                        By clicking Pay Now below, I agree to the
-                                        <a href="#">Terms of Sale</a>.
-                                    </p>
-                                    <div class="checkout-btn">
-                                        <!-- PayPal Mobile -->
-                                        <button class="button paypal-button hide" tabindex="0" type="submit"
-                                            id="payPal-button-mobile">
-                                            <span class="paypal-btn-inner">
-                                                Continue to <img src="images/PayPal-checkout.svg" alt="payPal-logo">
-                                            </span>
-                                        </button>
-                                        <!-- Paynow Mobile -->
-                                        <button class="button paypal-button show" tabindex="0" type="submit"
-                                            id="payNow-button-mobile">
-                                            <span class="paypal-btn-inner">
-                                                Pay Now
-                                            </span>
-                                        </button>
-                                    </div>
-                                    <img src="images/check-pay.png" class="img-fluid mt-2 mb-2">
-                                    <div class="searcue">
-                                        <img src="images/searcure-icon.jpg" alt="" class="img-fluid">
-                                    </div>
-                                    <p class="bottom-pra">
-                                        <strong style="color: #0084ca;">You've made a great choice!</strong> <br>
-                                        <strong>Order now</strong> before someone else <br>
-                                        grabs your discounted bags from you!
-                                    </p>
-                                </div>
-                                <!-- Mobile Payment Button End -->
-
-                            </div>
-                            <img src="images/reviews.jpg" alt="reviews-img"
-                                class="img-fluid d-none d-sm-none d-lg-block">
-                        </div>
+                <div class="row">
+                    <div class="lock-area">
+                        <p>
+                            <i class="fas fa-lock"></i>
+                            Secure Checkout
+                        </p>
                     </div>
-                    <div class="col-md-6 pxy bottom-box">
-                        <div class="box-area-top">
-                            <div class="d-none d-sm-none d-lg-block">
-                                <div class="box-area-1">
+                </div>
+
+                <!-- checkOut form -->
+                <form id="checkout-form">
+                    <div class="row maange-role-padding">
+                        <div class="col-md-6 pxy topbox">
+                            <div class="box-area-1 d-sm-block d-lg-none">
+                                <div class="d-sm-block d-lg-none">
                                     <div class="people-number">
-                                        <p class="text-center">
-                                            <i class="fas fa-eye"></i>
-                                            <strong>35 people</strong>
-                                            are online now on this page!
-                                        </p>
+                                        <p class="text-center"><i class="fas fa-eye"></i> <strong>35 people</strong> are
+                                            online
+                                            now on this page!</p>
                                     </div>
-                                    <!-- Desktop - Cart Summary -->
+                                    <!-- Mobile Cart Summary Start -->
                                     <div class="cart-summerty">
                                         <div class="upper-cart">
                                             <div class="products-image">
-                                                <img src="./images/bags/desktop-bag-3.png" class="img-fluid">
+                                                <img src="./images/bags/desktop-bag-3.png" alt="desktop-bag-3.png-img"
+                                                    class="img-fluid" />
                                             </div>
                                             <div class="summery-data text-center">
                                                 <p class="mb-0"><strong>Cart Summary</strong></p>
-                                                <h4 class="mb-0"><strong>3 People - 3 Bags</strong></h4>
+                                                <h4 class="mb-0"><strong> 3 People - 3 Bags</strong></h4>
                                                 <p style="text-align:center">
                                                     <span
                                                         style="background-color:rgba( 15 , 128 , 0 , 1 );color:rgba( 255 , 255 , 255 , 1 );font-family:'roboto' , sans-serif;font-size:14px">
                                                         <strong>&nbsp;4.5&nbsp;</strong>
                                                     </span>
                                                     <span
-                                                        style="background-color:rgba( 255 , 255 , 255 , 0.01 );font-family:'roboto' , sans-serif;font-size:14px">
-                                                        <strong> </strong>
-                                                    </span>
+                                                        style="background-color:rgba( 255 , 255 , 255 , 0.01 );font-family:'roboto' , sans-serif;font-size:14px"><strong></strong></span>
                                                     <span
                                                         style="background-color:rgba( 255 , 255 , 255 , 0.01 );color:rgba( 15 , 128 , 0 , 1 );font-family:'roboto' , sans-serif;font-size:14px">
                                                         <strong>&nbsp;Excellent!</strong>
@@ -417,7 +95,7 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        <!-- Desktop - Product Prices -->
+                                        <!-- Mobile - Product Prices -->
                                         <div class="summery-price-data">
                                             <div class="product-prices">
                                                 <div class="com-font normal">
@@ -429,7 +107,7 @@
                                                 <div class="com-font coupon">
                                                     <p class="mb-0 d-flex justify-content-between">
                                                         <span>Coupon: <span
-                                                                class="off-color">46%OFF<u></u></span></span>
+                                                                class="off-color"><u>46%OFF</u></span></span>
                                                         <span class="off-color">$110.39</span>
                                                     </p>
                                                 </div>
@@ -441,15 +119,14 @@
                                                     </p>
                                                 </div>
                                                 <div class="cart-checkbox manage-checkbox">
-                                                    <input id="cart-checkbox" name="cart-checkbox" class="cursor"
-                                                        type="checkbox">
-                                                    <label for="cart-checkbox">
+                                                    <input id="cart-checkbox-mobile" class="cursor" type="checkbox">
+                                                    <label for="cart-checkbox-mobile">
                                                         I do not want to receive exclusive content and promotion form
-                                                        this
-                                                        vendor, and do not share my personal information.
+                                                        this vendor, and do not share my personal information.
                                                     </label>
                                                 </div>
-                                                <!-- Desktop - Cart Prices -->
+
+                                                <!-- Mobile - Cart Prices -->
                                                 <div class="subtotal mt-3">
                                                     <p class="mb-0 d-flex justify-content-between">
                                                         <span>Subtotal</span>
@@ -469,51 +146,409 @@
                                                     </p>
                                                 </div>
                                             </div>
-                                            <p id="description" class="text-center mt-4 terms">
-                                                By clicking Pay Now below, I agree to the
-                                                <a href="#">Terms of Sale</a>.
-                                            </p>
-                                            <!-- Payment Button -->
-                                            <div class="checkout-btn">
-                                                <button class="button paypal-button hide" tabindex="0" type="submit"
-                                                    id="payPal-button">
-                                                    <span class="paypal-btn-inner">
-                                                        Continue to <img src="images/PayPal-checkout.svg" alt="">
-                                                    </span>
-                                                </button>
-                                                <button class="button paypal-button show" tabindex="0" type="submit"
-                                                    id="payNow-button">
-                                                    <span class="paypal-btn-inner">
-                                                        Pay Now
-                                                    </span>
-                                                </button>
-                                            </div>
-                                            <img src="images/check-pay.png" class="img-fluid mt-2 mb-2">
-                                            <div class="searcue">
-                                                <img src="images/searcure-icon.jpg" alt="" class="img-fluid">
-                                            </div>
-                                            <p class="bottom-pra">
-                                                <strong style="color: #0084ca;">You've made a great choice!</strong>
-                                                <br>
-                                                <strong>Order now</strong> before someone else <br>
-                                                grabs your discounted bags from you!
-                                            </p>
                                         </div>
-                                        <!-- Desktop - Cart Summary -->
+                                    </div>
+                                    <!-- Mobile Cart Summary End -->
+                                </div>
+                            </div>
+                            <div class="box-area">
+                                <h3>Customer Information</h3>
+
+                                <!-- Email Address -->
+                                <div class="form-floating mb-1">
+                                    <input type="email" class="form-control input-feilds" id="email-address"
+                                        placeholder="Email address" maxlength="50" autocomplete="email">
+                                    <label for="email-address">Email address</label>
+                                    <span class="error-message" id="email-address-error"></span>
+                                </div>
+                                <small>To receive an email order confirmation.</small>
+
+                                <!-- Phone Number -->
+                                <div class="form-floating mb-1">
+                                    <input type="tel" class="form-control input-feilds" id="phone-number"
+                                        data-filter="phone" placeholder="Phone number" maxlength="20" autocomplete="tel"
+                                        inputmode="tel">
+                                    <label for="phone-number">Phone number</label>
+                                    <span class="error-message" id="phone-number-error"></span>
+                                </div>
+                                <small>To receive tracking information.</small>
+                            </div>
+                            <div class="box-area box-areaaccordion">
+                                <div class="heading">
+                                    <h3>Payment Information</h3>
+                                    <small>All transactions are secure and encrypted.</small>
+                                </div>
+                                <!-- Payment Options -->
+                                <div class="accordion" id="accordionExample">
+                                    <!-- Credit Card -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button id="credit-card-select" class="accordion-button collapsed padding0"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                aria-expanded="false" aria-controls="collapseTwo">
+                                                <div class="form-check margin0 padding0">
+                                                    <label class="form-check-label btn-padding cursor"
+                                                        for="creditCard-radio">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="flexRadioDefault" id="creditCard-radio" checked>
+                                                        <div class="d-flex justify-content-between gap-manation cursor">
+                                                            <span class="lebel-text">Credit Card</span>
+                                                            <span class="text-end">
+                                                                <img src="images/visa.svg" alt="visa.svg-img" />
+                                                                <img src="images/cc-mastercard.svg"
+                                                                    alt="cc-mastercard.svg" />
+                                                            </span>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </button>
+                                        </h2>
+                                        <!-- Card Details -->
+                                        <div id="collapseTwo" class="accordion-collapse collapse show"
+                                            data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="payment-form controlform">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="form-floating mb-3">
+                                                                <!-- Card Number -->
+                                                                <input type="text" class="form-control input-feilds"
+                                                                    id="card-number" data-filter="card-number"
+                                                                    placeholder="Card Number" inputmode="numeric"
+                                                                    maxlength="19" autocomplete="cc-number">
+                                                                <label for="card-number">Card Number</label>
+                                                                <span class="error-message"
+                                                                    id="card-number-error"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="form-floating mb-3">
+                                                                <!-- Expiration Date -->
+                                                                <input type="text" class="form-control input-feilds"
+                                                                    id="expiration-date" data-filter="expiry"
+                                                                    placeholder="MM/YY" inputmode="numeric"
+                                                                    maxlength="5" autocomplete="cc-exp">
+                                                                <label for="expiration-date">Expiration Date</label>
+                                                                <span class="error-message"
+                                                                    id="expiration-date-error"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="form-floating mb-3">
+                                                                <!-- Security Code -->
+                                                                <input type="text" class="form-control input-feilds"
+                                                                    id="security-code" data-filter="digits"
+                                                                    placeholder="Security Code" inputmode="numeric"
+                                                                    maxlength="4" autocomplete="cc-csc"
+                                                                    title="Please enter a 3 or 4 digit security code">
+                                                                <label for="security-code">Security Code</label>
+                                                                <span class="error-message"
+                                                                    id="security-code-error"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="form-floating mb-3">
+                                                                <!-- Cardholder Name -->
+                                                                <input type="text" class="form-control input-feilds"
+                                                                    id="cardholder-name" data-filter="name"
+                                                                    placeholder="Cardholder Name" autocomplete="cc-name"
+                                                                    maxlength="50">
+                                                                <label for="cardholder-name">Cardholder Name</label>
+                                                                <span class="error-message"
+                                                                    id="cardholder-name-error"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- PayPal -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button id="payPal-select" class="accordion-button padding0" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                aria-expanded="true" aria-controls="collapseOne">
+                                                <div class="payPal-button">
+                                                    <label class="form-check-label cursor btn-padding"
+                                                        for="payPal-radio">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="flexRadioDefault" id="payPal-radio">
+                                                        <img src="images/PayPal.svg" alt="PayPal.svg-img" />
+                                                    </label>
+                                                </div>
+                                            </button>
+                                        </h2>
+
+                                        <!-- ✅ Add this collapsible div -->
+                                        <div id="collapseOne" class="accordion-collapse collapse"
+                                            aria-labelledby="payPal-select" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <p>After clicking "Continue to PayPal", you will be redirected to PayPal
+                                                    to
+                                                    complete your purchase securely.</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="">
-                                <img src="images/manage-deatils.jpg" class="img-fluid">
-                                <img src="images/reviews.jpg" class="img-fluid d-sm-block d-lg-none mt-2">
+                            <div class="box-area box-area-p-0">
+                                <div class="payment-form controlform">
+                                    <h3>Shipping Information</h3>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="form-floating mb-3">
+
+                                                <!-- Full Name -->
+                                                <input type="text" class="form-control input-feilds" id="full-name"
+                                                    name="full-name" data-filter="name" placeholder="Full Name"
+                                                    autocomplete="name" maxlength="50">
+                                                <label for="full-name">Full Name</label>
+                                                <span class="error-message" id="full-name-error"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-floating mb-3">
+
+                                                <!-- Street Address -->
+                                                <input type="text" class="form-control input-feilds" id="street-address"
+                                                    data-filter="address" name="street-address"
+                                                    placeholder="Street Address" autocomplete="address-line1"
+                                                    maxlength="100">
+                                                <label for="street-address">Street Address</label>
+                                                <span class="error-message" id="street-address-error"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-floating mb-3">
+
+                                                <!-- Apt / Suite / Other -->
+                                                <input type="text" class="form-control" id="apt-suite-other"
+                                                    data-filter="apt" placeholder="Apt / Suite / Other"
+                                                    autocomplete="address-line2" maxlength="50">
+                                                <label for="apt-suite-other">Apt / Suite / Other</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-floating mb-3">
+
+                                                <!-- City -->
+                                                <input type="text" class="form-control input-feilds" id="city"
+                                                    name="city" data-filter="city" placeholder="City"
+                                                    autocomplete="address-level2" maxlength="50">
+                                                <label for="city">City</label>
+                                                <span class="error-message" id="city-error"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-floating mb-3">
+
+                                                <!-- Postal Code -->
+                                                <input type="text" class="form-control input-feilds" id="postal-code"
+                                                    name="postal-code" data-filter="postal" placeholder="Postal Code"
+                                                    autocomplete="postal-code" maxlength="8">
+                                                <label for="postal-code">Postal Code</label>
+                                                <span class="error-message" id="postal-code-error"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Mobile Payment Button Start -->
+                                    <div id="mobiel-payment-section">
+                                        <hr>
+                                        <p id="description-mobile" class="text-center mt-4 terms">
+                                            By clicking Pay Now below, I agree to the
+                                            <a href="#">Terms of Sale</a>.
+                                        </p>
+                                        <div class="checkout-btn">
+                                            <!-- PayPal Mobile -->
+                                            <button class="button paypal-button hide" tabindex="0" type="submit"
+                                                id="payPal-button-mobile">
+                                                <span class="paypal-btn-inner">
+                                                    Continue to <img src="images/PayPal-checkout.svg"
+                                                        alt="payPal-logo" />
+                                                </span>
+                                            </button>
+                                            <!-- Paynow Mobile -->
+                                            <button class="button paypal-button show" tabindex="0" type="submit"
+                                                id="payNow-button-mobile">
+                                                <span class="paypal-btn-inner">
+                                                    Pay Now
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <img src="images/check-pay.png" alt="check-pay.png-img"
+                                            class="img-fluid mt-2 mb-2" />
+                                        <div class="searcue">
+                                            <img src="images/searcure-icon.jpg" alt="searcure-icon.jpg-img"
+                                                class="img-fluid" />
+                                        </div>
+                                        <p class="bottom-pra">
+                                            <strong style="color: #0084ca;">You've made a great choice!</strong> <br>
+                                            <strong>Order now</strong> before someone else <br>
+                                            grabs your discounted bags from you!
+                                        </p>
+                                    </div>
+                                    <!-- Mobile Payment Button End -->
+
+                                </div>
+                                <img src="images/reviews.jpg" alt="reviews-img"
+                                    class="img-fluid d-none d-sm-none d-lg-block" />
+                            </div>
+                        </div>
+                        <div class="col-md-6 pxy bottom-box">
+                            <div class="box-area-top">
+                                <div class="d-none d-sm-none d-lg-block">
+                                    <div class="box-area-1">
+                                        <div class="people-number">
+                                            <p class="text-center">
+                                                <i class="fas fa-eye"></i>
+                                                <strong>35 people</strong>
+                                                are online now on this page!
+                                            </p>
+                                        </div>
+                                        <!-- Desktop - Cart Summary -->
+                                        <div class="cart-summerty">
+                                            <div class="upper-cart">
+                                                <div class="products-image">
+                                                    <img src="./images/bags/desktop-bag-3.png"
+                                                        alt="desktop-bag-3.png-img" class="img-fluid" />
+                                                </div>
+                                                <div class="summery-data text-center">
+                                                    <p class="mb-0"><strong>Cart Summary</strong></p>
+                                                    <h4 class="mb-0"><strong>3 People - 3 Bags</strong></h4>
+                                                    <p style="text-align:center">
+                                                        <span
+                                                            style="background-color:rgba( 15 , 128 , 0 , 1 );color:rgba( 255 , 255 , 255 , 1 );font-family:'roboto' , sans-serif;font-size:14px">
+                                                            <strong>&nbsp;4.5&nbsp;</strong>
+                                                        </span>
+                                                        <span
+                                                            style="background-color:rgba( 255 , 255 , 255 , 0.01 );font-family:'roboto' , sans-serif;font-size:14px">
+                                                            <strong> </strong>
+                                                        </span>
+                                                        <span
+                                                            style="background-color:rgba( 255 , 255 , 255 , 0.01 );color:rgba( 15 , 128 , 0 , 1 );font-family:'roboto' , sans-serif;font-size:14px">
+                                                            <strong>&nbsp;Excellent!</strong>
+                                                        </span>
+                                                        <span
+                                                            style="font-family:'roboto' , sans-serif;font-size:14px"></span>
+                                                        <span
+                                                            style="color:rgba( 132 , 132 , 132 , 1 );font-family:'roboto' , sans-serif;font-size:14px">
+                                                            (2,797 reviews)
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <!-- Desktop - Product Prices -->
+                                            <div class="summery-price-data">
+                                                <div class="product-prices">
+                                                    <div class="com-font normal">
+                                                        <p class="mb-0 d-flex justify-content-between">
+                                                            <span>Normally</span>
+                                                            <span><del class="strike-red">$239.97</del></span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="com-font coupon">
+                                                        <p class="mb-0 d-flex justify-content-between">
+                                                            <span>Coupon: <span
+                                                                    class="off-color">46%OFF<u></u></span></span>
+                                                            <span class="off-color">$110.39</span>
+                                                        </p>
+                                                    </div>
+                                                    <hr>
+                                                    <div class="total-price">
+                                                        <p class="mb-0 d-flex justify-content-between">
+                                                            <span>Today's Price</span>
+                                                            <span>$129.58</span>
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="cart-checkbox manage-checkbox">
+                                                        <input id="cart-checkbox-mobile" class="cursor" type="checkbox">
+                                                        <label for="cart-checkbox-mobile">
+                                                            I do not want to receive exclusive content and promotion
+                                                            form this vendor, and do not share my personal information.
+                                                        </label>
+                                                    </div>
+
+                                                    <!-- Desktop - Cart Prices -->
+                                                    <div class="subtotal mt-3">
+                                                        <p class="mb-0 d-flex justify-content-between">
+                                                            <span>Subtotal</span>
+                                                            <span>$129.58</span>
+                                                        </p>
+                                                        <p class="mb-0 d-flex justify-content-between">
+                                                            <span>Shipping & Handling</span>
+                                                            <span>FREE</span>
+                                                        </p>
+                                                        <p class="mb-0 d-flex justify-content-between">
+                                                            <span>Tax</span>
+                                                            <span>$0.00</span>
+                                                        </p>
+                                                        <p class="mb-0 d-flex justify-content-between">
+                                                            <span>TOTAL</span>
+                                                            <span>$181.70</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <p id="description" class="text-center mt-4 terms">
+                                                    By clicking Pay Now below, I agree to the
+                                                    <a href="#">Terms of Sale</a>.
+                                                </p>
+                                                <!-- Payment Button -->
+                                                <div class="checkout-btn">
+                                                    <button class="button paypal-button hide" tabindex="0" type="submit"
+                                                        id="payPal-button">
+                                                        <span class="paypal-btn-inner">
+                                                            Continue to <img src="images/PayPal-checkout.svg"
+                                                                alt="PayPal-checkout.svg-img" />
+                                                        </span>
+                                                    </button>
+                                                    <button class="button paypal-button show" tabindex="0" type="submit"
+                                                        id="payNow-button">
+                                                        <span class="paypal-btn-inner">
+                                                            Pay Now
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                                <img src="images/check-pay.png" alt="check-pay.png"
+                                                    class="img-fluid mt-2 mb-2" />
+                                                <div class="searcue">
+                                                    <img src="images/searcure-icon.jpg" alt="searcure-icon.jpg"
+                                                        class="img-fluid" />
+                                                </div>
+                                                <p class="bottom-pra">
+                                                    <strong style="color: #0084ca;">You've made a great choice!</strong>
+                                                    <br>
+                                                    <strong>Order now</strong> before someone else <br>
+                                                    grabs your discounted bags from you!
+                                                </p>
+                                            </div>
+                                            <!-- Desktop - Cart Summary -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <img src="images/manage-deatils.jpg" alt="manage-deatils.jpg-img"
+                                        class="img-fluid" />
+                                    <img src="images/reviews.jpg" alt="reviews.jpg-img"
+                                        class="img-fluid d-sm-block d-lg-none mt-2" />
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </form>
-            <!-- checkOut form -->
+                </form>
+                <!-- checkOut form -->
+            </div>
         </div>
-    </div>
+    </main>
+
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -539,11 +574,16 @@
                     <div class="about comman-heading list-manage">
                         <h3>Quick Links</h3>
                         <ul>
-                            <li><i class="fas fa-long-arrow-alt-right"></i> <a href="privacy-policy.html">Privacy Policy</a></li>
-                            <li><i class="fas fa-long-arrow-alt-right"></i> <a href="termsofservice.html">Terms of Service</a></li>
-                            <li><i class="fas fa-long-arrow-alt-right"></i> <a href="shippingpolicy.html">Shipping Policy</a></li>
-                            <li><i class="fas fa-long-arrow-alt-right"></i> <a href="refundpolicy.html">Refund Policy</a></li>
-                            <li><i class="fas fa-long-arrow-alt-right"></i> <a href="cancel-subscription.html">Cancel Subscription</a></li>
+                            <li><i class="fas fa-long-arrow-alt-right"></i> <a href="privacy-policy.html">Privacy
+                                    Policy</a></li>
+                            <li><i class="fas fa-long-arrow-alt-right"></i> <a href="termsofservice.html">Terms of
+                                    Service</a></li>
+                            <li><i class="fas fa-long-arrow-alt-right"></i> <a href="shippingpolicy.html">Shipping
+                                    Policy</a></li>
+                            <li><i class="fas fa-long-arrow-alt-right"></i> <a href="refundpolicy.html">Refund
+                                    Policy</a></li>
+                            <li><i class="fas fa-long-arrow-alt-right"></i> <a href="cancel-subscription.html">Cancel
+                                    Subscription</a></li>
 
                         </ul>
                     </div>
@@ -554,18 +594,25 @@
                         <div class="col-md-12 col-6">
                             <div class="about comman-heading social-item">
                                 <h3>Follow Us</h3>
-                                <ul>
+                                <!-- <ul>
                                     <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                                     <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                                     <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                                </ul> -->
+
+                                <ul>
+                                    <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a></li>
                                 </ul>
+
                             </div>
                         </div>
                         <div class="col-md-12 col-6">
                             <div class="about comman-heading mt-3">
                                 <h3>We Accept</h3>
-                                <img src="images/visa.svg" class="img-fluid">
-                                <img src="images/cc-mastercard.svg" class="img-fluid">
+                                <img src="images/visa.svg" alt="visa.svg-img" class="img-fluid" />
+                                <img src="images/cc-mastercard.svg" alt="cc-mastercard.svg-img" class="img-fluid" />
                             </div>
                         </div>
                     </div>
@@ -581,13 +628,13 @@
             <p>Copyright © 2025 All rights reserved.</p>
             <a
                 href="https://www.dmca.com/Protection/Status.aspx?ID=a98f4c31-931e-439a-9367-dd6bdd6f22e9&refurl=https://freshcleanstore.com/checkout2/"><img
-                    src="images/dmca-badge.png" class="img-fluid"></a>
+                    src="images/dmca-badge.png" alt="dmca" class="img-fluid"></a>
         </div>
     </div>
 
-    <!-- Pop-Up model - Start -->
+    <!-- Pop-Up Modal - Start -->
     <div class="modal fade closing-shownmodal" id="myModal" data-bs-backdrop="static" data-bs-keyboard="false"
-        tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        tabindex="-1" aria-labelledby="exampleModalLabel">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -595,13 +642,12 @@
                 </div>
                 <div class="modal-body">
                     <div class="closing">
-                        <h4> <strong><u>WARNING:</u></strong> Closing this page will cancel your <strong>New Customer
+                        <h4><strong><u>WARNING:</u></strong> Closing this page will cancel your <strong>New Customer
                                 Discount Coupon.</strong></h4>
-                        <p>Your reserved bags of YOMZ will then be given to
-                            someone else. <strong><u>This action is final.</u></strong>
-                        </p>
+                        <p>Your reserved bags of YOMZ will then be given to someone else. <strong><u>This action is
+                                    final.</u></strong></p>
                         <p class="clickbutton">Tap the button below to complete your order.</p>
-                        <button class="button paypal-button show" tabindex="0" type="submit" id="payNow-button">
+                        <button class="button paypal-button show" type="submit" id="payNow-button">
                             <span class="paypal-btn-inner">
                                 <strong>Yes! I Accept the Discount! Give Me My YOMZ!</strong>
                             </span>
@@ -611,7 +657,7 @@
             </div>
         </div>
     </div>
-    <!-- Pop-Up model - End -->
+    <!-- Pop-Up Modal - End -->
 
     <!-- import function scrips -->
     <script src="./js/checkout.js"></script>

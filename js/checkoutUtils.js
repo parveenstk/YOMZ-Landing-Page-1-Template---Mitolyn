@@ -43,3 +43,12 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+const myModal = document.getElementById('myModal');
+
+myModal.addEventListener('hide.bs.modal', () => {
+    const focused = document.activeElement;
+    if (myModal.contains(focused)) {
+        focused.blur(); // remove focus from button inside modal
+    }
+});
