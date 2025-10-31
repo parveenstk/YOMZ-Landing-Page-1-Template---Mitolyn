@@ -101,7 +101,7 @@
   padding-left: 4px;
 }
 
-#bonuses,
+#gifts,
 #about,
 #ingredients,
 #faqs,
@@ -2072,8 +2072,8 @@ p.people {
 }
 
 /****************************** Products *****************************/
-/****************************** bonuses *****************************/
-.bonuses {
+/****************************** gifts *****************************/
+.gifts {
   padding: 50px 0;
   background: #0d98b8;
   background: -moz-radial-gradient(circle, #12b2eb 41%, #004293 100%);
@@ -2081,7 +2081,7 @@ p.people {
   background: radial-gradient(circle, #12b2eb 41%, #004293 100%);
 }
 
-.bonuses h3 {
+.gifts h3 {
   text-align: center;
   margin-bottom: 70px;
   font-size: 3rem;
@@ -2135,7 +2135,7 @@ p.people {
   color: #ffffff;
 }
 
-/****************************** bonuses *****************************/
+/****************************** gifts *****************************/
 /****************************** -That’s why there’s… *****************************/
 /****************************** -That’s why there’s… *****************************/
 /****************************** Shipping *****************************/
@@ -2699,7 +2699,7 @@ footer p {
     padding-bottom: 0px !important;
   }
 
-  #bonuses,
+  #gifts,
   #about,
   #ingredients,
   #faqs,
@@ -4248,11 +4248,11 @@ footer p {
     margin: 0px !important;
   }
 
-  .bonuses {
+  .gifts {
     padding: 30px 0 40px;
   }
 
-  .bonuses h3 {
+  .gifts h3 {
     font-size: calc(8.4vw - 0px) !important;
     line-height: calc(1em + 1vw) !important;
     margin-bottom: 10px;
